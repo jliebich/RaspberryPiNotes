@@ -7,5 +7,5 @@
 	cd /
 ##eine Ebene hoch
 	cd ..
-##listen
-	ls /
+##Inhalt des aktuellen Verzeichnisses anzeigen 
+	ls
