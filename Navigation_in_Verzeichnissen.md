@@ -7,3 +7,5 @@
 	cd /
 ##eine Ebene hoch
 	cd ..
+##listen
+	ls /
