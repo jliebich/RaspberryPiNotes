@@ -11,3 +11,18 @@ Zur Nutzung solltest du einfach den einen Dienst beenden und den anderen starten
 
     service apache2 stop && service nginx start
 
+#Konfiguration von nginx testen
+
+    sudo nginx -t
+
+#Expires header für statische Files setzen
+
+    location ~* \.(jpg|jpeg|gif|png|css|js|ico|xml)$ {
+    expires           360d;
+    }
+
+#epoll empfohlen für Linux-Systeme
+
+    events {
+        use epoll;
+    }
