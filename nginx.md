@@ -30,3 +30,7 @@ Zur Nutzung solltest du einfach den einen Dienst beenden und den anderen starten
     events {
         use epoll;
     }
+
+##htaccess to nginx converter
+
+http://winginx.com/en/htaccess
