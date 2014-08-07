@@ -34,3 +34,8 @@ Zur Nutzung solltest du einfach den einen Dienst beenden und den anderen starten
 ##htaccess to nginx converter
 
 http://winginx.com/en/htaccess
+
+##owncloud unter nginx
+
+http://doc.owncloud.org/server/7.0/admin_manual/installation/installation_source.html
+
