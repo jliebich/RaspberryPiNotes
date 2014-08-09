@@ -39,3 +39,10 @@ http://winginx.com/en/htaccess
 
 http://doc.owncloud.org/server/7.0/admin_manual/installation/installation_source.html
 
+##Setting up Perl FastCGI with Nginx
+
+http://nginxlibrary.com/perl-fastcgi/
+
+##IP based country blocking
+
+http://nginxlibrary.com/ip-based-country-blocking/
