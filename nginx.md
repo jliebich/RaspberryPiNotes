@@ -46,3 +46,13 @@ http://nginxlibrary.com/perl-fastcgi/
 ##IP based country blocking
 
 http://nginxlibrary.com/ip-based-country-blocking/
+
+##Welche Module sind installiert
+
+Ausgabe mit
+
+    sudo nginx -V
+
+vergleichen mit Modulliste unter
+
+http://wiki.nginx.org/NginxModules
