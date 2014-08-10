@@ -6,6 +6,10 @@ http://www.zdnet.de/41559930/mehr-leistung-im-www-nginx-statt-apache-nutzen/
 
 ##Nginx/PHP auf Raspberry pi
 
+Das hat bei mir funktioniert:
+http://jankarres.de/2012/08/raspberry-pi-webserver-nginx-installieren/
+
+Das irgendwie nicht:
 http://www.ducky-pond.com/posts/2013/Sep/setup-a-web-server-on-rpi/
 
 ##Apache stoppen und Nginx starten
@@ -36,6 +40,12 @@ Zur Nutzung solltest du einfach den einen Dienst beenden und den anderen starten
 http://winginx.com/en/htaccess
 
 ##owncloud unter nginx
+
+Diese Anleitung hat bei mir funktioniert:
+
+http://jankarres.de/2013/10/raspberry-pi-owncloud-server-installieren/
+
+Das ist die offizielle Anleitung (machte bei mir Probleme):
 
 http://doc.owncloud.org/server/7.0/admin_manual/installation/installation_source.html
 
