@@ -1,8 +1,8 @@
-##NodeJS
-#NodeJS installieren
+#NodeJS
+##NodeJS installieren
      wget http://node-arm.herokuapp.com/node_latest_armhf.deb
      sudo dpkg -i node_latest_armhf.deb
-#Versionsnummer abfragen
+##Versionsnummer abfragen
      node -v
-#Test
+##Test
      node -e "console.log('Test')"
