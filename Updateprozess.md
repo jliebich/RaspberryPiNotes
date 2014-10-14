@@ -6,6 +6,16 @@ Followed by:
 
     sudo apt-get upgrade
 
-Firmwareupdate:
+##Firmwareupdate:
+
+Updateskript installieren:
 
 http://raspberrypiguide.de/howtos/raspberry-pi-firmware-update/
+
+Update durchführen:
+
+    sudo rpi-update
+
+und Neustart via
+
+    sudo reboot
