@@ -1,7 +1,7 @@
 #Webalizer
-#Config
+##Config
  unter etc/webalizer
-#Zugriff absichern
+##Zugriff absichern
 
 [http://byggvir.de/2012/01/25/webalizer-statistiken-absichern/](http://byggvir.de/2012/01/25/webalizer-statistiken-absichern/) 
 
