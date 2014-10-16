@@ -7,3 +7,7 @@ Der Daemon teilt dem Watchdog in regelmäßigen Intervallen mit, dass das System
 
 ##Watchdog aktivieren und einrichten:
 Laden des Kernelmoduls und anschließende Installation des Deamons:
+
+    sudo modprobe bcm2708_wdog
+    echo "bcm2708_wdog" | sudo tee -a /etc/modules
+    sudo apt-get install watchdog
