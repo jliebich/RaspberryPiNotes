@@ -9,6 +9,7 @@ Hängt das System, erhält der Watchdog keine Nachrichten mehr und setzt daraufh
 
 ##Watchdog aktivieren und einrichten:
 Laden des Kernelmoduls:
+Für den Raspi heisst das Modul "bcm2708_wdog", für andere Systeme kann man versuchen mit lm-sensors (http://www.lm-sensors.org/) herauszufinden, die watchdog hardware zu indentifizieren. Nähere Infos dazu hier: http://www.sat.dundee.ac.uk/psc/watchdog/watchdog-configure.html#Watchdog_Device__Time
 
     sudo modprobe bcm2708_wdog
     echo "bcm2708_wdog" | sudo tee -a /etc/modules
@@ -25,6 +26,11 @@ Bei folgenden beiden Zeilen Raute-Zeichen am Anfang der Zeile entfernen:
 
     watchdog-device        = /dev/watchdog
     max-load-1             = 24
+
+"max-load-1" ist der maximal erlaubte "1 minute average load". Ein "load" über diesem Wert führt zum Reboot.
+Default-Wert ist 0 = deaktiviert. Ein Wert von 1 kann man bei einem Single-Core-System grob gesehen als 100% Auslastung interpretieren. Im Internet findet man die Empfehlung mindestens einen Wert von 5*Anzahl_Cores zu verwenden.
+
+"watchdog-device" ist der Device-Name des Hardware-Watchdogtimers. 
 
 Watchdog starten:
 
