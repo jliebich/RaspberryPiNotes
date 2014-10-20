@@ -12,6 +12,11 @@ iptables ist ein Programm zur Konfiguration der Firewall-Tabellen.
 ##Konfiguration anzeigen
 
     sudo iptables -L
+
+oder ausführlicher (mit Anzahl der gefilterten Packete/Bytes je Regel):
+
+    sudo iptables -L -v
+
     
 ##Links
 
