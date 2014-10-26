@@ -7,6 +7,6 @@ In der Linux-Bash geht das so:
 
 Folgende Zeile am Ende einfügen:
 
-    alias -'cd..'
+    alias -='cd..'
 
 Nach verlassen der bash und neuem einloggem sollte es dann fentsprechend funktionieren.
