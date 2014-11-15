@@ -12,4 +12,6 @@ SD-Karte aushängen und wie gewohnt Betriebssystem drauf spielen (Download von h
 Nun mit Linux PC SD-Karte mounten und alle zuvor gesicherten mit dem gleichen Befehl wieder zurück.
 
       cp -r -p -f /<Dein kurzfristiger Speicherort> /<Deine SD-Karte/root-Verzeichnis>).
+      
+Danach muss noch die Datei fstab angepasst werden! (Die nicht mehr genutzten Partitinen entfernen...)
 
