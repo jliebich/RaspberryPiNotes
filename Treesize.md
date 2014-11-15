@@ -1,2 +1,0 @@
-##Treesize für Linux
-    ncdu
