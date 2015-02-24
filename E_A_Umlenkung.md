@@ -7,4 +7,5 @@
 #Pipes
 Verbindung der Standardausgabe eines Befehls mit der Standardeingabe bes folgenden
 Beispiel
+
      mount | grep /dev/sd
