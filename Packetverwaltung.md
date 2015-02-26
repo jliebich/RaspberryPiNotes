@@ -12,7 +12,7 @@ Aptitude ist ein Tool, welches apt-cache und apt-get ersetzt
 
     dpkg -l Packetname
     
-Filtern mit gre
+Filtern mit grep
 
 ##Im installierten Paket enthaltenen Dateien ausgeben
 
@@ -27,3 +27,17 @@ Deshalb ist es hilfreich vorher eine Simulation (Dry-Run) der Deinstallation zu 
 ##Welche Version ist im Packetmanager    
     
      apt-cache show Packetname
+
+##Suchen ob Packet vorhanden
+
+     apt-cache search SUCHBEGRIFF  
+
+##Installierte Packete auslesen
+     
+     dpkg --get-selections \* > tmp/PACKETLISTE
+
+##Packete wiederherstellen
+     
+     dpkg --set-selections \* < tmp/PACKETLISTE
+     apt-get deselect-upgrade
+     
