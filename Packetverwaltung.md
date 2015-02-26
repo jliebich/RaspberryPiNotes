@@ -24,4 +24,6 @@ Deshalb ist es hilfreich vorher eine Simulation (Dry-Run) der Deinstallation zu 
 
      sudo apt-get --dry-run purge Packetname
 
+##Welche Version ist im Packetmanager    
     
+     apt-cache show Packetname
