@@ -7,10 +7,12 @@ Beispiel
 
      perl fhem.pl 7072 "version" 
      
-#FHEM Server starten
+##FHEM Server starten/stoppen
 
-      /etc/init.d/fhem start
-      
-##FHEM Server stoppen 
+      service fhem start
+
+bzw.
 
       /etc/init.d/fhem stop
+
+Ein "restart" ist merkwürdigerweise nicht möglich.
