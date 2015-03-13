@@ -13,6 +13,6 @@ Beispiel
 
 bzw.
 
-      /etc/init.d/fhem stop
+      service fhem stop
 
 Ein "restart" ist merkwürdigerweise nicht möglich.
