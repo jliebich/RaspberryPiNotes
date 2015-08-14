@@ -22,4 +22,6 @@ und Neustart via
 
 ##Automatische Sicherheits-Updates
 
+Verwendung des Pakets Unattended-Upgrades 
+
 http://www.elektronik-kompendium.de/sites/raspberry-pi/2002101.htm
