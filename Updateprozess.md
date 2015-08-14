@@ -19,3 +19,7 @@ Update durchführen:
 und Neustart via
 
     sudo reboot
+
+##Automatische Sicherheits-Updates
+
+http://www.elektronik-kompendium.de/sites/raspberry-pi/2002101.htm
