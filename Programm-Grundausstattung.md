@@ -5,6 +5,8 @@ sowas wie Norton Commamder
 Installieren:
 
     sudo apt-get install mc
+    
+Einfügen der Zwischenablage in den Editor von Midnight Commander geschied über SHIFT und rechtem Mausklick!
  
 ##Nano
 Editor
