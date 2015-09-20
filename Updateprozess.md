@@ -20,6 +20,10 @@ und Neustart via
 
     sudo reboot
 
+Anzeige der installierten Version mit
+
+    uname -a
+
 Aufräumen nach erfolgreichem Firmwareupdate:
 Firmwareupdate installiert häufig auch eine neue Kernelversion - die alte Version wird dabei als Bachkup behalten.
 Um diese alten Kernelversionen zu entfernen, kann man mit
