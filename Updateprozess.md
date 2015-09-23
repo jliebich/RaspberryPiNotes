@@ -60,3 +60,5 @@ Wechsel von Wheezy nach Jessie wird durch rpi-update NICHT durchgeführt!
 
 https://www.datenreise.de/raspberry-pi-raspbian-linux-wheezy-jessie-upgrade/
 
+Dieses Update hat bei mir zu einem unbenutzbaren System geführt (z.B. keine Netzwerkverbindung mehr).
+Habe es wieder rückgängig gemacht...
