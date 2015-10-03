@@ -22,6 +22,7 @@ und anschließend:
     update user set password=PASSWORD("xyz123") where user='root'; 
     
  und abschießen:
+
      flush privileges;
      quit;
  
