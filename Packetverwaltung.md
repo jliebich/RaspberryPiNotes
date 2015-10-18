@@ -53,3 +53,31 @@ Dieses zeigt verfügbare auch Paketversionen mit Distribution an - insbenondere 
      dpkg --set-selections \* < tmp/PAKETLISTE
      apt-get deselect-upgrade
      
+##Paket aus bestimmter Distribution installieren
+Man kann Distributionen auch "mischen" z.B. Wheezy und Jessie
+Vogehensweise:
+* In /etc/apt/sources.list und den Dateien unter /etc/apt/sources.list.d beide Distributionen eintragen
+* Unter /etc/apt/preferences folgenes eintragen:
+
+
+     Package: *
+     Pin: release n=wheezy
+     Pin-Priority: 900
+     
+     Package: *
+     Pin: release n=jessie
+     Pin-Priority: 300
+     
+     Package: *
+     Pin: release o=Raspbian
+     Pin-Priority: -10
+
+Jetzt kann ein bestimmtes Paket aus Jessie installiert werden mit:
+
+    apt-get install -t jessie Paketname
+    
+
+
+
+
+
