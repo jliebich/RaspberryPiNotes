@@ -42,6 +42,12 @@ Dies gibt teilweise > 100 MB Speicherplatz frei
      
      dpkg --get-selections \* > tmp/PAKETLISTE
 
+oder mit dem Tool
+
+     apt-show-versions
+     
+Dieses zeigt verfügbare auch Paketversionen mit Distribution an - insbenondere interessant wenn man Distributionen mischt (Wheezy und Jessie)
+
 ##Pakete wiederherstellen
      
      dpkg --set-selections \* < tmp/PAKETLISTE
