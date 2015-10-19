@@ -1,4 +1,8 @@
 #FHEM
+##Installationsverzechnis von FHEM
+
+     /opt/fhem 
+
 ##FHEM-Befehl in der Bash ausführen
 
      perl fhem.pl <Port> "<Befehl>" 
