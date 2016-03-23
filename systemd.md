@@ -11,3 +11,9 @@ Then disable it:
 Check:
 
      sudo systemctl status bluetooth.service
+     
+     
+     
+SystemdForUpstartUsers:
+
+https://wiki.ubuntu.com/SystemdForUpstartUsers
