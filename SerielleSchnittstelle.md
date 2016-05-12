@@ -1,4 +1,9 @@
 #Serielle Schnittstellen
-##Momentane Konfiguration abfragen
+##Dem System bekannte Schnittstellen anzeigen
 
     dmesg | grep tty
+
+##Momentane Konfiguration abfragen
+
+    stty -F /dev/ttyS0 -a
+
