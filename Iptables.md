@@ -17,6 +17,20 @@ oder ausführlicher (mit Anzahl der gefilterten Packete/Bytes je Regel):
 
     sudo iptables -L -v
 
+
+##Firewall-Regeln bei einem Neustart des Systems automatisch laden
+
+    sudo nano /etc/network/if-pre-up.d/iptables
+
+Fügen Sie in die Datei /etc/network/if-pre-up.d/iptables die folgenden Zeilen ein.
+
+    #!/bin/sh
+    /sbin/iptables-restore /etc/network/iptables
+
+Damit das Skript ausgeführt werden kann müssen Sie die Zugriffsrechte entsprechend anpassen.
+
+    sudo chmod +x /etc/network/if-pre-up.d/iptables
+
     
 ##Links
 
