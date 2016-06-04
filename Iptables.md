@@ -22,7 +22,7 @@ oder ausführlicher (mit Anzahl der gefilterten Packete/Bytes je Regel):
 
     sudo nano /etc/network/if-pre-up.d/iptables
 
-Fügen Sie in die Datei /etc/network/if-pre-up.d/iptables die folgenden Zeilen ein.
+Fügen Sie in die Datei `/etc/network/if-pre-up.d/iptables` die folgenden Zeilen ein.
 
     #!/bin/sh
     /sbin/iptables-restore /etc/network/iptables
