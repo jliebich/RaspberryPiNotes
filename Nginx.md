@@ -19,6 +19,10 @@ Zur Nutzung solltest du einfach den einen Dienst beenden und den anderen starten
 
     service apache2 stop && service nginx start
 
+##Pfad zur nginx Konfiguration
+
+    /etc/nginx/sites-enabled    
+
 ##Konfiguration von nginx testen
 
     sudo nginx -t
