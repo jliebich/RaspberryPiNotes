@@ -9,10 +9,17 @@
     apt-get install php5-tidy
 
 ## Twig (http://twig.sensiolabs.org) installieren...
+
+Dieser Schritt schlug bei mir wegen zu wenig RAM fehl - daher swap-File anlegen
+
+https://jankarres.de/2012/11/raspberry-pi-swap-erweitern/
+
     cd /var/www/wallabag
     sudo -s
     curl -s http://getcomposer.org/installer | php
     php composer.phar install
+
+
 
 #Wallagbag aktualisieren
     cd /var/www/wallabag
