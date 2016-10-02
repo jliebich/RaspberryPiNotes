@@ -1,4 +1,8 @@
 #Webalizer
+
+Achtung! Webalizer ist veraltet und wird nicht mehr weiterentwickelt.
+Alternative: piwik
+
 ##Config
  unter etc/webalizer
 ##Zugriff absichern
