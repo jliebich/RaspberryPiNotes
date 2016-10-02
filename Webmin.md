@@ -1,5 +1,7 @@
 #Webmin
 
+WebMin is a web-based GUI admin tool for Linux.
+
 ##Installieren
 
     apt-get update
