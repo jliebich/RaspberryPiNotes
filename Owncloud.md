@@ -25,7 +25,7 @@ in meinem Fall:
     mysql -u root -pStrengGeheim owncloud < backupxxxxxx.sql
     
 
-#Fehlermeldung "HP scheint zur Abfrage von Systemumgebungsvariablen nicht richtig eingerichtet zu sein"
+#Fehlermeldung "PHP scheint zur Abfrage von Systemumgebungsvariablen nicht richtig eingerichtet zu sein"
 
 https://doc.owncloud.org/server/8.1/admin_manual/installation/source_installation.html#php-fpm-tips-label
 
