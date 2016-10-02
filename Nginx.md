@@ -70,3 +70,7 @@ Ausgabe mit
 vergleichen mit Modulliste unter
 
 http://wiki.nginx.org/NginxModules
+
+##Neuere nginx-Version installieren (aus Stretch)
+
+https://getgrav.org/blog/raspberrypi-nginx-php7-dev
