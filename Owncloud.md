@@ -37,3 +37,11 @@ Kommentarzeichen vor diesen Einträgen entfernen in Datei `/etc/php5/fpm/pool.d/
     env[TMPDIR] = /tmp
     env[TEMP] = /tmp
 
+#Fehlermeldung "Es wurde kein PHP Memory Cache konfiguriert"
+
+Folgende Zeile in `config.php` editieren
+
+    'memcache.local' => '\OC\Memcache\APCu',
+    
+    
+ 
