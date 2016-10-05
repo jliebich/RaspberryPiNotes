@@ -30,7 +30,9 @@ Testen ob Zugriff möglich ist mit
     
 hier muss jetzt das oben angelegte Verzeichnis erscheinen
 
-Ordner anlegen, in den das NAS-Laufwerk gemuntet werden soll z.B. /media/NAS
+Ordner anlegen, in den das NAS-Laufwerk gemountet werden soll z.B. /media/NAS
+
+    mkdir /media/NAS
 
 Testweise mounten:
 
