@@ -8,7 +8,7 @@ https://dvpizone.wordpress.com/2014/03/08/using-rsnapshot-with-a-raspberry-pi-to
     apt-get install rsnapshot
 
 
-#Backup mit rsanpshot auf Synology NAS
+#Backup mit rsnapshot auf Synology NAS
 
 ##Arbeiten an Synology NAS:
 Systemsteuerung das Menü „Gemeinsame Ordner“ , neues Verzeichnis, z.B. Backup_Raspi
