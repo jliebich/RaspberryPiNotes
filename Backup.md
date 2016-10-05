@@ -40,3 +40,17 @@ Testweise mounten:
 
     mount -t nfs 192.168.0.11:/volume1/Backup_Raspi /media/NAS
 
+Bei Fehlermeldung
+
+    mount.nfs: rpc.statd is not running but is required for remote locking.
+    mount.nfs: Either use '-o nolock' to keep locks local, or start statd.
+    mount.nfs: an incorrect mount option was specified
+    
+muss noch folgendes gemacht werden:
+
+    service rpcbind start
+    
+und
+
+    update-rc.d rpcbind enable
+
