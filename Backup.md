@@ -56,3 +56,21 @@ und
 
     update-rc.d rpcbind enable
 
+##Automount
+
+Um den NFS-Ordner des NAS automatisch einzubinden, könnte man diesen in der fstab eintragen.
+Dies führt aber zu Problemen, wenn das NAS-Laufwerk nicht erreichbar ist.
+Besser geht dies mit autofs, siehe
+
+https://www.elektronik-kompendium.de/sites/raspberry-pi/2102221.htm
+
+
+##Prüfen ob Laufwerk gemounted
+
+    #!/bin/sh
+    if mount | grep '^/dev/hda1 ' >/dev/null 2>&1 ; then
+        echo "gemountet"
+    else
+        echo "nicht gemountet"
+    fi
+    exit 0
