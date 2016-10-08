@@ -17,52 +17,38 @@ Für die Dateisicherung benötigen Sie mindestens einen Benutzer, welcher schrei
 
 In meinem Beispiel heißt der User NASRaspi – er bekommt lese und schreibzugriff im Tab „Berechtigungen“.
 
-Unter „NFS-Berechtigungen“ → „Erstellen“ Lese- und Schreibzugriff für die IP des Raspberry Pi erlauben. Unten im Fenster steht auch der Mount-Pfad der später benötigt wird – bei mir /volume1/Backup_Raspi 
+Wir werden mit Samba auf diesen Ordner zugreifern -NFS wäre schneller, aber mir ist es nicht gelungen dies ans Laufen zu bekommen...
 
 ##Arbeiten an Raspberry Pi:
 Benötigte Packete installieren
     
-    apt-get install nfs-common cifs-utils libnss-myhostname
-
-Testen ob Zugriff möglich ist mit
-
-    showmount -e [ip-Adresse-NAS]
-    
-hier muss jetzt das oben angelegte Verzeichnis erscheinen
+    apt-get install cifs-utils
 
 Ordner anlegen, in den das NAS-Laufwerk gemountet werden soll z.B. /media/NAS
 
     mkdir /media/NAS
 
-Testweise mounten:
+.smbcredentials, im eigenen Homeverzeichnis anlegen. Inhalt
 
-    mount -t nfs [ip-Adresse-NAS]:[Mount-Pfad] /media/NAS
+    username=<benutzer>
+    password=<passwort>
 
-[ip-Adresse] durch die IP-Adresse des NAS-Laufwerks ersetzen, [Mount-Pfad] durch MountPfad-Name (siehe oben) – bei mir also
+Mounten:
 
-    mount -t nfs 192.168.0.11:/volume1/Backup_Raspi /media/NAS
+    mount -v -t cifs -o credentials=~/.smbcredentials //192.168.0.11/Backup_Raspi /media/NAS
 
-Bei Fehlermeldung
+##Mounten in C
 
-    mount.nfs: rpc.statd is not running but is required for remote locking.
-    mount.nfs: Either use '-o nolock' to keep locks local, or start statd.
-    mount.nfs: an incorrect mount option was specified
-    
-muss noch folgendes gemacht werden:
+    const char* src = "\\\\192.168.0.11\\Backup_Raspi";
+    const char* dst = "/media/NAS";
+    const char* fstype = "cifs";
 
-    service rpcbind start
-    
-und
-
-    update-rc.d rpcbind enable
-
-##Automount
-
-Um den NFS-Ordner des NAS automatisch einzubinden, könnte man diesen in der fstab eintragen.
-Dies führt aber zu Problemen, wenn das NAS-Laufwerk nicht erreichbar ist.
-Besser geht dies mit autofs, siehe
-
-https://www.elektronik-kompendium.de/sites/raspberry-pi/2102221.htm
+    const char* all_string = "unc=\\\\192.168.0.11\\Backup_Raspi,ip=192.168.0.11,username=NASRaspi,password=geheim";
+   
+    printf("Trying to mount...\n");
+    fflush(stdout);
+    // int mount (const char *special_file, const char *dir, const char *fstype, unsigned long int options, const void *data)
+    int result = mount(src, dst, fstype, MS_MGC_VAL | MS_SILENT, all_string);
 
 
 ##Prüfen ob Laufwerk gemounted
