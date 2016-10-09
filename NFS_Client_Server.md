@@ -1,4 +1,7 @@
 ##Arbeiten an Synology NAS (Server)
+
+Unter Dateidienste NFS aktiviren, aber NFSv4 Unterstützung deaktiviert lassen
+
 Systemsteuerung das Menü „Gemeinsame Ordner“ , neues Verzeichnis, z.B. Backup_Raspi
 
 Für die Dateisicherung benötigen Sie mindestens einen Benutzer, welcher schreibend darauf zugreifen darf.
@@ -26,11 +29,13 @@ Ordner anlegen, in den das NAS-Laufwerk gemountet werden soll z.B. /media/NAS
 
 Testweise mounten:
 
-    mount -t nfs [ip-Adresse-NAS]:[Mount-Pfad] /media/NAS
+    mount -v -t nfs [ip-Adresse-NAS]:[Mount-Pfad] /media/NAS
 
 [ip-Adresse] durch die IP-Adresse des NAS-Laufwerks ersetzen, [Mount-Pfad] durch MountPfad-Name (siehe oben) – bei mir also
 
-    mount -t nfs 192.168.0.11:/volume1/Backup_Raspi /media/NAS
+    mount -v -t nfs 192.168.0.11:/volume1/Backup_Raspi /media/NAS
+
+Option -v gibt zusätzliche Informationen aus, kann später entfallen falls alles klappt.
 
 Bei Fehlermeldung
 
