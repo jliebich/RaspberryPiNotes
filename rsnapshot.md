@@ -6,3 +6,7 @@ https://dvpizone.wordpress.com/2014/03/08/using-rsnapshot-with-a-raspberry-pi-to
 ##Installieren
 
     apt-get install rsnapshot
+
+##Konfig-Datei
+
+    /etc/rsnapshot.conf
