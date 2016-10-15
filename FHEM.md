@@ -7,10 +7,14 @@
 
      perl fhem.pl <Port> "<Befehl>" 
      
-Beispiel
+Beispiele
 
      perl fhem.pl 7072 "version" 
      
+     perl fhem.pl 7072 "update check" 
+
+     perl fhem.pl 7072 "update" 
+
 ##FHEM Server starten/stoppen
 
       service fhem start
