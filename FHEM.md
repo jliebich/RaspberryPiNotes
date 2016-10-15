@@ -13,7 +13,9 @@ Beispiele
      
      perl fhem.pl 7072 "update check" 
 
-     perl fhem.pl 7072 "update" 
+     perl fhem.pl 7072 "update"
+     
+     perl fhem.pl 7072 "shutdown restart"
 
 ##FHEM Server starten/stoppen
 
