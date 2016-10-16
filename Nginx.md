@@ -74,3 +74,9 @@ http://wiki.nginx.org/NginxModules
 ##Neuere nginx-Version installieren (aus Stretch)
 
 https://getgrav.org/blog/raspberrypi-nginx-php7-dev
+
+##Ausgabe der Versionsnummer auf Fehlerseiten und im Header unterdrücken 
+
+In der „http„-Sektion der nginx.conf folgendes einfügen
+
+    server_tokens off;
