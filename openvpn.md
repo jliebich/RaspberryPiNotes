@@ -4,6 +4,8 @@ Install the OpenVPN server from within Package Center.
 
 Enable OpenVPN under OpenVPN Server > Settings > OpenVPN.
 
+Unter VPNServer -> Privileg einem Nutzer den OpenVPN Zugriff erlauben
+
 #Fritzbox konfigurieren
 
 Unter Portfreigaben UDP port 1194 an NAS freigeben:
