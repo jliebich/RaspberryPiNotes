@@ -9,6 +9,26 @@
     git clone https://github.com/wallabag/wallabag
     chown www-data.www-data -R /var/www/wallabag
 
+#Install-Script aufrufen
+
+Nach einiger Lasufzeit kommt abfrage nach Datenbank
+
+    database_driver (pdo_sqlite): pdo_mysql
+    database_host (127.0.0.1): 127.0.0.1
+    database_port (null): 3306
+    database_name (symfony): DB_wallabag
+    database_user (root): USER_wallabag
+    database_password (null): $PASSWORTDESDATENBANKNUTZERS
+ database_path ('%kernel.root_dir%/../data/db/wallabag.sqlite'):
+ database_table_prefix (wallabag_): wallabag_
+ mailer_transport (smtp): smtp
+ mailer_host (127.0.0.1): $MAILSERVERIPBZWNAME
+ mailer_user (null): $bENUTZERNAMENMAILSERVER
+ mailer_password (null): $PASSWORTMAILSERVER
+ locale (en): en
+ secret (ovmpmAWXRCabNlMgzlzFXDYmCFfzGv): $SECRTEINGEBEN
+
+
 ## Auf vielen Webservern wird mod_tidy fehlen...
     apt-get install php5-tidy
 
@@ -22,6 +42,8 @@ https://jankarres.de/2012/11/raspberry-pi-swap-erweitern/
     sudo -s
     curl -s http://getcomposer.org/installer | php
     php composer.phar install
+
+
 
 
 
