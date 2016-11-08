@@ -19,14 +19,14 @@ Nach einiger Lasufzeit kommt abfrage nach Datenbank
     database_name (symfony): DB_wallabag
     database_user (root): USER_wallabag
     database_password (null): $PASSWORTDESDATENBANKNUTZERS
- database_path ('%kernel.root_dir%/../data/db/wallabag.sqlite'):
- database_table_prefix (wallabag_): wallabag_
- mailer_transport (smtp): smtp
- mailer_host (127.0.0.1): $MAILSERVERIPBZWNAME
- mailer_user (null): $bENUTZERNAMENMAILSERVER
- mailer_password (null): $PASSWORTMAILSERVER
- locale (en): en
- secret (ovmpmAWXRCabNlMgzlzFXDYmCFfzGv): $SECRTEINGEBEN
+    database_path ('%kernel.root_dir%/../data/db/wallabag.sqlite'):
+    database_table_prefix (wallabag_): wallabag_
+    mailer_transport (smtp): smtp
+    mailer_host (127.0.0.1): $MAILSERVERIPBZWNAME
+    mailer_user (null): $bENUTZERNAMENMAILSERVER
+    mailer_password (null): $PASSWORTMAILSERVER
+    locale (en): en
+    secret (ovmpmAWXRCabNlMgzlzFXDYmCFfzGv): $SECRTEINGEBEN
 
 
 ## Auf vielen Webservern wird mod_tidy fehlen...
