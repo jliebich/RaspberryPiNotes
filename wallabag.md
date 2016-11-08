@@ -20,6 +20,8 @@
 
 #Install-Script aufrufen
 
+    make install
+
 Nach einiger Lasufzeit kommt abfrage nach Datenbank
 
     database_driver (pdo_sqlite): pdo_mysql
