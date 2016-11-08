@@ -39,6 +39,12 @@ Nach einiger Lasufzeit kommt abfrage nach Datenbank
     locale (en): en
     secret (ovmpmAWXRCabNlMgzlzFXDYmCFfzGv): $SECRTEINGEBEN
 
+Später kommt die Frage
+
+    It appears that your database already exists. Would you like to reset it?
+
+hier mit NEIN antworten, sonst kam bei mir Fehlermeldung und Abbruch. 
+
 
 ## Auf vielen Webservern wird mod_tidy fehlen...
     apt-get install php5-tidy
