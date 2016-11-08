@@ -1,5 +1,8 @@
 #Wallabag installieren
 
+## Auf vielen Webservern wird mod_tidy fehlen...
+    apt-get install php5-tidy
+
 ##Composer aktualisieren
 
     composer selfupdate    
@@ -9,7 +12,7 @@
     git clone https://github.com/wallabag/wallabag
     chown www-data.www-data -R /var/www/wallabag
 
-##Set up a database for wallabag
+##MySQL Datenbank anlegen
 
     mysql -uroot -p
 
@@ -21,6 +24,10 @@
 #Install-Script aufrufen
 
     make install
+
+Dieser Schritt schlug bei mir wegen zu wenig RAM fehl - daher swap-File anlegen
+
+https://jankarres.de/2012/11/raspberry-pi-swap-erweitern/
 
 Nach einiger Lasufzeit kommt abfrage nach Datenbank
 
@@ -45,24 +52,7 @@ Später kommt die Frage
 
 hier mit NEIN antworten, sonst kam bei mir Fehlermeldung und Abbruch. 
 
-
-## Auf vielen Webservern wird mod_tidy fehlen...
-    apt-get install php5-tidy
-
-## Twig (http://twig.sensiolabs.org) installieren...
-
-Dieser Schritt schlug bei mir wegen zu wenig RAM fehl - daher swap-File anlegen
-
-https://jankarres.de/2012/11/raspberry-pi-swap-erweitern/
-
-    cd /var/www/wallabag
-    sudo -s
-    curl -s http://getcomposer.org/installer | php
-    php composer.phar install
-
-
-
-
+Danach wird man aufgefordert einen "Admin" User anzulegen - dies wie vorgeschlagen tun, es ist KEIN SQL-Datenbankuser!
 
 #Wallagbag aktualisieren
     cd /var/www/wallabag
