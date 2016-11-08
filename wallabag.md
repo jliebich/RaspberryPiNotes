@@ -9,6 +9,15 @@
     git clone https://github.com/wallabag/wallabag
     chown www-data.www-data -R /var/www/wallabag
 
+##Set up a database for wallabag
+
+    mysql -uroot -p
+
+    CREATE DATABASE DB_wallabag;
+    GRANT ALL PRIVILEGES ON DB_wallabag.* TO 'USER_wallabag'@'localhost' IDENTIFIED BY '_PASSWORD_';
+    FLUSH PRIVILEGES;
+    \q
+
 #Install-Script aufrufen
 
 Nach einiger Lasufzeit kommt abfrage nach Datenbank
