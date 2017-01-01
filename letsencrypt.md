@@ -7,7 +7,10 @@ Webserver stoppen
 Letsencrypt aufrufen
 
     ./letsencrypt-auto --renew-by-default certonly -d domain.de
-  
+
+Daraufhin wird das Prrogramm zunächst aktualisiert.
+Achtung: Es dauert sehr lange, bis der Schritt "Installing Python packages..." abgeschlossen ist!
+
 Im Dialog "Automatically use a temporary webserver (standalone)" wählen
 
 Prüfen, ob angegebener Pfad, in den das neue Zertifikat gespeichert ist, mit der Angabe in der nginx-Konfiguration übereinstimmt
