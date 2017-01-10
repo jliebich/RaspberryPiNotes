@@ -3,6 +3,10 @@
 
      /opt/fhem 
 
+##Konfigurations-Datei
+
+     /opt/fhem/fhem.cfg
+
 ##FHEM-Befehl in der Bash ausführen
 
      perl fhem.pl <Port> "<Befehl>" 
