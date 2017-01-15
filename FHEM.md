@@ -73,4 +73,4 @@ verschiebt alle Devices aus room1 nach room2. room1 ist dann verschwunden und ro
 
 #Icon für Raum definieren
 
-    attr WEB roomIcons Haus:control_building_empty 
+    attr WEB roomIcons Keller:control_building_modern_s_kg  EG:control_building_modern_s_eg OG:control_building_modern_s_og  DG:control_building_modern_s_dg
