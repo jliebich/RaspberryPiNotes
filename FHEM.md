@@ -63,3 +63,10 @@ FHEM wieder starten.
 CUL-Stick umstecken, Reboot mit
     
     reboot
+
+#Raum umbenennen
+
+
+    attr room=room1 room room2
+
+verschiebt alle Devices aus room1 nach room2. room1 ist dann verschwunden und room2 ist neu verfügbar. Das ist faktisch wie eine Umbenennung.
