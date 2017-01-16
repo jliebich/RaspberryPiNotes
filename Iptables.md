@@ -34,6 +34,7 @@ Damit das Skript ausgeführt werden kann müssen Sie die Zugriffsrechte entsprec
 
 ##ipset um große Blacklists zu verwalten
 https://neverendingsecurity.wordpress.com/2015/04/13/iptables-blacklist-script/
+http://unixetc.co.uk/2016/04/18/protect-your-web-server-with-ipset/#more-1376
 
 ##Links
 
