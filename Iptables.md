@@ -31,7 +31,10 @@ Damit das Skript ausgeführt werden kann müssen Sie die Zugriffsrechte entsprec
 
     sudo chmod +x /etc/network/if-pre-up.d/iptables
 
-    
+
+##ipset um große Blacklists zu verwalten
+https://neverendingsecurity.wordpress.com/2015/04/13/iptables-blacklist-script/
+
 ##Links
 
 http://www.forum-raspberrypi.de/Thread-tutorial-linux-firewall-iptables-unter-raspbian-konfigurieren
