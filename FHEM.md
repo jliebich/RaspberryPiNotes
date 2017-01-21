@@ -74,3 +74,14 @@ verschiebt alle Devices aus room1 nach room2. room1 ist dann verschwunden und ro
 #Icon für Raum definieren
 
     attr WEB roomIcons Keller:control_building_modern_s_kg  EG:control_building_modern_s_eg OG:control_building_modern_s_og  DG:control_building_modern_s_dg
+    
+#Homematic-Geräte anlernen (pairen)
+
+HM-MOD-UART in den "Akzeptiere-Pairing-Requests-Modus" bringen:
+
+    set myHmUART hmPairForSec 600
+
+Homematic-Gerät in den Pairing-Mode versetzen:
+
+* Rauchmenlder: Taste drücken bis LED orange blinkt
+* Heizregler und Wandthermostat: Boost-Taste min. 3 Sekunden drücken
