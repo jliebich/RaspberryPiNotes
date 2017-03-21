@@ -22,4 +22,8 @@ Gefärlich, wenn man nicht weiss was man tut und bei bereits "gepushten" commits
 Versionsverwltung (wie git) ist Voraussetzung für den Betrieb eines CI-Servers (continuous integration server).
 Tool von  Atlassian heißt Bamboo, siehe https://de.wikipedia.org/wiki/Bamboo_(Software)
 
+Netter Alias für das globale git-config files
+
+        alias.graph=log --oneline --decorate --graph --all
+
 
