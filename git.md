@@ -20,4 +20,6 @@ Wie "--amend" im lokalen Repository möglich.
 Gefärlich, wenn man nicht weiss was man tut und bei bereits "gepushten" commits tunlichst unterlassen"
 
 Versionsverwltung (wie git) ist Voraussetzung für den Betrieb eines CI-Servers (continuous integration server).
-Tool von  Atlassian heißt [https://de.wikipedia.org/wiki/Bamboo_(Software)|Bamboo]
+Tool von  Atlassian heißt Bamboo, siehe https://de.wikipedia.org/wiki/Bamboo_(Software)
+
+
