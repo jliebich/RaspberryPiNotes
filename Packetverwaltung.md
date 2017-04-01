@@ -1,20 +1,20 @@
-#Paketverwaltung
-##aptitude
+# Paketverwaltung
+## aptitude
 Aptitude ist ein Tool, welches apt-cache und apt-get ersetzt
 
     sudo aptitude
   
-##Zu welchem Paket gehört welche Datei/Ordner?
+## Zu welchem Paket gehört welche Datei/Ordner?
 
     dpkg -S Dateiname
 
-##Information zu einem Paket ausgeben
+## Information zu einem Paket ausgeben
 
     dpkg -l Paketname
     
 Filtern mit grep
 
-##Im installierten Paket enthaltenen Dateien ausgeben
+## Im installierten Paket enthaltenen Dateien ausgeben
 
     dpkg -L Paketname
 
@@ -24,21 +24,21 @@ Deshalb ist es hilfreich vorher eine Simulation (Dry-Run) der Deinstallation zu 
 
      sudo apt-get --dry-run purge Paketname
 
-##Heruntergeladene Installationsdateien aus dem Paket-Cache /var/cache/apt/archives/ löschen
+## Heruntergeladene Installationsdateien aus dem Paket-Cache /var/cache/apt/archives/ löschen
 
      sudo apt-get [Option(en)] clean  
 
 Dies gibt teilweise > 100 MB Speicherplatz frei
 
-##Welche Version ist im Paketmanager    
+## Welche Version ist im Paketmanager    
     
      apt-cache show Paketname
 
-##Suchen ob Paket vorhanden
+## Suchen ob Paket vorhanden
 
      apt-cache search SUCHBEGRIFF  
 
-##Installierte Pakete auslesen
+## Installierte Pakete auslesen
      
      dpkg --get-selections \* > tmp/PAKETLISTE
 
@@ -48,12 +48,12 @@ oder mit dem Tool
      
 Dieses zeigt verfügbare auch Paketversionen mit Distribution an - insbenondere interessant wenn man Distributionen mischt (Wheezy und Jessie)
 
-##Pakete wiederherstellen
+## Pakete wiederherstellen
      
      dpkg --set-selections \* < tmp/PAKETLISTE
      apt-get deselect-upgrade
      
-##Paket aus bestimmter Distribution installieren
+## Paket aus bestimmter Distribution installieren
 Man kann Distributionen auch "mischen" z.B. Wheezy und Jessie
 Vogehensweise:
 * In /etc/apt/sources.list und den Dateien unter /etc/apt/sources.list.d beide Distributionen eintragen
