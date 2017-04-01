@@ -1,10 +1,14 @@
-#Letsencrypt Zertifikat erneuern
+# Letsencrypt Zertifikat erneuern
 
 Webserver stoppen
 
     service nginx stop
 
-Letsencrypt aufrufen
+In Installationsverzeichnis wechslen - bei mir:
+
+    cd /home/letsencrypt
+
+Letsencrypt aufrufen 
 
     ./letsencrypt-auto --renew-by-default certonly -d domain.de
 
