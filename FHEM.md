@@ -1,13 +1,13 @@
-#FHEM
-##Installationsverzechnis von FHEM
+# FHEM
+## Installationsverzechnis von FHEM
 
      /opt/fhem 
 
-##Konfigurations-Datei
+## Konfigurations-Datei
 
      /opt/fhem/fhem.cfg
 
-##FHEM-Befehl in der Bash ausführen
+## FHEM-Befehl in der Bash ausführen
 
      perl fhem.pl <Port> "<Befehl>" 
      
@@ -21,7 +21,7 @@ Beispiele
      
      perl fhem.pl 7072 "shutdown restart"
 
-##FHEM Server starten/stoppen
+## FHEM Server starten/stoppen
 
       service fhem start
 
@@ -32,7 +32,7 @@ bzw.
 Ein "restart" ist merkwürdigerweise nicht möglich.
 
 
-##Mit FHEM auf andere Hardware umziehen
+## Mit FHEM auf andere Hardware umziehen
 
 Siehe auch
 
@@ -64,18 +64,18 @@ CUL-Stick umstecken, Reboot mit
     
     reboot
 
-#Raum umbenennen
+# Raum umbenennen
 
 
     attr room=room1 room room2
 
 verschiebt alle Devices aus room1 nach room2. room1 ist dann verschwunden und room2 ist neu verfügbar. Das ist faktisch wie eine Umbenennung.
 
-#Icon für Raum definieren
+# Icon für Raum definieren
 
     attr WEB roomIcons Keller:control_building_modern_s_kg  EG:control_building_modern_s_eg OG:control_building_modern_s_og  DG:control_building_modern_s_dg
     
-#Homematic-Geräte anlernen (pairen)
+# Homematic-Geräte anlernen (pairen)
 
 HM-MOD-UART in den "Akzeptiere-Pairing-Requests-Modus" bringen:
 
