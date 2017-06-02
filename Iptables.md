@@ -3,7 +3,7 @@ iptables ist ein Programm zur Konfiguration der Firewall-Tabellen.
 
 ## Konfiguration editieren
 
-    sudo nano /etc/network/iptables
+    sudo mcedit /etc/network/iptables
   
 ## Konfiguration laden
 
