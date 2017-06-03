@@ -96,3 +96,8 @@ https://berndklaus.at/owncloud-von-php5-auf-php7-upgraden/
 Achtung! Installation von php7 nicht wie im obigen Link installieren sondern besser aus stretch wie hier beschrieben:
 
 https://www.randombrick.de/raspberry-pi-nginx-und-php-installieren-und-einrichten/
+
+Nötige php7 Pakete für owncloud
+
+    apt-get -t stretch install php7.0-fpm php7.0-dev php7.0-mysql php7.0-cli php7.0-opcache
+
