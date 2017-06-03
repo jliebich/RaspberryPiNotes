@@ -43,7 +43,7 @@ Folgende Zeile in `config.php` editieren
 
     'memcache.local' => '\OC\Memcache\APCu',
     
-# Berechtigunge setzen
+# Berechtigungen setzen
 
 Script SetPermissions.sh (liegt bei mir unter /root)
 
@@ -87,3 +87,12 @@ Script SetPermissions.sh (liegt bei mir unter /root)
     fi
     
  
+# Owncloud von php5 auf php7 upgraden
+
+Migration von php5 nach php7:
+
+https://berndklaus.at/owncloud-von-php5-auf-php7-upgraden/
+
+Achtung! Installation von php7 nicht wie im obigen Link installieren sondern besser aus stretch wie hier beschrieben:
+
+https://www.randombrick.de/raspberry-pi-nginx-und-php-installieren-und-einrichten/
