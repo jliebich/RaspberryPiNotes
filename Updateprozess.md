@@ -1,4 +1,4 @@
-#Updateprozess
+# Updateprozess
 
     sudo apt-get update
 
@@ -6,7 +6,7 @@ Followed by:
 
     sudo apt-get upgrade
 
-##Firmwareupdate:
+## Firmwareupdate:
 
 Updateskript installieren:
 
@@ -48,13 +48,13 @@ Sinnvoll ist es anschliessend noch
     
 um von dem alten Kernel verbleibende Reste auch noch zu entfernen.
 
-##Automatische Sicherheits-Updates
+## Automatische Sicherheits-Updates
 
 Verwendung des Pakets Unattended-Upgrades 
 
 http://www.elektronik-kompendium.de/sites/raspberry-pi/2002101.htm
 
-##Release-Upgrade von Wheezy nach Jessie
+## Release-Upgrade von Wheezy nach Jessie
 
 Wechsel von Wheezy nach Jessie wird durch rpi-update NICHT durchgeführt!
 
