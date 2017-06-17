@@ -1,6 +1,6 @@
-#NetBeans als IDE für C Entwicklung auf dem Raspberry
+# NetBeans als IDE für C Entwicklung auf dem Raspberry
 
-##Creating A New NetBeans Project
+## Creating A New NetBeans Project
 Menu > File > New Project > Select 'C/C++ Application'
 
 Set the projects name and location
@@ -46,9 +46,9 @@ Right click the project > Properties > Build > Linker > In the 'Libraries' secti
 Right click the project > Build
 
 
-##Diverses
+## Diverses
 
-###Delete all breakpoints
+### Delete all breakpoints
 Menu > Window > Debugging > Breakpoints
 
 Then right-click in the Breakpoints window and select Disable All or  "Delete All".
