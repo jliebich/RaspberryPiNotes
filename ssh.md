@@ -1,14 +1,14 @@
-#ssh
+# ssh
 
-##ssh Verbindung aufbauen
+## ssh Verbindung aufbauen
 
      ssh Benutzer@IP_Adresse
      
-##Sicheres kopieren 
+## Sicheres kopieren 
     
      scp Quelldateiname Benutzer@IP_Adresse:Pfad 
 
-##Schlüsselpaar mit und für WinSCP & Putty/Kitty erzeugen
+## Schlüsselpaar mit und für WinSCP & Putty/Kitty erzeugen
 
 * Im Login-Fenster Tools->Putty Key Generator wählen
 * Generate klicken
