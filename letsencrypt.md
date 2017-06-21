@@ -8,6 +8,8 @@ In Installationsverzeichnis wechslen - bei mir:
 
     cd /home/letsencrypt
 
+Sicherstellen das in der Firewall (iptables) der Zugriff von "anywhere" auf HTTPS-Port erlaubt ist!
+
 Letsencrypt aufrufen 
 
     ./letsencrypt-auto --renew-by-default certonly -d domain.de
