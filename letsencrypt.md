@@ -8,7 +8,7 @@ In Installationsverzeichnis wechslen - bei mir:
 
     cd /home/letsencrypt
 
-Sicherstellen das in der Firewall (iptables) der Zugriff von "anywhere" auf HTTPS-Port erlaubt ist!
+Sicherstellen das in der Firewall (iptables) der Zugriff von "anywhere" auf HTTPS-Port erlaubt ist -siehe auch https://community.letsencrypt.org/t/lets-encrypt-and-firewall-rules/18641
 
 Letsencrypt aufrufen 
 
