@@ -23,3 +23,23 @@
 Note:
 Für die Verwendung in OpenSSH Clients muss der Private Key im PuTTY Key Generator über "Conversions->Export OpenSSH key" noch konvertiert werden. Achtung: Dabei wird die Passphrase entfernt. 
  
+ 
+## Protocol V1 deaktivieren
+Um nur die neuese Version 2 von SSH zuzulassen, folgenden Eintrag in
+
+    etc/ssh/sshd_config
+    
+vornehmen:
+
+    Protocol 2
+
+Vorher prüfen, ob auch die entspechenden Schlüssel für V2 vorhanden sind:
+
+    # HostKeys for protocol version 2
+    HostKey /etc/ssh/ssh_host_rsa_key
+    HostKey /etc/ssh/ssh_host_dsa_key
+
+Änderungen wirksam werden lassen, durch Neustart des SSH daemon:
+    
+    /etc/init.d/sshd restart
+    
