@@ -1,4 +1,4 @@
-#Synology NAS konfigurieren
+# Synology NAS konfigurieren
 
 Install the OpenVPN server from within Package Center.
 
@@ -6,7 +6,7 @@ Enable OpenVPN under OpenVPN Server > Settings > OpenVPN.
 
 Unter VPNServer -> Privileg einem Nutzer den OpenVPN Zugriff erlauben
 
-#Fritzbox konfigurieren
+# Fritzbox konfigurieren
 
 Unter Portfreigaben UDP port 1194 an NAS freigeben:
 
@@ -24,7 +24,7 @@ an IP-Adresse XX.XX.XX.XX
 
 an Port 1194
 
-#Windows konfigurieren
+# Windows konfigurieren
 
 OpenVPN application installieren
 
