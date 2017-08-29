@@ -25,3 +25,7 @@ In local.conf Änderungen sind gefährlich, da sie die höchste Prio hat.
 
 meta-yocto ist veraltet -> neu meta-poky
 
+64 bit Ubutntu 8+ core 1TByte
+
+bitbake aus poky verwenden!
+
