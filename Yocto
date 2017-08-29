@@ -2,7 +2,7 @@ Distros iefern Security fixes. Bei Yocto ist das nicht unbedingt der Fall.
 
 BMW verwendet Intel und Yocto.
 
-Yocto: Master branch besser nicht verwenden, sonder stable
+Yocto: Master branch besser nicht verwenden, sondern stable
 
 Poky ist dei Referenzimpelementierung.
 
@@ -18,4 +18,10 @@ Möglichst gleiche Releases verwenden (Yocto, Layer)
 .bb ist Dateiendung für recipes
 .bbappend ist Dateiendung für Änderungen an bestehenden Rezepten
 
+
+include vs. require: require bricht ab, include läuft weiter
+
+In local.conf Änderungen sind gefährlich, da sie die höchste Prio hat.
+
+meta-yocto ist veraltet -> neu meta-poky
 
