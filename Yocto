@@ -10,3 +10,12 @@ bitBake ist task scheduler: Phython oder shell script
 
 Mega Manual: https://www.yoctoproject.org/docs/latest/mega-manual/mega-manual.html
 BitbakeManual:
+
+
+
+Möglichst gleiche Releases verwenden (Yocto, Layer)
+
+.bb ist Dateiendung für recipes
+.bbappend ist Dateiendung für Änderungen an bestehenden Rezepten
+
+
