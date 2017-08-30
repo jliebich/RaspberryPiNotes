@@ -31,3 +31,6 @@ Anforderungen an Hardware:
 bitbake aus poky verwenden!
 
 # Tag 2
+
+DL_DIR: Empfehlung: umbiegen - nicht Projektspezifisch machen
+
