@@ -35,3 +35,7 @@ bitbake aus poky verwenden!
 DL_DIR: Empfehlung: umbiegen - nicht Projektspezifisch machen
 
 OpenGrok: Toll in in großen Source-Projekten zu suchen.
+
+6.6.5 custom.bbfles-basedoncore-image-minimal ist die empfehenswrte Variante.
+
+
