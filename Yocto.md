@@ -34,3 +34,4 @@ bitbake aus poky verwenden!
 
 DL_DIR: Empfehlung: umbiegen - nicht Projektspezifisch machen
 
+OpenGrok: Toll in in großen Source-Projekten zu suchen.
