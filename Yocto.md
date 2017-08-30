@@ -38,4 +38,6 @@ OpenGrok: Toll in in großen Source-Projekten zu suchen.
 
 6.6.5 custom.bbfles-basedoncore-image-minimal ist die empfehenswrte Variante.
 
+PRServer muss vorhanden sein für git--Verssionierten code. in conf/auto.conf
 
+7.3.11 KillallBitBake killt alle instanzen von bitbake
