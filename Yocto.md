@@ -41,3 +41,9 @@ OpenGrok: Toll in in großen Source-Projekten zu suchen.
 PRServer muss vorhanden sein für git--Verssionierten code. in conf/auto.conf
 
 7.3.11 KillallBitBake killt alle instanzen von bitbake
+
+
+# Tag 3
+
+meta-virtualization: Layer für Vitualisierung auf Target z.B Docker
+
