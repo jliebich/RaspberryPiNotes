@@ -47,3 +47,4 @@ PRServer muss vorhanden sein für git--Verssionierten code. in conf/auto.conf
 
 meta-virtualization: Layer für Vitualisierung auf Target z.B Docker
 
+möglist mainlineisch z.B. NXP Xilinx TI
