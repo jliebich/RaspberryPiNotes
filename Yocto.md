@@ -48,3 +48,11 @@ PRServer muss vorhanden sein für git--Verssionierten code. in conf/auto.conf
 meta-virtualization: Layer für Vitualisierung auf Target z.B Docker
 
 möglist mainlineisch z.B. NXP Xilinx TI
+
+Flash Friendly Filesystem von Samsung für SD Karten
+
+# Tag 4
+
+Für das Mira Baord ist eine andere Defaultkonfiguration für uboot und ein anderer DeviceTree erforderlich.
+
+Nettes Tool: thefuck https://github.com/nvbn/thefuck
