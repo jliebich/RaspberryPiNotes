@@ -1,12 +1,17 @@
 # Owncloud
-## Maintenance Mode ein- ausschalten
+## Maintenance Mode einschalten
 
     sudo -u www-data php occ maintenance:mode --on
 
-bzw.
+## Update auf Kommandozeilr starten, nachdem Files manuell aktualisiert wurden
+
+    sudo -u www-data php occ upgrade
+
+## Maintenance Mode ausschalten
 
     sudo -u www-data php occ maintenance:mode --off
     
+
 
 ## Mysql Datenbank sichern
 
