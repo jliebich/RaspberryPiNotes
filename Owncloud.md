@@ -3,7 +3,7 @@
 
     sudo -u www-data php occ maintenance:mode --on
 
-## Update auf Kommandozeilr starten, nachdem Files manuell aktualisiert wurden
+## Update auf Kommandozeile starten, nachdem Files manuell aktualisiert wurden
 
     sudo -u www-data php occ upgrade
 
