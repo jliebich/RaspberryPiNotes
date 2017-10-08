@@ -64,6 +64,14 @@ CUL-Stick umstecken, Reboot mit
     
     reboot
 
+# Geräte (device) umbenennen
+
+     rename <alterName> <neuerName>
+
+also z.B.
+
+     rename HM_55B1C7 Wassermelder
+
 # Raum umbenennen
 
 
