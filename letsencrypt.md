@@ -10,6 +10,11 @@ In Installationsverzeichnis wechslen - bei mir:
 
 Sicherstellen das in der Firewall (iptables) der Zugriff von "anywhere" auf HTTPS-Port erlaubt ist -siehe auch https://community.letsencrypt.org/t/lets-encrypt-and-firewall-rules/18641
 
+Mein Eintrag in /etc/network/iptables sieht dafür so aus:
+
+    #HTTPS generell erlauben - nötig für Erneuerung Letsencrypt-Zerifikat
+    -A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPTPT
+
 Letsencrypt aufrufen 
 
     ./letsencrypt-auto --renew-by-default certonly -d domain.de
@@ -32,6 +37,12 @@ Dies sind Links auf
     /etc/letsencrypt/archive/domain.de/privkeyX.pem
 
 die offensichtlich automatisch aktualisiert werden (X ist eine Nummer die hochgezählt wird)
+
+Allgemeinen Zugriff auf HTTPS ggf. wieder verbieten.
+Dafür den entsprechenden Eintrag (siehe oben) in /etc/network/iptables auskommentieren:
+    
+    #HTTPS generell erlauben - nötig für Erneuerung Letsencrypt-Zerifikat
+    #-A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT
 
 Webserver wieder starten
 
