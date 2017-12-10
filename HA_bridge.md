@@ -7,6 +7,10 @@ https://splittscheid.de/ha-bridge-installation-auf-dem-raspberry-pi/
 
 https://github.com/bwssytems/ha-bridge/releases
 
+## Update ha-bridge Version
+
+https://github.com/bwssytems/ha-bridge/wiki/HA-Bridge-FAQs#update
+
 
 ## Kommandos für Robbie:
 
