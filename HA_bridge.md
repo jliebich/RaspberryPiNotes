@@ -11,25 +11,20 @@ https://github.com/bwssytems/ha-bridge/releases
 
 Siehe https://github.com/bwssytems/ha-bridge/wiki/HA-Bridge-FAQs#update
 
-Wir müssen den Habridge-Dienst stoppen (falls er läuft):
+Ins Installationsverzeichnis wechseln (verwenden Sie Ihren Ordnernamen, wenn nicht "/home/pi/habridge"):
 
-        sudo systemctl stop habridge
-
-Ins Installationsverzeichnis wechseln (verwenden Sie Ihren Ordnernamen, wenn nicht "habridge"):
-
-        cd habridge
-
-Vorhandene Datei ha-bridge.jar umbenennen:
-
-        mv ha-bridge.jar ha-bridge-ARCHIVE.jar
-        
+        cd /home/pi/habridge
+      
 Version herunterladen, auf die aktualisiert werden soll (wobei {VERSION} die Versionsnummer ist):
 
         wget https://github.com/bwssytems/ha-bridge/releases/download/v{VERSION}/ha-bridge-{VERSION}.jar
 
-Heruntergeledene Datei umbenennen (wobei {VERSION} die Versionsnummer ist):
+Wir müssen den Habridge-Dienst stoppen (falls er läuft):
 
-        mv ha-bridge-{VERSION}.jar ha-bridge.jar
+        sudo systemctl stop habridge
+
+Symlink /home/pi/ha-bridge.jar auf neue Version umlenken z.B. mit mc über File -> Edit symlink
+
 
 habridge service wieder starten:
 
