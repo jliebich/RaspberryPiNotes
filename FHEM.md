@@ -93,5 +93,5 @@ Homematic-Gerät in den Pairing-Mode versetzen:
 
 * Rauchmenlder: Taste drücken bis LED orange blinkt
 * Heizregler und Wandthermostat: Boost-Taste min. 3 Sekunden drücken
-* Funk-Gangmodul MP3 (HM-OU-CM-PCB): Taste TA1 min. 4 Sekunden drücken (dauerhaftes Blinken = Anlernmodus)
+* Funk-Gongmodul MP3 (HM-OU-CM-PCB): Taste TA1 min. 4 Sekunden drücken (dauerhaftes Blinken = Anlernmodus)
 * 4 Kanal Funk-Schaltaktor für Batteriebetrieb (HM-LC-Sw4-Ba-PCB): Taste am entsprechenden Kanal min 4 Sekunden drücken 
