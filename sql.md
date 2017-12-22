@@ -26,6 +26,16 @@ und anschließend:
      flush privileges;
      quit;
  
+## Tables eine Datenbank anzeigen
+
+Nach dem auswählen der Datenbank mit use, also z.B.
+
+     use DB_wallabag;
+     
+folgendes eingeben
+
+     show tables;
+ 
 ## Zentrale MySQL Konfig-Datei
 
     /etc/mysql/my.cnf
