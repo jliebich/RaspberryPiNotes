@@ -14,6 +14,9 @@
 
 ## MySQL Datenbank anlegen
 
+Achtung! Dies scheint in neueren Versionen nicht mehr nötig zu sein!
+Das "make install" (siehe unten) scheint schon eine passende Datenbank anzulegen!
+
     mysql -uroot -p
 
 Root-Passwort eingeben
