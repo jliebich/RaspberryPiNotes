@@ -35,6 +35,10 @@ Nach dem auswählen der Datenbank mit use, also z.B.
 folgendes eingeben
 
      show tables;
+     
+## Inhalt einer Table anzeigen
+     
+     SELECT * FROM <table name here>
  
 ## Zentrale MySQL Konfig-Datei
 
