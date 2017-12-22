@@ -3,7 +3,7 @@
 ## Auf vielen Webservern wird mod_tidy fehlen...
     apt-get install php5-tidy
 
-##Composer aktualisieren
+## Composer aktualisieren
 
     composer selfupdate    
 
