@@ -68,6 +68,13 @@ Auf jeden Fall migriert es die Datenbank auf die neue Version.
 Wenn die Datenbank leer ist, funktioniert die Migration nicht - dann muss man das sier machen:
 https://github.com/wallabag/wallabag/issues/3480
 
+# wallabag Log
+Neben den Log-Dateien die der Server anlegt, hat wallabag noch eine eigene Log-Datei.
+Die liegt bei mir unter
+
+    /var/www/wallabag/var/logs/prod.log
+
+
 # Setting up wallabag + MySQL + nginx
 
 https://blog.ronsonchan.com/setting-up-wallabag-mysql-nginx/
