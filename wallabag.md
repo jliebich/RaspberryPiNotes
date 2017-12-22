@@ -26,6 +26,7 @@ Root-Passwort eingeben
 
 # Install-Script aufrufen
 
+    cd /var/www/wallabag
     make install
 
 Dieser Schritt schlug bei mir wegen zu wenig RAM fehl - daher swap-File anlegen
