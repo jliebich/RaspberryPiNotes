@@ -16,6 +16,9 @@
 
     mysql -uroot -p
 
+Root-Passwort eingeben
+
+
     CREATE DATABASE DB_wallabag;
     GRANT ALL PRIVILEGES ON DB_wallabag.* TO 'USER_wallabag'@'localhost' IDENTIFIED BY '_PASSWORD_';
     FLUSH PRIVILEGES;
