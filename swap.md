@@ -1,10 +1,10 @@
-#Swap
+# Swap
 
-##Status anzeigen
+## Status anzeigen
 
     service dphys-swapfile status   
 
-##Speicherauslastung anzeigen
+## Speicherauslastung anzeigen
 Kurzform:
 
     free
@@ -12,7 +12,7 @@ Graphisch schöner:
 
     htop
     
-##Swap an- / ausschalten
+## Swap an- / ausschalten
 
     swapoff -a
     
