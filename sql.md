@@ -40,6 +40,11 @@ folgendes eingeben
      
      SELECT * FROM <table name here>
  
+## Datenbank löschen
+
+     DROP DATABASE <Datenbankname>
+
+ 
 ## Zentrale MySQL Konfig-Datei
 
     /etc/mysql/my.cnf
