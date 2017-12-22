@@ -12,7 +12,7 @@
     git clone https://github.com/wallabag/wallabag
     chown www-data.www-data -R /var/www/wallabag
 
-##MySQL Datenbank anlegen
+## MySQL Datenbank anlegen
 
     mysql -uroot -p
 
@@ -21,7 +21,7 @@
     FLUSH PRIVILEGES;
     \q
 
-#Install-Script aufrufen
+# Install-Script aufrufen
 
     make install
 
@@ -54,11 +54,11 @@ hier mit NEIN antworten, sonst kam bei mir Fehlermeldung und Abbruch.
 
 Danach wird man aufgefordert einen "Admin" User anzulegen - dies wie vorgeschlagen tun, es ist KEIN SQL-Datenbankuser!
 
-#Wallagbag aktualisieren
+# Wallagbag aktualisieren
     cd /var/www/wallabag
     git pull
     chown www-data.www-data -R /var/www/wallabag
 
-#Setting up wallabag + MySQL + nginx
+# Setting up wallabag + MySQL + nginx
 
 https://blog.ronsonchan.com/setting-up-wallabag-mysql-nginx/
