@@ -59,9 +59,14 @@ hier mit NEIN antworten, sonst kam bei mir Fehlermeldung und Abbruch.
 Danach wird man aufgefordert einen "Admin" User anzulegen - dies wie vorgeschlagen tun, es ist KEIN SQL-Datenbankuser!
 
 # Wallagbag aktualisieren
-    cd /var/www/wallabag
-    git pull
-    chown www-data.www-data -R /var/www/wallabag
+
+Dieses Kommando scheint die neueste Version Wallabag Version zu laden.
+Auf jeden Fall migriert es die Datenbank auf die neue Version.
+
+    make update
+
+Wenn die Datenbank leer ist, funktioniert die Migration nicht - dann muss man das sier machen:
+https://github.com/wallabag/wallabag/issues/3480
 
 # Setting up wallabag + MySQL + nginx
 
