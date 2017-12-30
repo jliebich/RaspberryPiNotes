@@ -91,3 +91,5 @@ Datei app/config/parameters.yml öffen und folgenden Eintrag setzen:
 In den Stammordner der Wallabag-Installation wechseln und folgendes ausführen
 
     php bin/console cache:clear -e prod
+    
+Achtung: Dies dauert auf einem Raspberry Pi sehr lange!
