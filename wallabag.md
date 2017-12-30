@@ -81,3 +81,13 @@ Die liegt bei mir unter
 # Setting up wallabag + MySQL + nginx
 
 https://blog.ronsonchan.com/setting-up-wallabag-mysql-nginx/
+
+# Öffentliche Benutzerregistrierung deaktivieren
+
+Datei app/config/parameters.yml öffen und folgenden Eintrag setzen:
+
+    fosuser_registration setzen = false
+    
+In den Stammordner der Wallabag-Installation wechseln und folgendes ausführen
+
+    php bin/console cache:clear -e prod
