@@ -81,7 +81,7 @@ In der „http„-Sektion der nginx.conf folgendes einfügen
 
     server_tokens off;
 
-##SSL Konfiguration sicherer machen
+## SSL Konfiguration sicherer machen
 
 Siehe https://www.sherbers.de/howto/nginx/
 
