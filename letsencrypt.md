@@ -15,9 +15,9 @@ Mein Eintrag in /etc/network/iptables sieht dafür so aus:
     #HTTPS generell erlauben - nötig für Erneuerung Letsencrypt-Zerifikat
     -A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPTPT
 
-Letsencrypt aufrufen 
+Letsencrypt aufrufen (letsencrypt-auto wurde in certbot-auto umbenannt):
 
-    ./letsencrypt-auto --renew-by-default certonly -d domain.de
+    ./certbotletsencrypt-auto --renew-by-default certonly -d domain.de2
 
 Daraufhin wird das Prrogramm zunächst aktualisiert.
 Achtung: Es dauert sehr lange, bis der Schritt "Installing Python packages..." abgeschlossen ist!
