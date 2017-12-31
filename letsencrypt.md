@@ -49,7 +49,7 @@ Webserver wieder starten
     service nginx start
 
 
-# Trobleshooting
+## Trobleshooting
 
 Meldet das Script am Ende folgendes, dann wurde vermutlich vergessen, den Webserver zu stoppen:
 
