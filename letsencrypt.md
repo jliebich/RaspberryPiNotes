@@ -49,4 +49,8 @@ Webserver wieder starten
     service nginx start
 
 
+# Trobleshooting
 
+Meldet das Script am Ende folgendes, dann wurde vermutlich vergessen, den Webserver zu stoppen:
+
+    Problem binding to port 443: Could not bind to IPv4 or IPv6.
