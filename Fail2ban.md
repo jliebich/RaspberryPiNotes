@@ -2,7 +2,7 @@
 
 Fail2ban für owncloud7 siehe:
 
-http://debianforum.de/forum/viewtopic.php?f=37&t=150519
+https://www.ksite.de/nextcloud-mit-fail2ban-absichern/
 
 ## Logfile
      
