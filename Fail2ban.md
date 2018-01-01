@@ -17,10 +17,22 @@ Sie liegen unter:
 
      /etc/fail2ban/filter.d/
      
+Für nextcloud z.B. eine Datei nextclod.conf anlegen mit folgendem Inhalt:
+     
+     [Definition]
+     failregex = ^{"reqId":".*","remoteAddr":".*","app":"core","message":"Login failed: '.*' \(Remote IP: '<HOST>'\)","level":2,"time":".*"}$^{"reqId":".*","level":2,"time":".*","remoteAddr":".*","app":"core".*","message":"Login failed: '.*' \(Remote IP: '<HOST>'\)".*}$
+     ignoreregex =
+     
+        
+     
 ### Jails
 
-Filter werden erst aktiv, wenn sie in folgender Datei erwähnt sind:
+Filter werden erst aktiv, wenn es einen passenden "Jail" dafür gibt.
+Eigene Jails sollte man NICHT in die Datei /etc/fail2ban/jail.conf eintragen, sondern unter
 
-     /etc/fail2ban/jail.conf
+     /etc/fail2ban/jail.d/
+     
+eine entsprechende 
+
      
      
