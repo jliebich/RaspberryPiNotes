@@ -10,4 +10,17 @@ http://debianforum.de/forum/viewtopic.php?f=37&t=150519
      
 ## Konfiguration
 
-     /etc/fail2ban/
+### Filter
+
+Filter enthalten reguläre Ausdrücke fü die Log-Datei der entsprechenden Anwendung.
+Sie liegen unter:
+
+     /etc/fail2ban/filter.d/
+     
+### Jails
+
+Filter werden erst aktiv, wenn sie in folgender Datei erwähnt sind:
+
+     /etc/fail2ban/jail.conf
+     
+     
