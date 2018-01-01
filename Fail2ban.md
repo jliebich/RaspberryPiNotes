@@ -1,13 +1,13 @@
-#fail2ban
+# fail2ban
 
 Fail2ban für owncloud7 siehe:
 
 http://debianforum.de/forum/viewtopic.php?f=37&t=150519
 
-##Logfile
+## Logfile
      
      /var/log/fail2ban.log
      
-##Konfiguration
+## Konfiguration
 
      /etc/fail2ban/
