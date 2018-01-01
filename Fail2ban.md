@@ -32,7 +32,18 @@ Eigene Jails sollte man NICHT in die Datei /etc/fail2ban/jail.conf eintragen, so
 
      /etc/fail2ban/jail.d/
      
-eine entsprechende 
+Für nextcloud z.B. eine Datei nextclod.conf anlegen mit folgendem Inhalt:
+
+     [nextcloud]
+     enabled = true
+     port = 80,443
+     protocol = tcp
+     filter = nextcloud
+     maxretry = 3
+     logpath = /var/www/owncloud/data/nextcloud.log
+     
+     
+
 
      
      
