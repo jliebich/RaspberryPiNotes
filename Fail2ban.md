@@ -1,6 +1,6 @@
 # fail2ban
 
-Fail2ban für owncloud7 siehe:
+Fail2ban für nextcloud siehe:
 
 https://www.ksite.de/nextcloud-mit-fail2ban-absichern/
 
@@ -43,7 +43,9 @@ Für nextcloud z.B. eine Datei nextclod.conf anlegen mit folgendem Inhalt:
      logpath = /var/www/owncloud/data/nextcloud.log
      
      
+## Benachrichtigungen von fail2ban als Telegram Message
 
+https://blog.mypapit.net/2015/08/how-to-send-fail2ban-notification-with-telegram-telegram-cli.html
 
      
      
