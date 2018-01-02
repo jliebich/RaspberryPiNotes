@@ -77,6 +77,29 @@ Die liegt bei mir unter
 
     /var/www/wallabag/var/logs/prod.log
 
+# fail2ban Setup
+
+Beispieleintag in prod.log für einen fehlgeschlagenen Login:
+
+    [2017-12-22 17:39:27] app.ERROR: Authentication failure for user "TestUser", from IP "192.168.0.9", with UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36". [] []
+
+Filter: Inhalt von 
+
+    [Definition]
+    failregex = ^\[\] app\.ERROR: Authentication failure for user "(\B|\S+)", from IP "<HOST>".*\[\]$
+    ignoreregex =
+
+Jail: Inhalt von /etc/fail2ban/jail.d/wallabag.conf
+
+    [wallabag]
+    enabled = true
+    port = 80,443
+    protocol = tcp
+    filter = wallabag
+    maxretry = 3
+    logpath = /var/www/wallabag/var/logs/prod.log
+
+
 
 # Setting up wallabag + MySQL + nginx
 
