@@ -19,7 +19,7 @@ Im Einzelchat mit dem Bot ist chat_id gleichbedeutend mit user_id.
 
 ### Im Browser:
 
-    https://api.telegram.org/bot"BOTID"/sendMessage?chat_id="yourchatid"&text="Hello!"
+    https://api.telegram.org/bot<TOKEN>/sendMessage?chat_id="yourchatid"&text="Hello!"
 
 ### Linux Command Line:
 
