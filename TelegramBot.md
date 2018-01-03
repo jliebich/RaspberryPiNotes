@@ -36,3 +36,13 @@ Im Einzelchat mit dem Bot ist chat_id gleichbedeutend mit user_id.
 
     curl -s -X POST $URL -d chat_id=$CHAT_ID -d text="$MESSAGE"
     
+### .NET Beispiel    
+    
+    public void SendNotificationViaTelegram(string notificationMessage)
+    {
+        var telegramNotification = WebRequest.Create(
+            "https://api.telegram.org/botABCDEFG/sendMessage?chat_id=3101948&text="
+	        + HttpUtility.UrlEncode(notificationMessage));
+        telegramNotification.GetResponse();
+    }
+
