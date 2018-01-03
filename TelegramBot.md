@@ -1,13 +1,38 @@
-# Eigene User-ID herausfinden
+# Telegram-Bot
 
-Send a message to your bot then retrieve the update with:
+## Eigene User-ID herausfinden
 
-https://api.telegram.org/bot"BOTID"/getUpdates
+Im Browser folgende Nachricht an den eigenen Bot senden:
 
-"BOTID" ist dabei der Token des Bots
+    https://api.telegram.org/bot<TOKEN>/getUpdates
 
-In the json string returned you will find you chat_id/user_id.
-In single chat with the bot chat_id is equal to user_id.
-Now you can send your message with:
+Er hat die folgende Form
 
-https://api.telegram.org/bot"BOTID"/sendMessage?chat_id="yourchatid"&text="Hello!"
+    1234567890:AbCdefgHIJklmnOPQRst-uvwxyz
+
+und wird beim anlegen vom BotFather übermittelt.
+
+In dem zurückgegebenen JSON-String findet man seine chat_id und user_id.
+Im Einzelchat mit dem Bot ist chat_id gleichbedeutend mit user_id.
+
+## Nachricht senden
+
+### Im Browser:
+
+    https://api.telegram.org/bot"BOTID"/sendMessage?chat_id="yourchatid"&text="Hello!"
+
+### Linux Command Line:
+
+    curl -s -X POST https://api.telegram.org/bot<TOKEN>/sendMessage -d chat_id=<CHAT_ID> -d text="Hello World"
+
+### Bash Script Beispiel
+
+    #!/bin/bash
+
+    TOKEN=<TOKEN>
+    CHAT_ID=<CHAT_ID>
+    MESSAGE="Hello World"
+    URL="https://api.telegram.org/bot$TOKEN/sendMessage"
+
+    curl -s -X POST $URL -d chat_id=$CHAT_ID -d text="$MESSAGE"
+    
