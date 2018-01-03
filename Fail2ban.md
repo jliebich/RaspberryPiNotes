@@ -43,9 +43,11 @@ Für nextcloud z.B. eine Datei nextclod.conf anlegen mit folgendem Inhalt:
      logpath = /var/www/owncloud/data/nextcloud.log
      
      
-## Benachrichtigungen von fail2ban als Telegram Message
+## Benachrichtigungen von fail2ban aschicken mit actions 
 
 https://blog.mypapit.net/2015/08/how-to-send-fail2ban-notification-with-telegram-telegram-cli.html
+    
+http://toon.io/fail2ban-send-sms-user-banned/     
 
-     
-     
+https://askubuntu.com/questions/435511/fail2ban-creating-a-custom-action-that-gives-parameters-to-script
+
