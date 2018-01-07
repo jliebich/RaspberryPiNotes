@@ -10,7 +10,9 @@ Followed by:
 
 Updateskript installieren:
 
-http://raspberrypiguide.de/howtos/raspberry-pi-firmware-update/
+        sudo wget https://raw.github.com/Hexxeh/rpi-update/master/rpi-update -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update
+        
+siehe auch http://raspberrypiguide.de/howtos/raspberry-pi-firmware-update/
 
 Update durchführen:
 
