@@ -57,6 +57,11 @@ Verwendung des Pakets Unattended-Upgrades
 
 http://www.elektronik-kompendium.de/sites/raspberry-pi/2002101.htm
 
+Intsallation so anpassen, sonst gehts nicht:
+
+https://raspberrypi.stackexchange.com/questions/72022/configuring-unattended-upgrades-on-raspbian-stretch
+
+
 ## Release-Upgrade von Wheezy nach Jessie
 
 Wechsel von Wheezy nach Jessie wird durch rpi-update NICHT durchgeführt!
