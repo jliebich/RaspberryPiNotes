@@ -79,7 +79,7 @@ Die liegt bei mir unter
 
 # fail2ban Setup
 
-Beispieleintag in prod.log für einen fehlgeschlagenen Login:
+Beispieleintrag in prod.log für einen fehlgeschlagenen Login:
 
     [2017-12-22 17:39:27] app.ERROR: Authentication failure for user "TestUser", from IP "192.168.0.9", with UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36". [] []
 
