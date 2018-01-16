@@ -8,9 +8,18 @@ https://hackaday.io/project/5301-reverse-engineering-a-low-cost-usb-co-monitor
 
 # Install
 
-    git clone https://github.com/henryk/fhem-co2mini.git
+Dateien von hier
 
-    cd /etc/udev/rules.d
+        https://github.com/verybadsoldier/fhem-co2mini/tree/vbs
+        
+oder hier
+
+        https://github.com/henryk/fhem-co2mini/tree/verybadsoldier-vbs
+        
+herunterladen. Darauf achten, dass man nicht die veraltete Version von FHEM/38_co2mini.pm bekommt.
+Die richtige ist vom 24.01.2016 / 10.046 Bytes
+
+        cd /etc/udev/rules.d
 
 Datei 90-co2mini.rules mit folgendem Inhalt anlegen
 
