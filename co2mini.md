@@ -6,7 +6,7 @@ https://forum.fhem.de/index.php?topic=41750.0
 
 https://hackaday.io/project/5301-reverse-engineering-a-low-cost-usb-co-monitor
 
-# Install
+# Installation allgemein
 
 Dateien von hier
 
@@ -70,9 +70,14 @@ Dann
     
  Nach einem Reboot wird der co2mini_server.pl jetzt immer automatisch gestartet.
  
+## Installation in FHEM
 
+Die Datei 38_co2mini.pm in den Ordner /opt/fhem/FHEM kopiren
+In der FHEM Kommandozeile folgendes eingeben:
 
+        reload 38_co2mini
 
+Simply supply address:port instead of the device node.
 
 
 
