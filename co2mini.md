@@ -24,7 +24,8 @@ oder hier
 
         https://github.com/henryk/fhem-co2mini/tree/verybadsoldier-vbs
         
-herunterladen. Darauf achten, dass man nicht die veraltete Version von FHEM/38_co2mini.pm bekommt.
+auf den Raspi herunterladen, der mit dem CO2mini via USB verbunden ist (hier IP 192.168.0.36).
+Darauf achten, dass man nicht die veraltete Version von FHEM/38_co2mini.pm bekommt.
 Die richtige ist vom 24.01.2016 / 10.046 Bytes
 
         cd /etc/udev/rules.d
@@ -36,16 +37,6 @@ Datei 90-co2mini.rules mit folgendem Inhalt anlegen
     LABEL="co2mini_end"
 
 Neu booten.
-
-## co2mini_server.pl
-
-Dieses Skript muss mit zwei Argumenten gestartet werden:
-Dem "Device Node" des co2mini-Gerätes und eine Portnummer, lso zum Beispiel:
-
-    sudo perl co2mini_server.pl /dev/co2mini0 1971
-
-Es wird dann auf diesem Port (hier 1971) lauschen und Verbindungen von Clients akzeptieren.
-Clients erhalten vom CO2-Monitor einen Strom von entschlüsselten Nachrichten (d.h. 5 Byte bis einschließlich 0x0D).
 
 ## startup/shutdown Skript für co2mini_server
 
@@ -79,15 +70,15 @@ Nach einem Reboot wird der co2mini_server.pl jetzt immer automatisch gestartet.
  
 ## Installation in FHEM
 
-Die Datei 38_co2mini.pm in den Ordner /opt/fhem/FHEM kopieren
+Auf den anderen Raspi, auf dem FHEM läuft, die Datei 38_co2mini.pm in den Ordner /opt/fhem/FHEM kopieren
 In der FHEM Kommandozeile folgendes eingeben:
 
         reload 38_co2mini
 
-Jetzt das device in FHEM anlegen (IP-Adress und Port anpassen):
+Jetzt das device in FHEM anlegen (IP-Adress und Port ggf. an eigene Gegebenheiten anpassen):
 
         define co2 co2mini 192.168.0.36:20000
 
-Als readings bekommt man jetzt 
+Als readings bekommt man jetzt die CO2 und Temperaturwerte angezeigt
 
 
