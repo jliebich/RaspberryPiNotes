@@ -48,9 +48,20 @@ https://github.com/jliebich/RaspberryPiNotes/blob/master/scripts/co2mini
 
 installieren, z.B. mit
 
-wgeö -P /etc/init.d/ https://github.com/jliebich/RaspberryPiNotes/blob/master/scripts/co2mini
-sudo update-rc.d co2mini defaults
-sudo service co2mini start
+        cd /etc/init.d/
+        wget https://github.com/jliebich/RaspberryPiNotes/blob/master/scripts/co2mini
+
+Jetzt die Variablen file und port darin entsprechend anpassen.
+Dann
+
+        sudo update-rc.d co2mini defaults
+        sudo service co2mini start
+        
+ Kann jetzt mit
+ 
+        sudo service co2mini start|restart|stop|status
+        
+genutzt werden.
 
 
 
