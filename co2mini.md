@@ -14,7 +14,7 @@ https://hackaday.io/project/5301-reverse-engineering-a-low-cost-usb-co-monitor
 
 Im folgenden ist die Installation für folgendes Setup beschrieben:
 
-
+![Setup](https://github.com/jliebich/RaspberryPiNotes/blob/master/bilder/co2mini_Setup.png)
 
 Dateien von hier
 
