@@ -81,4 +81,4 @@ Jetzt das device in FHEM anlegen (IP-Adress und Port ggf. an eigene Gegebenheite
 
 Als readings bekommt man jetzt die CO2 und Temperaturwerte angezeigt
 
-
+![Readings](https://github.com/jliebich/RaspberryPiNotes/blob/master/bilder/Co2_Readings.PNG)
