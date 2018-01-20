@@ -50,6 +50,7 @@ installieren, z.B. mit
 
         cd /etc/init.d/
         wget https://raw.githubusercontent.com/jliebich/RaspberryPiNotes/master/scripts/co2mini
+        chmod +x co2mini
         
 Jetzt die Variablen file und port darin entsprechend anpassen.
 Dann
