@@ -51,7 +51,24 @@ installieren, z.B. mit
         chmod +x co2mini
         
 Jetzt die Variablen file und port darin entsprechend anpassen.
-Dann
+Bei mir sieht es so aus:
+
+        #!/bin/sh
+        ### BEGIN INIT INFO
+        # Provides:          co2mini server
+        # Required-Start:    $all
+        # Required-Stop:     
+        # Default-Start:     2 3 4 5
+        # Default-Stop:      0 1 6
+        # Short-Description: 
+        # Description:       
+        ### END INIT INFO
+
+        file="/home/pi/co2mini/fhem-co2mini/co2mini_server.pl"
+        port=20000
+        ...
+
+Dann weiter:
 
         update-rc.d co2mini defaults
         service co2mini start
