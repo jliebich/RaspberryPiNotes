@@ -8,6 +8,8 @@ https://forum.fhem.de/index.php?topic=41750.0
 
 https://hackaday.io/project/5301-reverse-engineering-a-low-cost-usb-co-monitor
 
+
+
 # Installation allgemein
 
 Dateien von hier
@@ -34,13 +36,12 @@ Neu booten.
 ## co2mini_server.pl
 
 Dieses Skript muss mit zwei Argumenten gestartet werden:
-Dem "Device Node" des co2mini-Gerätes und eine Portnummer. Bei mir
+Dem "Device Node" des co2mini-Gerätes und eine Portnummer, lso zum Beispiel:
 
     sudo perl co2mini_server.pl /dev/co2mini0 1971
 
 Es wird dann auf diesem Port (hier 1971) lauschen und Verbindungen von Clients akzeptieren.
 Clients erhalten vom CO2-Monitor einen Strom von entschlüsselten Nachrichten (d.h. 5 Byte bis einschließlich 0x0D).
-Um das FHEM-Modul so zu konfigurieren, dass es sich mit einem entfernten co2mini_server.pl verbindet, muss einfach "address:port" anstelle des "Decvie Node" angegeben werden.
 
 ## startup/shutdown Skript für co2mini_server
 
@@ -60,7 +61,7 @@ Dann
         update-rc.d co2mini defaults
         service co2mini start
         
- Prüfen ob service korrekt gestartet wurde.
+Prüfen ob service korrekt gestartet wurde.
  
         service co2mini status
   
@@ -70,7 +71,7 @@ Dann
         Active: active (running) since...
         ...
     
- Nach einem Reboot wird der co2mini_server.pl jetzt immer automatisch gestartet.
+Nach einem Reboot wird der co2mini_server.pl jetzt immer automatisch gestartet.
  
 ## Installation in FHEM
 
@@ -83,6 +84,6 @@ Jetzt das device in FHEM anlegen (IP-Adress und Port anpassen):
 
         define co2 co2mini 192.168.0.36:20000
 
-
+Als readings bekommt man jetzt 
 
 
