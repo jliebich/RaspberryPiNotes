@@ -49,8 +49,8 @@ https://github.com/jliebich/RaspberryPiNotes/blob/master/scripts/co2mini
 installieren, z.B. mit
 
         cd /etc/init.d/
-        wget https://github.com/jliebich/RaspberryPiNotes/blob/master/scripts/co2mini
-
+        wget https://raw.githubusercontent.com/jliebich/RaspberryPiNotes/master/scripts/co2mini
+        
 Jetzt die Variablen file und port darin entsprechend anpassen.
 Dann
 
