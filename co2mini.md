@@ -42,7 +42,7 @@ Es wird dann auf diesem Port (hier 1971) lauschen und Verbindungen von Clients a
 Clients erhalten vom CO2-Monitor einen Strom von entschlüsselten Nachrichten (d.h. 5 Byte bis einschließlich 0x0D).
 Um das FHEM-Modul so zu konfigurieren, dass es sich mit einem entfernten co2mini_server.pl verbindet, muss einfach "address:port" anstelle des "Decvie Node" angegeben werden.
 
-## startup/shutdown Skript für den server
+## startup/shutdown Skript für co2mini_server
 
 Dieses Script 
 
