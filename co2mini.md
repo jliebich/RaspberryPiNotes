@@ -55,12 +55,12 @@ installieren, z.B. mit
 Jetzt die Variablen file und port darin entsprechend anpassen.
 Dann
 
-        sudo update-rc.d co2mini defaults
-        sudo service co2mini start
+        update-rc.d co2mini defaults
+        service co2mini start
         
  Kann jetzt mit
  
-        sudo service co2mini start|restart|stop|status
+        service co2mini start|restart|stop|status
         
 genutzt werden.
 
