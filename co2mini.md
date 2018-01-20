@@ -72,12 +72,15 @@ Dann
  
 ## Installation in FHEM
 
-Die Datei 38_co2mini.pm in den Ordner /opt/fhem/FHEM kopiren
+Die Datei 38_co2mini.pm in den Ordner /opt/fhem/FHEM kopieren
 In der FHEM Kommandozeile folgendes eingeben:
 
         reload 38_co2mini
 
-Simply supply address:port instead of the device node.
+Jetzt das device in FHEM anlegen (IP-Adress und Port anpassen):
+
+        define co2 co2mini 192.168.0.36:20000
+
 
 
 
