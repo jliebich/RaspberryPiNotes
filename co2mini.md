@@ -68,11 +68,8 @@ Dann
         Active: active (running) since...
         ...
     
- Kann jetzt mit
+ Nach einem Reboot wird der co2mini_server.pl jetzt immer automatisch gestartet.
  
-        service co2mini start|restart|stop|status
-        
-genutzt werden.
 
 
 
