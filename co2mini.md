@@ -58,6 +58,10 @@ Dann
         update-rc.d co2mini defaults
         service co2mini start
         
+ Prüfen ob service korrekt gestartet wurde
+ 
+        service co2mini status
+  
  Kann jetzt mit
  
         service co2mini start|restart|stop|status
