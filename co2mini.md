@@ -42,7 +42,15 @@ Um das FHEM-Modul so zu konfigurieren, dass es sich mit einem entfernten co2mini
 
 ## startup/shutdown Skript für den server
 
-Siehe https://github.com/jliebich/RaspberryPiNotes/blob/master/scripts/co2mini.sh
+Dieses Script 
+
+https://github.com/jliebich/RaspberryPiNotes/blob/master/scripts/co2mini
+
+installieren, z.B. mit
+
+wgeö -P /etc/init.d/ https://github.com/jliebich/RaspberryPiNotes/blob/master/scripts/co2mini
+sudo update-rc.d co2mini defaults
+sudo service co2mini start
 
 
 
