@@ -12,6 +12,10 @@ https://hackaday.io/project/5301-reverse-engineering-a-low-cost-usb-co-monitor
 
 # Installation allgemein
 
+Im folgenden ist die Installation für folgendes Setup beschrieben:
+
+
+
 Dateien von hier
 
         https://github.com/verybadsoldier/fhem-co2mini/tree/vbs
