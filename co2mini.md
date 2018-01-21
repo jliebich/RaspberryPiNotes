@@ -116,3 +116,12 @@ Inhalt sieht dann so aus:
         2018-01-20_17:10:05 co2 co2: 1360
         ...
 
+Jetz noch einen Plot erstellen
+
+![CO2-Plot-Settings](https://github.com/jliebich/RaspberryPiNotes/blob/master/bilder/co2plotSettings.PNG)
+
+Ergebnis:
+
+![CO2-Plot](https://github.com/jliebich/RaspberryPiNotes/blob/master/bilder/co2plot.PNG)
+
+Man sieht - kurz vor 21 Uhr gelüftet ;-)
