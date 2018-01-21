@@ -116,7 +116,7 @@ Inhalt sieht dann so aus:
         2018-01-20_17:10:05 co2 co2: 1360
         ...
 
-Jetz noch einen Plot erstellen
+Jetzt noch einen Plot erstellen
 
 ![CO2-Plot-Settings](https://github.com/jliebich/RaspberryPiNotes/blob/master/bilder/co2plotSettings.PNG)
 
