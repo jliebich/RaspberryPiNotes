@@ -116,6 +116,11 @@ Inhalt sieht dann so aus:
         2018-01-20_17:10:05 co2 co2: 1360
         ...
 
+Ui, das sind alle 5 Sekunden eine neue Temperatur und ein neuer CO2-Wert.
+Damit das log-File nicht zu groß wird, habe ich noch folgende Attribute gesetzt:
+
+![Attributes](https://github.com/jliebich/RaspberryPiNotes/blob/master/bilder/co2Attributes.PNG)
+
 Jetzt noch einen Plot erstellen
 
 ![CO2-Plot-Settings](https://github.com/jliebich/RaspberryPiNotes/blob/master/bilder/co2plotSettings.PNG)
