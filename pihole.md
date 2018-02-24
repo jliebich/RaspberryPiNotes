@@ -6,7 +6,7 @@
     
 ## FitzBox Konfiguration
 
-    RaspberryPiNotes/bilder/Einstellungen_Fritzbox.PNG
+![Setup](https://github.com/jliebich/RaspberryPiNotes/bilder/Einstellungen_Fritzbox.PNG)    
 
 ## Weblinks
 
