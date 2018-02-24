@@ -4,6 +4,10 @@
 
     curl -sSL https://install.pi-hole.net | bash
     
+## FitzBox Konfiguration
+
+    RaspberryPiNotes/bilder/Einstellungen_Fritzbox.PNG
+
 ## Weblinks
 
 Installation:
