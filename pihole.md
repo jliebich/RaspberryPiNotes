@@ -6,7 +6,9 @@
     
 ## FitzBox Konfiguration
 
-![Setup](https://github.com/jliebich/RaspberryPiNotes/bilder/Einstellungen_Fritzbox.PNG)    
+![Setup](https://github.com/jliebich/RaspberryPiNotes/blob/master/bilder/Einstellungen_Fritzbox.PNG)    
+
+192.168.0.31 ist hier das Gerät auf dem Pihole läuft
 
 ## Weblinks
 
