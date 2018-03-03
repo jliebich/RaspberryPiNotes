@@ -4,6 +4,9 @@
 
     /opt/vc/bin/tvservice -o
 
+Um HDMI dauerhaft abzuschalten, diese Zeile in /etc/rc.local vor "exit 0" eintragen.
+
+
 ## HDMI Status prüfen
 
     /opt/vc/bin/tvservice -s
