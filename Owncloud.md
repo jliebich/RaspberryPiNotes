@@ -1,17 +1,28 @@
 # Owncloud
-## Maintenance Mode einschalten
+## Upgrade über Kommandozeile
 
-    sudo -u www-data php occ maintenance:mode --on
+Der Web-Updater von Nextcloud macht bei mit Probleme wegen Timeouts im Browser.
+Deshalb ist es besser das Upgrade über die Kommandozeile zu machen
 
-## Update auf Kommandozeile starten, nachdem Files manuell aktualisiert wurden
+In folgenden Ordner wechslen
 
-    sudo -u www-data php occ upgrade
+    cd /var/www/ownloud/updater
+
+(ja, nextcloud ist bei mir unter owncloud installiert).
+
+Dann
+
+    sudo -u www-data php updater.phar
+
+
 
 ## Maintenance Mode ausschalten
 
     sudo -u www-data php occ maintenance:mode --off
     
+## Maintenance Mode einschalten
 
+    sudo -u www-data php occ maintenance:mode --on
 
 ## Mysql Datenbank sichern
 
