@@ -19,6 +19,8 @@ Letsencrypt aufrufen (letsencrypt-auto wurde in certbot-auto umbenannt):
 
     ./certbot-auto --renew-by-default certonly -d domain1.de -d domain2.de
 
+Habe mir dafür ein Script angelegt (Aufruf ./my-renew.sh)
+
 Mit mehreren -d können mehrere Domains angegeben werden! Es wird trotzdem nur ein Zertifikat erstellt, dass dann aber für alle angegebenen Domains gültig ist.
 Nach obigem Aufruf wird das Prrogramm zunächst aktualisiert.
 Achtung: Es dauert sehr lange, bis der Schritt "Installing Python packages..." abgeschlossen ist!
