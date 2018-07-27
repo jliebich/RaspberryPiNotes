@@ -15,6 +15,10 @@ Mein Eintrag in /etc/network/iptables sieht dafür so aus:
     #HTTPS generell erlauben - nötig für Erneuerung Letsencrypt-Zerifikat
     -A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPTPT
 
+Änderungen übernehmen:
+
+    iptables-restore /etc/network/iptables
+
 Letsencrypt aufrufen (letsencrypt-auto wurde in certbot-auto umbenannt):
 
     ./certbot-auto --renew-by-default certonly -d domain1.de -d domain2.de
@@ -46,6 +50,10 @@ Dafür den entsprechenden Eintrag (siehe oben) in /etc/network/iptables auskomme
     
     #HTTPS generell erlauben - nötig für Erneuerung Letsencrypt-Zerifikat
     #-A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT
+
+Änderungen übernehmen:
+
+    iptables-restore /etc/network/iptables
 
 Webserver wieder starten
 
