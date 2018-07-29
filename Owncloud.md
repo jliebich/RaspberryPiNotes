@@ -6,7 +6,7 @@ Deshalb ist es besser das Upgrade über die Kommandozeile zu machen
 
 In folgenden Ordner wechslen
 
-    cd /var/www/ownloud/updater
+    cd /var/www/owncloud/updater
 
 (ja, nextcloud ist bei mir unter owncloud installiert).
 
