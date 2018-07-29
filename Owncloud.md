@@ -1,4 +1,4 @@
-# Owncloud
+# Owncloud / Nextcloud
 ## Upgrade über Kommandozeile
 
 Der Web-Updater von Nextcloud macht bei mit Probleme wegen Timeouts im Browser.
@@ -13,6 +13,8 @@ In folgenden Ordner wechslen
 Dann
 
     sudo -u www-data php updater.phar
+
+Update dauert eine Weile - daher besser unter Windows mit dem Programm "Don't sleep" (http://www.softwareok.de/?seite=Microsoft/DontSleep) verhindern das die SSH-Session abbricht...
 
 
 
