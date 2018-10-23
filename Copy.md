@@ -1,4 +1,4 @@
-#Alle Datein rekursiv unverändert kopieren
+# Alle Datein rekursiv unverändert kopieren
      cp -ra * Pfad
      
   -r für rekursiv
