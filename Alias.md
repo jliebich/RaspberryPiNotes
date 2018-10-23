@@ -1,4 +1,4 @@
-#Aliases in Bash
+# Aliases in Bash
 Schon zu DOS Zeiten habe ich mir immer ein Alias angelegt, das bei ".." ein "cd .." ausführt
 
 In der Linux-Bash geht das so:
