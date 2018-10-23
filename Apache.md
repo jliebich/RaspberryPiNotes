@@ -1,5 +1,5 @@
-#Apache
-##Neu starten / stoppen
+# Apache
+## Neu starten / stoppen
 To restart Apache 2, enter:
 
     sudo service apache2 restart
