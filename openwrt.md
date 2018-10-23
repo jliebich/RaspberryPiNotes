@@ -18,3 +18,13 @@ um Einstellungen zu sichern.
 
 Dann "Flash new firware image" -> Durchsuchen
 um eben geladenes Image zu installieren
+
+# Probleme beim GL-B1300
+
+Update über Webinterface klappte nicht - war danach nicht mehr ansprechbar.
+Update über UBoot vorgenommen, nach dieser Anleitung
+
+    https://docs.gl-inet.com/en/2/troubleshooting/debrick/
+
+Danach finktionierte es.
+Vielleicht lag es daran, dass vorher nicht das Original OpenWRT Image installiert war, sonden ein OpenWrt von Gl-Inet?
