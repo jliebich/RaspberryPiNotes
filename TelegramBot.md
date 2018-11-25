@@ -44,5 +44,16 @@ Im Einzelchat mit dem Bot ist chat_id gleichbedeutend mit user_id.
             "https://api.telegram.org/botABCDEFG/sendMessage?chat_id=3101948&text="
 	        + HttpUtility.UrlEncode(notificationMessage));
         telegramNotification.GetResponse();
-    }
+  
+### Bei start / stop eines systemd service Nachricht senden
+
+Hier zum Beispiel für nginx:
+In der Datei /lib/systemd/system/nginx.service im Abschnitt Service folgendes ergänzen
+
+	ExecStartPost=/usr/bin/curl --data chat_id=XXXXXXXXX --data-urlencode "text=Webserver wurde gestartet"  "https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXX/sendMessage"
+	ExecStopPost=/usr/bin/curl --data chat_id=XXXXXXXXX --data-urlencode "text=Webserver wurde angehalten"  "https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXX/sendMessage"
+
+Nach dem ändern muss folgendes ausgeführt werden:
+
+ 	systemctl daemon-reload	
 
