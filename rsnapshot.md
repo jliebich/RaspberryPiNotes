@@ -24,6 +24,7 @@ rsnapshot itself is a low-overhead program, but rsync can drive processor utiliz
 Depending on how rsync was packaged for your system, your installation may have an /etc/default/rsync file. If it does, set RSYNC_NICE and RSYNC_IONICE as recommended. Then restart the rsync daemon. You should notice a difference immediately.
 
 Aber Achtung: Im Kopf von /etc/default/rsync steht:
+
     This file is only used for init.d based systems!
     If this system uses systemd, you can specify options etc. for rsync
     in daemon mode by copying /lib/systemd/system/rsync.service to
