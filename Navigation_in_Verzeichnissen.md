@@ -1,14 +1,14 @@
-#Verzeichnisse
-##erzeugen
+# Verzeichnisse
+## erzeugen
     mkdir
-##wechseln (allgemein)
+## wechseln (allgemein)
 	cd
-##zum Homeverzeichnis
+## zum Homeverzeichnis
 	cd /
-##eine Ebene hoch
+## eine Ebene hoch
 	cd ..
-##ein Punkt symbolisiert das aktuelle Verzeichnis
+## ein Punkt symbolisiert das aktuelle Verzeichnis
 	cd ./Music
-##Inhalt des aktuellen Verzeichnisses anzeigen 
+## Inhalt des aktuellen Verzeichnisses anzeigen 
 	ls
 
