@@ -1,4 +1,4 @@
-#Checken ob fstab valide ist
+# Checken ob fstab valide ist
 
      mount -fav
      
