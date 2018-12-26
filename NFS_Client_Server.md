@@ -1,4 +1,4 @@
-##Arbeiten an Synology NAS (Server)
+## Arbeiten an Synology NAS (Server)
 
 Unter Dateidienste NFS aktiviren, aber NFSv4 Unterstützung deaktiviert lassen
 
@@ -12,7 +12,7 @@ Unter „NFS-Berechtigungen“ → „Erstellen“ Lese- und Schreibzugriff für
 
 Unten im Fenster steht auch der Mount-Pfad der später benötigt wird – bei mir /volume1/Backup_Raspi 
 
-##Arbeiten an Raspberry Pi (Client)
+## Arbeiten an Raspberry Pi (Client)
 Benötigte Packete installieren
     
     apt-get install nfs-common cifs-utils libnss-myhostname
