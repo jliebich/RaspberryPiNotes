@@ -31,5 +31,15 @@ Aber Achtung: Im Kopf von /etc/default/rsync steht:
     /etc/systemd/system/rsync.service and modifying the copy; add required
     options to the ExecStart line.
 
+nice und ionice sind aber KEINE Optionen von rsync sondern eigenständige Progrmme - siehe
+https://wiki.ubuntuusers.de/nice/
+und
+https://linux.die.net/man/1/ionice
 
+Hier ist beschrieben, wie man es rictig macht
+https://superuser.com/questions/1148694/nice-rsync-on-remote
 
+Der Aufruf in /etc/systemd/system/rsync.service lautet also:
+
+    ExecStart=/usr/bin/nice -n 10 /usr/bin/ionice -c3 /usr/bin/rsync --daemon --no-detach
+    
