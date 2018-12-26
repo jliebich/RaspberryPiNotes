@@ -1,4 +1,4 @@
-#Interpretationsreihenfolge der Kommandozeile
+# Interpretationsreihenfolge der Kommandozeile
 
 * Variablenauflösung z.B. $HOME
 * Auflösung der Dateinamenmuster z.B.   *.txt
