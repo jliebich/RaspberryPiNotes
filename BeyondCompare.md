@@ -1,8 +1,8 @@
-#BeyondCompare über SFTP nutzen
+# BeyondCompare über SFTP nutzen
 
 Im folgenden wird beschrieben wie man BeyondCompare über SFTP mit dem Raspi nutzen kann.
 
-##Profil anlegen
+## Profil anlegen
 
 * Unter Extras -> Profile -> + -> FTP Profil ein neues Profil anlegen
 * Im Login tab "SFTP (SSH2)" als Protokoll wählen.
