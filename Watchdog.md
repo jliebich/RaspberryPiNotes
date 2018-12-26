@@ -1,13 +1,13 @@
-#Watchdog
+# Watchdog
 
 Der BCM2708 auf dem Raspi besitzt einen Hardware-Watchdog, der das System nach einem Absturz neu booten kann.
 Um diesen zu nutzen, wird ein Kernelmodul und ein Daemon benötigt.
 
-##Funktionsweise:
+## Funktionsweise:
 Der Daemon teilt dem Watchdog in regelmäßigen Intervallen mit, dass das System funktioniert.
 Hängt das System, erhält der Watchdog keine Nachrichten mehr und setzt daraufhin das System zurück.
 
-##Watchdog aktivieren und einrichten:
+## Watchdog aktivieren und einrichten:
 Laden des Kernelmoduls:
 Für den Raspi heisst das Modul "bcm2708_wdog", für andere Systeme kann man versuchen mit lm-sensors (http://www.lm-sensors.org/) herauszufinden, die watchdog hardware zu indentifizieren. Nähere Infos dazu hier: http://www.sat.dundee.ac.uk/psc/watchdog/watchdog-configure.html#Watchdog_Device__Time
 
@@ -36,7 +36,7 @@ Watchdog starten:
 
     sudo /etc/init.d/watchdog restart
     
-##Syslog checken
+## Syslog checken
 
     grep watchdog /var/log/syslog
     
@@ -54,7 +54,7 @@ Ausgabe (Beispiel):
     Oct 16 18:34:07 raspberrypi watchdog[5168]: hardware wartchdog identity: BCM2708
 
 
-##Testen ob Daemon läuft
+## Testen ob Daemon läuft
 
     ps -Af | grep watchdog
     
@@ -62,7 +62,7 @@ Ausgabe (Beispiel):
 
     root      5168     1  0 18:34 ?        00:00:01 /usr/sbin/watchdog
     
-##Watchdog testen
+## Watchdog testen
 
 Diverse Scripts mit denen man den Watchdog testen kann:
     
