@@ -1,4 +1,4 @@
-#NOOBS Bootloader entfernen
+# NOOBS Bootloader entfernen
 Mit einem Linux-Rechner (nicht der Raspi!) SD Karte vom Raspi mounten.
 
 Alle Daten kopieren:
