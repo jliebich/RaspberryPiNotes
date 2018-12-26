@@ -1,4 +1,4 @@
-#Verzeichnisübersicht
+# Verzeichnisübersicht
 
      /etc                               systemweite Einstellungen
             /fstab                      File System Tabelle
