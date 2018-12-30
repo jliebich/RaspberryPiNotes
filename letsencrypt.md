@@ -8,10 +8,12 @@ In Installationsverzeichnis wechslen - bei mir:
 
     cd /home/letsencrypt
 
-Sicherstellen das in der Firewall (iptables) der Zugriff von "anywhere" auf HTTPS-Port erlaubt ist -siehe auch https://community.letsencrypt.org/t/lets-encrypt-and-firewall-rules/18641
+Sicherstellen das in der Firewall (iptables) der Zugriff von "anywhere" auf HTTPS- UND den HTTP-Port erlaubt ist -siehe auch https://community.letsencrypt.org/t/lets-encrypt-and-firewall-rules/18641
 
 Mein Eintrag in /etc/network/iptables sieht dafür so aus:
 
+    #HTTP generell erlauben  - nötig für Erneuerung Letsencrypt-Zerifikat
+    -A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
     #HTTPS generell erlauben - nötig für Erneuerung Letsencrypt-Zerifikat
     -A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPTPT
 
@@ -45,11 +47,13 @@ Dies sind Links auf
 
 die offensichtlich automatisch aktualisiert werden (X ist eine Nummer die hochgezählt wird)
 
-Allgemeinen Zugriff auf HTTPS ggf. wieder verbieten.
+Allgemeinen Zugriff auf HTTP und HTTPS ggf. wieder verbieten.
 Dafür den entsprechenden Eintrag (siehe oben) in /etc/network/iptables auskommentieren:
     
+    #HTTP generell erlauben  - nötig für Erneuerung Letsencrypt-Zerifikat
+    #-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
     #HTTPS generell erlauben - nötig für Erneuerung Letsencrypt-Zerifikat
-    #-A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT
+    #-A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPTPT
 
 Änderungen übernehmen:
 
