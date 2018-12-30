@@ -16,7 +16,8 @@ Dann
 
 Update dauert eine Weile - daher besser unter Windows mit dem Programm "Don't sleep" (http://www.softwareok.de/?seite=Microsoft/DontSleep) verhindern das die SSH-Session abbricht... Eine andere Alternative ist natürlich screen (https://wiki.ubuntuusers.de/Screen/)
 
-
+Beim Update wird unter `/var/www/owncloud/data/updater-XXXXXX/backups` ein Backup der gesamten Nextcloud-Installation angelegt.
+Diese belegt ziemlich viel Speicherplatz, da auch die gesamte Datenbank mit enthalten ist. Das ist bei mir problematisch, da ich den gesamten Ordner `/var/www/owncloud` auf ein NAS sichere. Muss daher zügig gelöscht werden, wenn nach dem Update alles wie erwartet funktioniert.
 
 ## Maintenance Mode ausschalten
 
