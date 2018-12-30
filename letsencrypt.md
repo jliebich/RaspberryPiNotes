@@ -49,11 +49,14 @@ die offensichtlich automatisch aktualisiert werden (X ist eine Nummer die hochge
 
 Allgemeinen Zugriff auf HTTP und HTTPS ggf. wieder verbieten.
 Dafür den entsprechenden Eintrag (siehe oben) in /etc/network/iptables auskommentieren:
-    
-    #HTTP generell erlauben  - nötig für Erneuerung Letsencrypt-Zerifikat
-    #-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
-    #HTTPS generell erlauben - nötig für Erneuerung Letsencrypt-Zerifikat
-    #-A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPTPT
+
+```Shell
+#HTTP generell erlauben  - nötig für Erneuerung Letsencrypt-Zerifikat
+#-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
+#HTTPS generell erlauben - nötig für Erneuerung Letsencrypt-Zerifikat
+#-A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT
+```
+ 
 
 Änderungen übernehmen:
 
