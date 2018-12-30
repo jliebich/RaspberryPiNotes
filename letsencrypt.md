@@ -11,12 +11,12 @@ In Installationsverzeichnis wechslen - bei mir:
 Sicherstellen das in der Firewall (iptables) der Zugriff von "anywhere" auf HTTPS- UND den HTTP-Port erlaubt ist -siehe auch https://community.letsencrypt.org/t/lets-encrypt-and-firewall-rules/18641
 
 Mein Eintrag in /etc/network/iptables sieht dafür so aus:
-
-    #HTTP generell erlauben  - nötig für Erneuerung Letsencrypt-Zerifikat
-    -A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
-    #HTTPS generell erlauben - nötig für Erneuerung Letsencrypt-Zerifikat
-    -A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPTPT
-
+```Shell
+#HTTP generell erlauben  - nötig für Erneuerung Letsencrypt-Zerifikat
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
+#HTTPS generell erlauben - nötig für Erneuerung Letsencrypt-Zerifikat
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPTPT
+```
 Änderungen übernehmen:
 
     iptables-restore /etc/network/iptables
