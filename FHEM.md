@@ -99,6 +99,10 @@ Homematic-Gerät in den Pairing-Mode versetzen:
 Nach dem Anlernen erkennt man an in der Weboberfläche von FHEM an dem roten Fragezeichen hinter "Save config", dass das Gerät angelernt wurde.
 Man kann auf das Fragezechen klicken, um zu sehen wie das neue Gerät heißt. "Save config" klicken um die Änderung zu übernhemen
 
+# Firmware-Update von HomeMatic-Komponenten
+
+https://haus-automatisierung.com/hardware/fhem/2016/12/23/fhem-tutorial-reihe-part-19-firmware-update-homematic-komponenten.html
+
 # Synology-NAS via SNMP überwachen
 
 https://haus-automatisierung.com/hardware/fhem/2016/06/02/fhem-tutorial-reihe-part-10-synology-status-per-snmp-ueberwachen.html
