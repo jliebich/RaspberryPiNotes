@@ -64,7 +64,7 @@ CUL-Stick umstecken, Reboot mit
     
     reboot
 
-# Geräte (device) umbenennen
+## Geräte (device) umbenennen
 
      rename <alterName> <neuerName>
 
@@ -72,18 +72,18 @@ also z.B.
 
      rename HM_55B1C7 Wassermelder
 
-# Raum umbenennen
+## Raum umbenennen
 
 
     attr room=room1 room room2
 
 verschiebt alle Devices aus room1 nach room2. room1 ist dann verschwunden und room2 ist neu verfügbar. Das ist faktisch wie eine Umbenennung.
 
-# Icon für Raum definieren
+## Icon für Raum definieren
 
     attr WEB roomIcons Keller:control_building_modern_s_kg  EG:control_building_modern_s_eg OG:control_building_modern_s_og  DG:control_building_modern_s_dg
     
-# Homematic-Geräte anlernen (pairen)
+## Homematic-Geräte anlernen (pairen)
 
 HM-MOD-UART in den "Akzeptiere-Pairing-Requests-Modus" bringen:
 
@@ -99,11 +99,16 @@ Homematic-Gerät in den Pairing-Mode versetzen:
 Nach dem Anlernen erkennt man an in der Weboberfläche von FHEM an dem roten Fragezeichen hinter "Save config", dass das Gerät angelernt wurde.
 Man kann auf das Fragezechen klicken, um zu sehen wie das neue Gerät heißt. "Save config" klicken um die Änderung zu übernhemen
 
-# Firmware-Update von HomeMatic-Komponenten
+## Firmware-Update von HomeMatic-Komponenten
 
 https://haus-automatisierung.com/hardware/fhem/2016/12/23/fhem-tutorial-reihe-part-19-firmware-update-homematic-komponenten.html
 
-# Synology-NAS via SNMP überwachen
+## Synology-NAS via SNMP überwachen
 
 https://haus-automatisierung.com/hardware/fhem/2016/06/02/fhem-tutorial-reihe-part-10-synology-status-per-snmp-ueberwachen.html
 
+## Floorplan
+
+Floorplan nutzt ein CSS-Datei.
+Welche genau verwendet wird kann im Browser mit dem F12-Tool herausgefunden werden. Bei mir ist es die Datei darkfloorplanstyle.css
+Mit dem F12-Tool kann man auch leicht die Element-ID eines umzuformatierenden Textes gefunden werden.
