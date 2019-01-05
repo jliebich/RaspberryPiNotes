@@ -115,4 +115,4 @@ Mit dem F12-Tool kann man auch leicht die Element-ID eines umzuformatierenden Te
 Achtung: Änderungen in der CSS-Datei werden erst übernommen wenn man einen "vollen" Refresh der Seite vornimmt. Ein normales Neuladen reicht nicht! In Firefox muss man dazu Alt gedrückt halten und "Neu laden" klicken, bei Chrome muss man dazu Strg gedrückt halten und "Neu laden" klicken.
 
 ## Undo
-Es gibt leider kein direktes Undo. Wnn man eine Änderung gemacht hat, die man nicht spechern möchte ```shutdown restart``` verwenden
+Es gibt leider kein direktes Undo. Wnn man eine Änderung gemacht hat und noch nicht ```Save config``` geklickt hat, kann sie nur mit ```shutdown restart``` rückgängig gemacht werden.
