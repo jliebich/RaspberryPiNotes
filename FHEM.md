@@ -113,3 +113,6 @@ Floorplan nutzt ein CSS-Datei.
 Welche genau verwendet wird kann im Browser mit dem F12-Tool herausgefunden werden. Bei mir ist es die Datei darkfloorplanstyle.css
 Mit dem F12-Tool kann man auch leicht die Element-ID eines umzuformatierenden Textes gefunden werden.
 Achtung: Änderungen in der CSS-Datei werden erst übernommen wenn man einen "vollen" Refresh der Seite vornimmt. Ein normales Neuladen reicht nicht! In Firefox muss man dazu Alt gedrückt halten und "Neu laden" klicken, bei Chrome muss man dazu Strg gedrückt halten und "Neu laden" klicken.
+
+## Undo
+Es gibt leider kein direktes Undo. Wnn man eine Änderung gemacht hat, die man nicht spechern möchte ```shutdown restart``` verwenden
