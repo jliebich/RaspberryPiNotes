@@ -116,3 +116,17 @@ Achtung: Änderungen in der CSS-Datei werden erst übernommen wenn man einen "vo
 
 ## Undo
 Es gibt leider kein direktes Undo. Wnn man eine Änderung gemacht hat und noch nicht ```Save config``` geklickt hat, kann sie nur mit ```shutdown restart``` rückgängig gemacht werden.
+
+## Eigene, globale Variablen in FHEM
+
+Will man aber global Variablen nutzen, die man innerhalb der FHEM Steuerung auch von anderen Geräten oder notifys auslesen oder längerfristig speichern möchte, definiert man zunächst ein dummy-Device in FHEM, dem man später einen Wert geben kann:
+
+define MeineVariable dummy
+
+Diesem Device kann man jetzt einen Wert zuweisen – entweder aus FHEM selbst:
+
+set MeineVariable on
+
+oder aus Perl:
+
+fhem(„set MeineVariable on“);
