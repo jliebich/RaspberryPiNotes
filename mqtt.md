@@ -1,6 +1,7 @@
 # MQTT
 
-mosquitto installieren (Quelle: http://blog.wenzlaff.de/?p=6487)
+## mosquitto installieren
+Quelle: http://blog.wenzlaff.de/?p=6487
 
         sudo apt-get install mosquitto mosquitto-clients python-mosquitto libmodule-pluggable-perl
 
@@ -21,7 +22,9 @@ Weitere setups für Perl (für FHEM)
         sudo cpan install Net::MQTT:Simple
         sudo cpan install Net::MQTT:Constants
         
+## Mosquitto in FHEM konfigurieren
 
+        define MyMosquitto MQTT 192.168.0.35:1883
  
 
         
