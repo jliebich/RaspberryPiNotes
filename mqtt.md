@@ -15,7 +15,13 @@ Installiert wird unter
 Konfig-File ist unter 
 
         /etc/mosquitto/mosquitto.conf
+
+Weitere setups für Perl (für FHEM)
+
+        sudo cpan install Net::MQTT:Simple
+        sudo cpan install Net::MQTT:Constants
         
+
  
 
         
