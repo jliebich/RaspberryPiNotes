@@ -18,3 +18,6 @@ Installieren:
 
     sudo apt-get install ncdu
  
+## git
+
+    sudo apt-get install git
