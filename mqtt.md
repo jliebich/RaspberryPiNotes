@@ -1,5 +1,18 @@
 # MQTT
 
+## MQTT C Client
+https://www.eclipse.org/paho/clients/c/
+
+Asynchronous subscription example:
+https://www.eclipse.org/paho/files/mqttdoc/MQTTClient/html/subasync.html
+
+## FHEM und MQTT
+https://wiki.fhem.de/wiki/MQTT
+Zitat: "Nutzt man das MQTT-Protokoll dagegen vorwiegend innerhalb von FHEM, ist eher der Einsatz von MQTT2_SERVER in Betracht zu ziehen." 
+
+Ich verwende trotzdem mosquitto, da dies auf dem FHEM-Raspi schon installiert war. 
+
+
 ## mosquitto installieren
 Quelle: http://blog.wenzlaff.de/?p=6487
 
