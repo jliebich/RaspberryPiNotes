@@ -39,5 +39,13 @@ Weitere setups für Perl (für FHEM)
 
         define MyMosquitto MQTT 192.168.0.35:1883
  
+## MQTT_GENERIC_BRIDGE
 
+Um in FHEM einfach für vorhandene Devices MQTT-Nachrichten zu erzeugen verwende ich das Modul MQTT_GENERIC_BRIDGE
+
+        defmod mqttGeneric MQTT_GENERIC_BRIDGE mqtt
+        attr mqttGeneric IODev MyMosquitto
         
+Damit ein Device automatisch MQTT-Nachriten versendet, wenn sich ein Reading ändert muss noch folgendes Attribut gesetzt werden Hier am Bespiel des Device "co2" mit topic "/Haus/EG/Wohnzimmer/CO2":
+
+        attr co2 mqttPublish *:topic={"/Haus/EG/Wohnzimmer/CO2/$reading"}
