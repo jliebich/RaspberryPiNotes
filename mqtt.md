@@ -1,6 +1,12 @@
 # MQTT
 
+## Windows Tool
 
+MQTT.fx
+
+        www.jensd.de
+        
+        
 ## FHEM und MQTT
 https://wiki.fhem.de/wiki/MQTT
 Zitat: "Nutzt man das MQTT-Protokoll dagegen vorwiegend innerhalb von FHEM, ist eher der Einsatz von MQTT2_SERVER in Betracht zu ziehen." 
@@ -57,6 +63,19 @@ Installieren:
         cd paho.mqtt.c
         make
         
+make gibt ein paar Warnungen aus (veraltet), läuft aber sonst durck
+
+        make install
+        
+auch hier ein paar Fehler - scheint aber nur was mit doc zu tun zu haben - ignoriert.
+
+Test: Unter `/home/pi/paho.mqtt.c/build/output/samples` folgendes ausführen:
+
+         paho_c_pub -t my_topic --connection 192.168.0.35:1883
+         
+Alles was man eingibt wird nach Return als MQTT-Message gesendet - sichtbar z.B. mit MQTT.fx unter Windows.
+
+
 
 
 Asynchronous subscription example:
