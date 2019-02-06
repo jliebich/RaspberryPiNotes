@@ -69,6 +69,15 @@ make gibt ein paar Warnungen aus (veraltet), läuft aber sonst durck
         
 auch hier ein paar Fehler - scheint aber nur was mit doc zu tun zu haben - ignoriert.
 
+Unter `/usr/local/lib` erscheinen jetzt mehrere .so Dateien:
+
+        libpaho-mqtt3a.so
+        libpaho-mqtt3as.so
+        libpaho-mqtt3c.so
+        libpaho-mqtt3cs.so
+ 
+ die für den Linker mit `-lpaho-mqtt3c` eingebunden werden müssen (in Netbeans unter Options -> Linker -> Libaries)
+
 Test: Unter `/home/pi/paho.mqtt.c/build/output/samples` folgendes ausführen:
 
          paho_c_pub -t my_topic --connection 192.168.0.35:1883
