@@ -1,10 +1,5 @@
 # MQTT
 
-## MQTT C Client
-https://www.eclipse.org/paho/clients/c/
-
-Asynchronous subscription example:
-https://www.eclipse.org/paho/files/mqttdoc/MQTTClient/html/subasync.html
 
 ## FHEM und MQTT
 https://wiki.fhem.de/wiki/MQTT
@@ -49,3 +44,21 @@ Um in FHEM einfach für vorhandene Devices MQTT-Nachrichten zu erzeugen verwende
 Damit ein Device automatisch MQTT-Nachriten versendet, wenn sich ein Reading ändert muss noch folgendes Attribut gesetzt werden Hier am Bespiel des Device "co2" mit topic "/Haus/EG/Wohnzimmer/CO2":
 
         attr co2 mqttPublish *:topic={"/Haus/EG/Wohnzimmer/CO2/$reading"}
+        
+# MQTT-Client mit C schreiben
+
+### MQTT C Client
+https://www.eclipse.org/paho/clients/c/
+
+Installieren:
+
+        apt-get install libssl-dev
+        git clone https://github.com/eclipse/paho.mqtt.c.git
+        cd paho.mqtt.c
+        make
+        
+
+
+Asynchronous subscription example:
+https://www.eclipse.org/paho/files/mqttdoc/MQTTClient/html/subasync.html
+
