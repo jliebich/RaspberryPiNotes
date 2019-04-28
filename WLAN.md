@@ -30,9 +30,7 @@ Mit
 
     mcedit /etc/wpa_supplicant/wpa_supplicant.conf
 
-Konfiguration anpassen:
-
-    (SSID = WLAN-Name, PSK = WLAN-Passwort)
+Konfiguration anpassen: (SSID = WLAN-Name, PSK = WLAN-Passwort)
 
     network={
         ssid="MeinWLAN"
