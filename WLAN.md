@@ -41,4 +41,21 @@ Netzwerkdienst neu starten um Änderung zu aktivieren
 
     service networking restart
 
-Damit ist die Einrichtung der WLAN-verbindung abgeschlossen. Das System sollte nun automatisch eine Verbindung zum konfigurierten WLAN herstellen und sich via DHCP eine IP-Adresse vom Router holen.
+Das System sollte nun automatisch eine Verbindung zum konfigurierten WLAN herstellen und sich via DHCP eine IP-Adresse vom Router holen. Bei mir hat es erst nach einem reboot funktioniert.
+
+## Zustand prüfen
+
+Mit
+
+    ifconfig
+    
+kann man sehen, welche IP der Anschluss bekommen hat.
+
+Mit
+
+    iwconfig
+    
+kann man sehen, mit welchem Router der Raspi verbunden ist.
+
+
+
