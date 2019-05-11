@@ -53,3 +53,12 @@ Menu > Window > Debugging > Breakpoints
 
 Then right-click in the Breakpoints window and select Disable All or  "Delete All".
 
+##  bcm2835 library installieren
+
+Doku siehe http://www.airspayce.com/mikem/bcm2835/
+
+    cd /home/pi/
+    wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.58.tar.gz 
+    tar zxvf bcm2835-1.58.tar.gz
+    
+        
