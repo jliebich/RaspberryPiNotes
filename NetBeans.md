@@ -60,5 +60,33 @@ Doku siehe http://www.airspayce.com/mikem/bcm2835/
     cd /home/pi/
     wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.58.tar.gz 
     tar zxvf bcm2835-1.58.tar.gz
+    cd bcm2835-1.58
+    ./configure
+    make
+    make check
+    make install
+    
+    
+## mqtt library installieren
+
+Doku siehe https://www.eclipse.org/paho/clients/c/
+
+
+    apt-get install libssl-dev
+
+    cd /home/pi/
+    git clone https://github.com/eclipse/paho.mqtt.c.git
+    cd paho.mqtt.c
+    make
+  
+  Bei mir gab es mehrere Warnungen das TLSv1 veraltet ist - die kann man ignorieren
+    
+    make install
+
+Auch hier gab es bei mir ein paar Warnungen
+    
+    
+    
+    
     
         
