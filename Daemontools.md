@@ -1,4 +1,4 @@
-# Daemintools zur Überwachung von Daemon Prozessen
+# Daemontools zur Überwachung von Daemon Prozessen
 
 ## installieren
 
@@ -43,7 +43,7 @@ In Datei /etc/init.d/
 
 Init-Script aktivieren mit
 
-        update.rc-d supervise-app defaults
+        update-rc.d supervise-app defaults
 
 Falls man es wieder deaktivieren möchte
 
