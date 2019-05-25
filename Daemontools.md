@@ -40,7 +40,15 @@ In Datei /etc/init.d/
                 exit 1
                 ;;
         esac
-        
+
+Init-Script aktivieren mit
+
+        update.rc-d supervise-app defaults
+
+Falls man es wieder deaktivieren möchte
+
+        update-rc.d -f supervise-app  remove
+
 ## Run script
   
         #!/bin/sh
@@ -48,4 +56,6 @@ In Datei /etc/init.d/
         exec ./e_paper_info >> /var/log/e_paper_info.log
         
         
+## Ergebnis
 
+Program e_paper_info.log wird automatisch neu gestartet wenn es sich beendet
