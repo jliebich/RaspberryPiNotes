@@ -41,4 +41,11 @@ In Datei /etc/init.d/
                 ;;
         esac
         
+## Run script
   
+        #!/bin/sh
+        echo Monitoring e_paper_info
+        exec ./e_paper_info >> /var/log/e_paper_info.log
+        
+        
+
