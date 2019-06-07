@@ -122,7 +122,9 @@ Vor größeren Änderungen empfiehlt sich, ein backup durchzuführen. Einfach
 
      backup
      
-ins Eingabefeld eingeben. Unter /opt/fhem/backup wird dann ein TAR-Archiv der kompletten Installation angelegt. Ältere Backups werden dabei NICHT gelöscht - mann sollte also ab und zu in dem backup-Ordner aufräumen.
+ins Eingabefeld eingeben. Unter /opt/fhem/backup wird dann im Hintergrund ein TAR-Archiv der kompletten Installation angelegt.
+Im Logfile erscheint der einsprechende tar Aufruf und wenn Backup beendet ist die Zeile "Backup done"
+Ältere Backups werden dabei NICHT gelöscht - mann sollte also ab und zu in dem backup-Ordner aufräumen.
 
 ## Eigene, globale Variablen in FHEM
 
