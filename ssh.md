@@ -45,6 +45,14 @@ Müssen folgende Optionen gesetzt sein:
 Achtung
 Es muss sichergestellt sein, dass die Zeile „PubkeyAuthentication yes“ vorhanden ist. Ansonsten kommt man auch mit seinem Schlüssel nicht mehr auf den Server.
 
+Um zu testen, ob Login über Passwort wirklich deaktiviert ist, folgendes von einem anderen Rechner ausprobieren:
+
+     ssh -p 22 pi@192.168.0.XXX
+
+Es sollte folgende Meldung kommen:
+
+     Permission denied (publickey).
+  
  
 ## Protocol V1 deaktivieren
 Um nur die neuese Version 2 von SSH zuzulassen, folgenden Eintrag in
