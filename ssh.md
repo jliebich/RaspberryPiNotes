@@ -28,7 +28,23 @@ Default user: pi Default password: raspberry
 
 Note:
 Für die Verwendung in OpenSSH Clients muss der Private Key im PuTTY Key Generator über "Conversions->Export OpenSSH key" noch konvertiert werden. Achtung: Dabei wird die Passphrase entfernt. 
- 
+
+
+## Passwort-Login serverseitig abschalten
+Achtung: Es muss gewährleistet sein, dass man sich über seinen Key anmelden kann. Ansonsten kommt man über SSH nicht mehr auf den Server!
+In der Datei:
+     
+     mcedit /etc/ssh/sshd_config
+
+Müssen folgende Optionen gesetzt sein:
+     
+     ChallengeResponseAuthentication no
+     PasswordAuthentication no
+     UsePAM no
+
+Achtung
+Es muss sichergestellt sein, dass die Zeile „PubkeyAuthentication yes“ vorhanden ist. Ansonsten kommt man auch mit seinem Schlüssel nicht mehr auf den Server.
+
  
 ## Protocol V1 deaktivieren
 Um nur die neuese Version 2 von SSH zuzulassen, folgenden Eintrag in
