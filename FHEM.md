@@ -139,3 +139,12 @@ set MeineVariable on
 oder aus Perl:
 
 fhem(„set MeineVariable on“);
+
+## Geräte tauschen
+
+* Neues Geraet an fhem anlernen
+* FHEM Configs entsprechend altem Geraet anpassen (Raum, DevStateIcon, etc...)
+* M-Configs entsprechend altem Geraet anpassen (register, usw...)
+* altes Device loeschen
+* rename neues-HM-Geraet NamedesaltenHMGeraets
+* shutdown restart
