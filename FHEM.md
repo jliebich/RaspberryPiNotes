@@ -91,9 +91,10 @@ HM-MOD-UART in den "Akzeptiere-Pairing-Requests-Modus" bringen:
 
 Homematic-Gerät in den Pairing-Mode versetzen:
 
-* Rauchmenlder: Taste drücken bis LED orange blinkt
+* Rauchmelder: Taste drücken bis LED orange blinkt
 * Heizregler und Wandthermostat: Boost-Taste min. 3 Sekunden drücken
 * Funk-Gongmodul MP3 (HM-OU-CM-PCB): Taste TA1 min. 4 Sekunden drücken (dauerhaftes Blinken = Anlernmodus)
+* Tür-/Fensterkontakt, optisch: Kurz auf Taste drücken
 * 4 Kanal Funk-Schaltaktor für Batteriebetrieb (HM-LC-Sw4-Ba-PCB): Taste am entsprechenden Kanal min 4 Sekunden drücken. Laut Anleitung muss jeder Kanal einzeln angelert werden, in FHEM erscheinen bei mir aber sofort alle 4 Kanäle, nachdem ich einen Kanal angelert habe.
 
 Nach dem Anlernen erkennt man an in der Weboberfläche von FHEM an dem roten Fragezeichen hinter "Save config", dass das Gerät angelernt wurde.
