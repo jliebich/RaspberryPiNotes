@@ -13,6 +13,6 @@ Mit
 
     service rsyslog restart
 
-den Service noch neustarten und schon müsste man die ersten Logs zu sehen bekommen. Praktisch ist, dass hier bereits auch der komplette Bootlog gesendet wird, was oft beim debuggen behilfreich ist. Übrigens keine Angst, das lokale Syslog File wird weiterhin fleißig gefüllt, die Meldungen werden nur zusätzlich an den eingetragenen Server gesendet.
-
-Viel Spaß beim nachmachen!
+den Service noch neustarten und schon müsste man die ersten Logs zu sehen bekommen.
+Auch der komplette Bootlog wird gesendet, was oft beim debuggen behilfreich ist.
+Das lokale Syslog File wird weiterhin gefüllt, die Meldungen werden nur zusätzlich an die NAS gesendet.
