@@ -57,3 +57,6 @@ Nach dem ändern muss folgendes ausgeführt werden:
 
  	systemctl daemon-reload	
 
+
+### Telegram für Benachrichtigungen in der Synology-NAS einrichten 
+https://blog.unltd-networx.de/synology-diskstation-telegram/
