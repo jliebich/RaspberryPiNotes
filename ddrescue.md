@@ -16,5 +16,16 @@ Karte unmounten mit
 
 Jetzt ddrescue starten
 
-    ddrescue -d -r3 /dev/sda test.img test.logfile
+    ddrescue -d -r3 /dev/sdx test.img test.log
+
+Ergebnis vom Lesevorgang steht jetzt in test.img
+
+Jetzt das Ziellaufwerk einlegen und test.img zurückschreiben
+Man könnte es mit dd mach, aber ddrescue hat eine nettere Fortschrittsanzeige...
+
+    ddsercue -f test.img /dev/sdx restore.log
+
+Jetzt noch fsck ausführen um zu prüfen, ob alles gut funktioniert hat:
+
+    sudo fsck.ext4 -v -f -c /dev/sdax
 
