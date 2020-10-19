@@ -45,4 +45,51 @@ Weiter mit dieser Anmeldung:
     cd /usr/local/searx/searx-src
     pip install -e .
     
+Zweites Terminal öffnen (mit normalem User) und das andere mit User serry offen lassen
+In dem neuen Terminal:
+
+    mkdir /etc/searx
+    sudo -H cp /usr/local/searx/searx-src/searx/settings.yml /etc/searx/settings.yml
+    sudo -H sed -i -e s/ultrasecretkey/\51234567890b42919551c0442c4919d8/g /etc/searx/settings.yml
+
+Schlüssel natürlich beliebig anpassen
+
+Dieser Befehl    
+
+    sudo -H sed -i -e s/{instance_name}/searx@\alexandre-vm/g /etc/searx/settings.yml
+
+funktionierte beim mir nicht. Habs gelassen. Nennt nur irgendwie die Instance um, vermutlich nicht nötig.
+
+Debug aktivieren
+
+    sudo -H sed -i -e s/debug : False/debug : True/g /etc/searx/settings.yml
+
+Im searx Terminal:
+
+    cd /usr/local/searx/searx-src
+    export SEARX_SETTINGS_PATH=/etc/searx/settings.yml
+    python searx/webapp.py
+
+Jetzt testen, remote ging bei mir nicht (wegen Firewall) auf dem Rechner selber mit curl aber schon:
+
+    curl 127.0.0.1.8888 --location --verbose --head --insecure
+
+liefert so was ähnliches wie
+
+    *   Trying 127.0.0.1:8888...
+    * TCP_NODELAY set
+    * Connected to 127.0.0.1 (127.0.0.1) port 8888 (#0)
+    > HEAD / HTTP/1.1
+    > Host: 127.0.0.1:8888
+    > User-Agent: curl/7.68.0
+    > Accept: */*
+    >
+    * Mark bundle as not supporting multiuse
+    * HTTP 1.0, assume close after body
+    < HTTP/1.0 200 OK
+HTTP/1.0 200 OK
+...
+
+# disable debug
+$ sudo -H sed -i -e s/debug : True/debug : False/g /etc/searx/settings.yml
     
