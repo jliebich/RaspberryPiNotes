@@ -70,7 +70,7 @@ Im searx Terminal:
     export SEARX_SETTINGS_PATH=/etc/searx/settings.yml
     python searx/webapp.py
 
-Jetzt testen, remote ging bei mir nicht (wegen Firewall) auf dem Rechner selber mit curl aber schon:
+Jetzt testen (mit normalem User-Terminal), remote ging bei mir nicht (wegen Firewall) auf dem Rechner selber mit curl aber schon:
 
     curl 127.0.0.1.8888 --location --verbose --head --insecure
 
@@ -87,9 +87,13 @@ liefert so was ähnliches wie
     * Mark bundle as not supporting multiuse
     * HTTP 1.0, assume close after body
     < HTTP/1.0 200 OK
-HTTP/1.0 200 OK
-...
+    HTTP/1.0 200 OK
+    ...
 
-# disable debug
-$ sudo -H sed -i -e s/debug : True/debug : False/g /etc/searx/settings.yml
+Debug wieder disable
+    
+    sudo -H sed -i -e s/debug : True/debug : False/g /etc/searx/settings.yml
+    
+## Zu nginx hinzufügen
+
     
