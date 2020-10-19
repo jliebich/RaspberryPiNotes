@@ -1,9 +1,11 @@
 # Searx auf Raspberry Pi
 
-Quellen
+## Quellen
 https://raspiblog.noblogs.org/post/2018/01/27/installing-searx-with-apache-and-morty/
+
 https://searx.github.io/searx/admin/installation-searx.html#installation-basic
 
+## Installation nach "Step by step instruction"
 Ich will eine schlanke Installation für die ausschließliche Nutzung im Inranet, also ohne filtron und morty.
 
 Deshalb verwende ich die "Step by step installation"-Anleitung.
