@@ -12,3 +12,7 @@ sudo apt-get install dconf-editor
 nachholen.
 
 Die gewünschte Einstellung findet man dann unter org -> Gnome -> Desktop -> screensaver. Hier entfernt man einfach bei ubuntu-lock-on-suspend das Häkchen.
+
+# Animationen abschalten
+ 
+ /org/gnome/desktop/interface/, scroll down a bit, and disable the "enable-animations" setting
