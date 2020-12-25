@@ -100,4 +100,10 @@ Dazu in Datei /etc/searx/settings.yml "debug : True" wieder ersetzen mit
     
 ## Zu nginx hinzufügen
 
+
+Create configuration at /etc/nginx/sites-available/searx and place a symlink to sites-enabled:
+
+sudo -H ln -s /etc/nginx/sites-available/searx /etc/nginx/sites-enabled/searx
+
+
     
