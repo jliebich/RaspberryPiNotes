@@ -63,8 +63,9 @@ Dieser Befehl
 funktionierte beim mir nicht. Habs gelassen. Nennt nur irgendwie die Instance um, vermutlich nicht nötig.
 
 Debug aktivieren
+Dazu in Datei /etc/searx/settings.yml "debug : False" ersetzen mit
 
-    sudo -H sed -i -e s/debug : False/debug : True/g /etc/searx/settings.yml
+    debug : True
 
 Im searx Terminal:
 
@@ -74,7 +75,7 @@ Im searx Terminal:
 
 Jetzt testen (mit normalem User-Terminal), remote ging bei mir nicht (wegen Firewall) auf dem Rechner selber mit curl aber schon:
 
-    curl 127.0.0.1.8888 --location --verbose --head --insecure
+    curl 127.0.0.1:8888 --location --verbose --head --insecure
 
 liefert so was ähnliches wie
 
@@ -92,9 +93,10 @@ liefert so was ähnliches wie
     HTTP/1.0 200 OK
     ...
 
-Debug wieder disable
-    
-    sudo -H sed -i -e s/debug : True/debug : False/g /etc/searx/settings.yml
+Debug wieder disable.
+Dazu in Datei /etc/searx/settings.yml "debug : True" wieder ersetzen mit
+
+    debug : False
     
 ## Zu nginx hinzufügen
 
