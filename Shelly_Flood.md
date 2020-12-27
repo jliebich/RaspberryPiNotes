@@ -2,7 +2,7 @@
 
 ## Allgemeines
 
-Gerät geht schnell schlafen. Aufwecken mit kurzem Druck aus Taste
+Gerät geht schnell schlafen. Aufwecken mit kurzem Druck auf Taste
 
 ## API
 
