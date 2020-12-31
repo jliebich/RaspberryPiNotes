@@ -62,11 +62,6 @@ Intsallation so anpassen, sonst gehts nicht:
 https://raspberrypi.stackexchange.com/questions/72022/configuring-unattended-upgrades-on-raspbian-stretch
 
 
-## Release-Upgrade von Wheezy nach Jessie
+## Release-Upgrade von Stretch nach Buster
 
-Wechsel von Wheezy nach Jessie wird durch rpi-update NICHT durchgeführt!
-
-https://www.datenreise.de/raspberry-pi-raspbian-linux-wheezy-jessie-upgrade/
-
-Dieses Update hat bei mir zu einem unbenutzbaren System geführt (z.B. keine Netzwerkverbindung mehr).
-Habe es wieder rückgängig gemacht...
+https://pimylifeup.com/upgrade-raspbian-stretch-to-raspbian-buster/
