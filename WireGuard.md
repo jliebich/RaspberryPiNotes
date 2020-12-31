@@ -14,4 +14,5 @@ Dann dieser Anleitung folgen:
 
     https://www.sigmdel.ca/michel/ha/wireguard/wireguard_03_en.html
     
-Andere Anleitung holen sich das WireGuard Paket von Debian (nicht von raspbina). Das ist veraltet, da WireGuard package im "Raspbian Testing repository" von Buster enthalten ist
+Andere Anleitung holen sich das WireGuard Paket von Debian (nicht von Raspbian).
+Das ist veraltet, da WireGuard package im "Raspbian Testing repository" von Buster enthalten ist
