@@ -31,7 +31,7 @@ Beispiel mit User "zenfone"
 
     ./user.sh -v zenfone
 
-Es gibt immer 2 Congig-Files pro user und zwar client.conf und client.all.conf.
+Es gibt immer 2 Config-Files pro User und zwar client.conf und client.all.conf.
 
 client.conf ist die "Split" Konfiguration. Dort werden nur Zugriffe auf das lokale Netzwerk (192.168.0.XXX) getunnel, andere Adressen werden NICHT getunnelt.
 
@@ -45,5 +45,11 @@ Am besten über den QR-Code
 
 Am besten über die .conf Dateien. Kann man z.B. über WinSCP vom Raspi runterholen 
 
+## Statistik 
+
+    wg
+ 
+ zeigt eine Zusmmenfassung der Konfiguarion, wann die letzte Verbindung war und wieviel Daten übertragen wurden
+ 
 
     
