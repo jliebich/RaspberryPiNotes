@@ -37,5 +37,13 @@ client.conf ist die "Split" Konfiguration. Dort werden nur Zugriffe auf das loka
 
 client.all.conf ist die "All" Konfiguration  (AllowedIPs: 0.0.0.0/0). Hier werden alle Zugriffe getunnelt.
 
+## Einrichten Android-Geräte
+
+Am besten über den QR-Code
+
+## Einrichten Windows-Notbook
+
+Am besten über die .conf Dateien. Kann man z.B. über WinSCP vom Raspi runterholen 
+
 
     
