@@ -23,10 +23,19 @@ Beispiel mit User "zenfone"
 
     cd wg_config
     ./user.sh -a zenfone
-    wg_config $ ls users
+    ls users
     
 ## Infos zu einem User anzeigen
 
 Beispiel mit User "zenfone"
 
     ./user.sh -v zenfone
+
+Es gibt immer 2 Congig-Files pro user und zwar client.conf und client.all.conf.
+
+client.conf ist die "Split" Konfiguration. Dort werden nur Zugriffe auf das lokale Netzwerk (192.168.0.XXX) getunnel, andere Adressen werden NICHT getunnelt.
+
+client.all.conf ist die "All" Konfiguration  (AllowedIPs: 0.0.0.0/0). Hier werden alle Zugriffe getunnelt.
+
+
+    
