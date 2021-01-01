@@ -17,16 +17,16 @@ Dann dieser Anleitung folgen:
 Andere Anleitung holen sich das WireGuard Paket von Debian (nicht von Raspbian).
 Das ist veraltet, da WireGuard package im "Raspbian Testing repository" von Buster enthalten ist
 
-Installation dauert lange (bleibt scheibar bei 
+## Neuen User anlegen
 
-        wireguard.ko:
-        Running module version sanity check.
-        - Original module
-        - No original module exists within this kernel
-        - Installation
-        - Installing to /lib/modules/5.4.79+/kernel/net/
-        
-        depmod...
-        
- stehen.
+Beispiel mit User "zenfone"
 
+    cd wg_config
+    ./user.sh -a zenfone
+    wg_config $ ls users
+    
+## Infos zu einem User anzeigen
+
+Beispiel mit User "zenfone"
+
+    ./user.sh -v zenfone
