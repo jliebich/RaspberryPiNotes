@@ -16,3 +16,26 @@ Mit
 den Service noch neustarten und schon müsste man die ersten Logs zu sehen bekommen.
 Auch der komplette Bootlog wird gesendet, was oft beim debuggen behilfreich ist.
 Das lokale Syslog File wird weiterhin gefüllt, die Meldungen werden nur zusätzlich an die NAS gesendet.
+
+# rngd-Ausgabe aufiltern
+
+Die rngd-Protokolle sind ziemlich überflüssig und "müllen" das syslog voll.
+Wir können rsyslog dazu bringen, sie in eine dedizierte Protokolldatei zu schreiben (sagen wir /var/log/rnd.log):
+
+Erzeugen einer /etc/rsyslog.d/rng.conf
+
+
+    # redirect rngd output on Raspberry Pi Buster
+    # distribution into /var/log/rng.log to
+    # avoid cluttering /var/log/syslog
+
+    # redirect all messages coming from rng
+    :programname,startswith,"rng" /var/log/rng.log
+
+    # and discard them for the following rsyslog
+    # actions
+    :programname,startswith,"rng" stop
+
+gefolgt von einem Neustart des rsyslog-Dienstes:
+
+    sudo systemctl restart rsyslog.service
