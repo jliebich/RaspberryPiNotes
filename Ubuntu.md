@@ -7,7 +7,7 @@ Verschlüsselung für VNC deaktivieren, damit UntraVNC unter Windows Verbindung 
 # Screensvaer
 Sofern der dconf-editor nicht installiert ist kann man das mit
 
-sudo apt-get install dconf-editor
+    sudo apt-get install dconf-editor
 
 nachholen.
 
