@@ -45,6 +45,12 @@ Right click the project > Properties > Build > Linker > In the 'Libraries' secti
 
 Right click the project > Build
 
+## Delete all breakpoints
+Menu > Window > Debugging > Breakpoints
+
+Then right-click in the Breakpoints window and select Disable All or  "Delete All".
+
+
 # Visual Studio Code auf Windows als Remote-IDE für C Entwicklung auf dem Raspberry nutzen
 
 NICHT diese Anleitung nehemen, die ist veraltet:
@@ -67,12 +73,8 @@ Beispiel für ein Hello-World Programm in c++:
     https://tutorials-raspberrypi.de/raspberry-pi-visual-studio-code-installieren-cpp-programmieren/
 
 
-## Diverses
+# Diverses
 
-### Delete all breakpoints
-Menu > Window > Debugging > Breakpoints
-
-Then right-click in the Breakpoints window and select Disable All or  "Delete All".
 
 ##  bcm2835 library installieren
 
