@@ -1,4 +1,4 @@
-# NetBeans als IDE für C Entwicklung auf dem Raspberry
+# NetBeans als IDE für C Entwicklung auf dem Raspberry (besser Visual Studio Code nehmen, siehe unten)
 
 ## Creating A New NetBeans Project
 Menu > File > New Project > Select 'C/C++ Application'
@@ -44,6 +44,27 @@ If you are using the bcm2835 library for the IO pins etc, ensure you've installe
 Right click the project > Properties > Build > Linker > In the 'Libraries' section press the '…' button > Add Option… > Other Option > Enter: -lbcm2835
 
 Right click the project > Build
+
+# Visual Studio Code auf Windows als Remote-IDE für C Entwicklung auf dem Raspberry nutzen
+
+NICHT diese Anleitung nehemen, die ist veraltet:
+    
+    https://www.i-programmer.info/programming/hardware/14044-raspberry-pi-iot-in-c-vs-code-remote-c.html
+    
+Sondern mittels dieser Extension:
+    
+    https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+
+Installation ist u.a. hier beschrieben
+
+    https://electrobotify.wordpress.com/2019/08/16/remote-development-on-raspberry-pi-with-vs-code/
+
+Wenn dann das Remote-VSCode auf dem Raspi läuft, kann man so arbeiten, als wäre VSCode auf dem Raspi direkt installiert.
+Um C-Programme zu schreiben muss man auf dem Remote-VSCode die Extension C/C++ von Microsoft installieren (mittels Button "Install in SSH: XXXXX").
+
+Beispiel für ein Hello-World Programm in c++:
+
+    https://tutorials-raspberrypi.de/raspberry-pi-visual-studio-code-installieren-cpp-programmieren/
 
 
 ## Diverses
