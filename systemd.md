@@ -1,7 +1,9 @@
 # systemd
 
 systemd ist ein Hintergrundprogramm (Daemon) für Linux-Systeme, das als init-Prozess als erster Prozess (Prozess-ID 1) zum Starten, Überwachen und Beenden weiterer Prozesse dient.
+
 systemd ist die "neue" Variante um Daemon Prozesse zu starten, Vorgänger ist SysVinit
+
 In Debian ist systemd verfügbar sei Version Jessie.
 
 
