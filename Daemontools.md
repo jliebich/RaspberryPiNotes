@@ -6,7 +6,7 @@
         
 ## Autostart
 
-In Datei /etc/init.d/
+In Ordner /etc/init.d/ eine neue Datei supervise-app anlegen
 
         #!/bin/sh
         ### BEGIN INIT INFO
