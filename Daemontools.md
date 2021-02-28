@@ -41,9 +41,14 @@ In Ordner /etc/init.d/ eine neue Datei supervise-app anlegen
                 ;;
         esac
 
+Dieses Script überwacht das Verwichnis /root und führt die Datei "run" (siehe Run script unten) in diesem Ordner aus.
+Es wird außerdem ein Unterverzecihnis /supervice angelegt
+
+
 Init-Script aktivieren mit
 
         update-rc.d supervise-app defaults
+
 
 Falls man es wieder deaktivieren möchte
 
