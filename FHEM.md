@@ -115,6 +115,10 @@ Welche genau verwendet wird kann im Browser mit dem F12-Tool herausgefunden werd
 Mit dem F12-Tool kann man auch leicht die Element-ID eines umzuformatierenden Textes gefunden werden.
 Achtung: Änderungen in der CSS-Datei werden erst übernommen wenn man einen "vollen" Refresh der Seite vornimmt. Ein normales Neuladen reicht nicht! In Firefox muss man dazu Alt gedrückt halten und "Neu laden" klicken, bei Chrome muss man dazu Strg gedrückt halten und "Neu laden" klicken.
 
+Bei einem Update wird die Datei /opt/fhem/www/pgm2/darkfloorplanstyle.css immer überschrieben und damit meine Änderung rückgängig gemacht.
+Ich stelle sie dann immer aus dem Backup wieder her.
+
+
 ## Undo
 Es gibt leider kein direktes Undo. Wnn man eine Änderung gemacht hat und noch nicht ```Save config``` geklickt hat, kann sie nur mit ```shutdown restart``` rückgängig gemacht werden.
 
