@@ -123,6 +123,7 @@ Kleine Versionssprünge kann man mit
 
     ./scripts/update.sh prod --ignore-root-warning
 
-aus dem Ordner /home/wallabag durchführen
+aus dem Ordner /home/wallabag durchführen. Das enspricht "make update", was aber als root nicht geht
+
 
 
