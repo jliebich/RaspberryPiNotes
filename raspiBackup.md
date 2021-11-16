@@ -17,7 +17,7 @@ Meldungen (Fehler, Erfolg Ergebnis) werden an Telegram gesendet
     
     /usr/local/etc/raspiBackup.conf
 
-## NAS (nfs) mounten
+## NAS (nfs) automatisch mounten
 
 In raspiBackup.conf
 
@@ -28,6 +28,11 @@ in /etc/fstab
 
     192.168.0.11:/volume1/Backup_Raspi /media/nas-backup nfs noauto,rw,nfsvers=3 0 0
     
+## Starten
+
+Vor den Start lohnt es sich mit ncdu nach Speicherfressern zu suchen
+Bei Nextcloud sollten z.B. unbenötigte Backups unter /var/owncloud/data/updater-XXXXXX gelöscht werden
+
 ## PiShrink
 
 Nach erstellen des Backups kann mit PiShrink die .img Datei deutlich verkleinert werden, siehe
