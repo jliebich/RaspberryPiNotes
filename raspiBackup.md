@@ -30,8 +30,10 @@ in /etc/fstab
     
 ## Starten
 
-Vor den Start lohnt es sich mit ncdu nach Speicherfressern zu suchen
-Bei Nextcloud sollten z.B. unbenötigte Backups unter /var/owncloud/data/updater-XXXXXX gelöscht werden
+- Vor dem Start lohnt es sich mit `ncdu` nach Speicherfressern zu suchen. Bei Nextcloud sollten z.B. unbenötigte Backups unter `/var/owncloud/data/updater-XXXXXX` gelöscht werden
+- `apt clean` gefolgt von `apt autoremove` auführen
+- `journalctl --vacuum-size=100M` ausführen, um Logs zu löschen
+
 
 ## PiShrink
 
