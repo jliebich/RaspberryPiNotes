@@ -47,7 +47,7 @@ Ausführung auf der Synology NAS:
 
 - Einloggen via SSH
 - In den Ordner `/volume1/Backup_Raspi/Backup/raspberrypi/raspberrypi-dd-backup-XXXXXX` wechseln
-- `pishrink.sh -vrpd raspberrypi-dd-backup-XXXXXX.img` ausführen
+- `sudo pishrink.sh -vrpd raspberrypi-dd-backup-XXXXXX.img` ausführen
 
 
 
