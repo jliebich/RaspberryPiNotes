@@ -41,5 +41,17 @@ Nach erstellen des Backups kann mit PiShrink die .img Datei deutlich verkleinert
 
 https://github.com/Drewsif/PiShrink
 
-PiShrink habe ich unter Ubuntu auf WSL installiert UND auch auf der NAS (Zugriff über ssh auf NAS)
+PiShrink habe ich unter Ubuntu auf WSL installiert UND auch auf der NAS 
+
+Ausführung auf der Synology NAS:
+
+- Einloggen via SSH
+- In den Ordner `/volume1/Backup_Raspi/Backup/raspberrypi/raspberrypi-dd-backup-XXXXXX` wechseln
+- `pishrink.sh -vrpd raspberrypi-dd-backup-XXXXXX.img` ausführen
+
+
+
+
+
+
 
