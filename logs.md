@@ -10,10 +10,6 @@ Um rsyslog-Datein zu "rotieren" wird das Tool "logrotate" benötigt.
 
 Es ist also u.U. sinnvoll rsyslog zu deaktivieren.
 
-Die Größe des journalctl-Protokolls wird durch /etc/systemd/journald.conf gesteuert.
-
-Interessante Einstellungen sind hier `SystemMaxUse`, `SystemKeepFree`, etc.
-
 Das journalctl-Protokoll auf einem Pi wird angeblich standardmäßig in einem nicht-permanenten Speicher gehalten (Wo ??)
 
 Um journalctl abzuspeichern folgendes tun:
@@ -32,15 +28,31 @@ und dann das System neu starten. Dadurch wird das journalctl-Protokoll dauerhaft
 
 Das funktioniert, weil der Standard-Speichermodus von journald auto ist, was bedeutet, dass die Protokolle im Speicher gehalten werden, solange /var/log/journal oder /run/log/journal nicht existiert - und das ist im Basis-Image angeblich nicht der Fall.
 
-`/run/log/journal` ist übrigens auch nur im RAM, da /run ein tmpfs Filesystem ist. Das kann man mittels `mount | grep tmpfs` sehen
-
 Ich habe allerdings da andere Erfahrungen: Bei meinen Raspis gibt es teilwiese sowohl /var/log/journal als auch /run/log/journal
 
-Einstellungen zu journalctl sind in
+`/run/log/journal` ist übrigens auch nur im RAM, da /run ein tmpfs Filesystem ist. Das kann man mittels `mount | grep tmpfs` sehen
+
+# journal konfigurieren
+
+Einstellungen (wie z.B. die Größe) zu journalctl sind in
 
     /etc/systemd/journald.conf
+
+Interessante Einstellungen sind hier `SystemMaxUse`, `SystemKeepFree`, etc.
+
+Man kann systemd-tmpfiles verwenden, um das Journal zu verwalten.
+Damit sollten Sie in der Lage sein, die Protokolle zu bereinigen und zu deaktivieren mit:
+
+    systemd-tmpfiles --clean
+
+Was macht das?
     
-# Größenbegrenzung von Text-Log-Dateie (NICHT system.journal!)
+    systemd-tmpfiles --remove
+
+Man kann auch in  `/etc/tmpfiles.d/*.conf` nachsehen, warum das Journal nicht automatisch aufgeräumt wird.
+
+    
+# Größenbegrenzung von Text-Log-Dateien mit logrotate (NICHT für system.journal!)
 
 Die Speicherung der Textprotokolle, die von rsyslog erstellt werden, kann mit logrotate kontrolliert werden
 
@@ -50,7 +62,7 @@ Traditionell wird logrotate von cron ausgeführt, aber das aktuelle Raspbian-Sys
 
 Siehe `/etc/systemd/system/timers.target.wants/logrotate.timer`
 
-Mit `systemctl status logrotate.timer` kann man überprüfen od er aktiviert ist
+Mit `systemctl status logrotate.timer` kann man überprüfen ob er aktiviert ist
 
 # Syslog an einen Syslog-Server senden
 
