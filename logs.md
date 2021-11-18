@@ -32,13 +32,25 @@ und dann das System neu starten. Dadurch wird das journalctl-Protokoll dauerhaft
 
 Das funktioniert, weil der Standard-Speichermodus von journald auto ist, was bedeutet, dass die Protokolle im Speicher gehalten werden, solange /var/log/journal oder /run/log/journal nicht existiert - und das ist im Basis-Image angeblich nicht der Fall.
 
+`/run/log/journal` ist übrigens auch nur im RAM, da /run ein tmpfs Filesystem ist. Das kann man mittels `mount | grep tmpfs` sehen
+
 Ich habe allerdings da andere Erfahrungen: Bei meinen Raspis gibt es teilwiese sowohl /var/log/journal als auch /run/log/journal
 
 Einstellungen zu journalctl sind in
 
     /etc/systemd/journald.conf
     
+# Größenbegrenzung von Text-Log-Dateie (NICHT system.journal!)
 
+Die Speicherung der Textprotokolle, die von rsyslog erstellt werden, kann mit logrotate kontrolliert werden
+
+Es rollt die Dateien um, komprimiert sie möglicherweise und verwirft sie je nach Volumen und/oder Alter.
+
+Traditionell wird logrotate von cron ausgeführt, aber das aktuelle Raspbian-System verwendet einen systemd-Timer.
+
+Siehe `/etc/systemd/system/timers.target.wants/logrotate.timer`
+
+Mit `systemctl status logrotate.timer` kann man überprüfen od er aktiviert ist
 
 # Syslog an einen Syslog-Server senden
 
