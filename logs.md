@@ -40,17 +40,6 @@ Einstellungen (wie z.B. die Größe) zu journalctl sind in
 
 Interessante Einstellungen sind hier `SystemMaxUse`, `SystemKeepFree`, etc.
 
-Man kann systemd-tmpfiles verwenden, um das Journal zu verwalten.
-Damit sollten Sie in der Lage sein, die Protokolle zu bereinigen und zu deaktivieren mit:
-
-    systemd-tmpfiles --clean
-
-Was macht das?
-    
-    systemd-tmpfiles --remove
-
-Man kann auch in  `/etc/tmpfiles.d/*.conf` nachsehen, warum das Journal nicht automatisch aufgeräumt wird.
-
 # rsyslog deaktivieren
 
 Wenn man rsyslog nicht benötigt, weil man z.B. wie oben beschrieben das journalctl-Protokoll persistent speichert, dann kann man es einfach deinstallieren mit
