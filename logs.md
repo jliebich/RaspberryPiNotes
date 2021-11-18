@@ -51,6 +51,12 @@ Was macht das?
 
 Man kann auch in  `/etc/tmpfiles.d/*.conf` nachsehen, warum das Journal nicht automatisch aufgeräumt wird.
 
+# rsyslog deaktivieren
+
+Wenn man rsyslog nicht benötigt, weil man z.B. wie oben beschrieben das journalctl-Protokoll persistent speichert, dann kann man es einfach deinstallieren mit
+
+    apt --autoremove purge rsyslog
+
     
 # Größenbegrenzung von Text-Log-Dateien mit logrotate (NICHT für system.journal!)
 
@@ -63,6 +69,7 @@ Traditionell wird logrotate von cron ausgeführt, aber das aktuelle Raspbian-Sys
 Siehe `/etc/systemd/system/timers.target.wants/logrotate.timer`
 
 Mit `systemctl status logrotate.timer` kann man überprüfen ob er aktiviert ist
+
 
 # Syslog an einen Syslog-Server senden
 
