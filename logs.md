@@ -23,7 +23,22 @@ Um journalctl abzuspeichern folgendes tun:
     chmod 755 journal
     chmod g+s journal
  
+ 
+ oder wahrcheinlich besser
+ 
+    mkdir -p /var/log/journal systemd-tmpfiles --create --prefix /var/log/journal
+ 
 und dann das System neu starten. Dadurch wird das journalctl-Protokoll dauerhaft gespeichert.
+
+Das funktioniert, weil der Standard-Speichermodus von journald auto ist, was bedeutet, dass die Protokolle im Speicher gehalten werden, solange /var/log/journal oder /run/log/journal nicht existiert - und das ist im Basis-Image angeblich nicht der Fall.
+
+Ich habe allerdings da andere Erfahrungen: Bei meinen Raspis gibt es teilwiese sowohl /var/log/journal als auch /run/log/journal
+
+Einstellungen zu journalctl sind in
+
+    /etc/systemd/journald.conf
+    
+
 
 # Syslog an einen Syslog-Server senden
 
