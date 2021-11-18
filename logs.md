@@ -1,3 +1,30 @@
+# Diverses zu den Logdatein
+
+Pfad zu den logs ist `/var/log`
+
+Zumindest auf dem Raspberry Pi Stretch von 11/2018 werden sowohl journalctl als auch rsyslog ausgeführt.
+Dies bedeutet, dass die Protokollinformationen doppelt geloged werden!
+
+journalctl ist das modernere System, rsyslog das ältere.
+Um rsyslog-Datein zu "rotieren" wird das Tool "logrotate" benötigt.
+
+Es ist also u.U. sinnvoll rsyslog zu deaktivieren.
+
+Die Größe des journalctl-Protokolls wird durch /etc/systemd/journald.conf gesteuert.
+
+Interessante Einstellungen sind hier `SystemMaxUse`, `SystemKeepFree`, etc.
+
+Das journalctl-Protokoll auf einem Pi wird angeblich standardmäßig in einem nicht-permanenten Speicher gehalten (Wo ??)
+
+Um journalctl abzuspeichern folgendes tun:
+
+    cd /var/log
+    mkdir journal
+    chmod 755 journal
+    chmod g+s journal
+ 
+und dann das System neu starten. Dadurch wird das journalctl-Protokoll dauerhaft gespeichert.
+
 # Syslog an einen Syslog-Server senden
 
 Synology-NAS als Sylog Server einrichten mit Paket "Protokoll-Center" (muss nachistalliert werden)
