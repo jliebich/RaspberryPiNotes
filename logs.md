@@ -40,6 +40,13 @@ Einstellungen (wie z.B. die Größe) zu journalctl sind in
 
 Interessante Einstellungen sind hier `SystemMaxUse`, `SystemKeepFree`, etc.
 
+# journal anzeigen
+
+Dem Journal live folgen
+
+    journalctl -f
+
+
 # rsyslog deaktivieren
 
 Wenn man rsyslog nicht benötigt, weil man z.B. wie oben beschrieben das journalctl-Protokoll persistent speichert, dann kann man es einfach deinstallieren mit
