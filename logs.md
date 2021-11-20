@@ -10,27 +10,18 @@ Um rsyslog-Datein zu "rotieren" wird das Tool "logrotate" benötigt.
 
 Es ist also u.U. sinnvoll rsyslog zu deaktivieren.
 
-Das journalctl-Protokoll auf einem Pi wird angeblich standardmäßig in einem nicht-permanenten Speicher gehalten (Wo ??)
+Das journalctl-Protokoll auf einem Pi wird angeblic standardmäßig in einem nicht-permanenten Speicher gehalten, sondern unter `/run/log/journal` (`/run` ist ein tmpfs Filesystem und somit im RAM, das kann man mittels `mount | grep tmpfs` sehen)
 
 Um journalctl abzuspeichern folgendes tun:
 
-    cd /var/log
-    mkdir journal
-    chmod 755 journal
-    chmod g+s journal
- 
- 
- oder wahrcheinlich besser
- 
     mkdir -p /var/log/journal systemd-tmpfiles --create --prefix /var/log/journal
  
 und dann das System neu starten. Dadurch wird das journalctl-Protokoll dauerhaft gespeichert.
 
-Das funktioniert, weil der Standard-Speichermodus von journald auto ist, was bedeutet, dass die Protokolle im Speicher gehalten werden, solange /var/log/journal oder /run/log/journal nicht existiert - und das ist im Basis-Image angeblich nicht der Fall.
+Das funktioniert, weil der Standard-Speichermodus von journald auto ist, was bedeutet, dass die Protokolle im Speicher gehalten werden, solange /var/log/journal nicht existiert - und das ist im Basis-Image angeblich nicht der Fall.
 
-Ich habe allerdings da andere Erfahrungen: Bei meinen Raspis gibt es teilwiese sowohl /var/log/journal als auch /run/log/journal
+Ich habe allerdings da andere Erfahrungen: Bei meinen Raspis gibt es teilwiese ein /var/log/journal...
 
-`/run/log/journal` ist übrigens auch nur im RAM, da /run ein tmpfs Filesystem ist. Das kann man mittels `mount | grep tmpfs` sehen
 
 # journal konfigurieren
 
@@ -40,11 +31,26 @@ Einstellungen (wie z.B. die Größe) zu journalctl sind in
 
 Interessante Einstellungen sind hier `SystemMaxUse`, `SystemKeepFree`, etc.
 
+Diverse Befehle für den Service:
+
+`systemctl status systemd-journald` zeigt an, ob der Dienst läuft und gibt gegebenenfalls zusätzliche Informationen.
+
+`systemctl start systemd-journald` startet den Dienst
+
+`systemctl stop systemd-journald` stoppt den Dienst.
+
+`systemctl restart systemd-journald` startet den Dienst neu.
+
+`systemctl reload systemd-journald` lädt die Konfiguration des Dienstes neu, wenn möglich, beendet ihn aber nicht (daher besteht keine Gefahr einer Dienstunterbrechung oder einer Unterbrechung der laufenden Verarbeitung, aber der Dienst läuft möglicherweise mit einer veralteten Konfiguration weiter).
+
+`systemctl force-reload systemd-journald` lädt die Konfiguration des Dienstes neu, wenn dies möglich ist, und startet den Dienst neu, wenn dies nicht möglich ist (so ist gewährleistet, dass der Dienst die aktuelle Konfiguration verwendet, aber dies kann zu einer Unterbrechung führen).
+
 # journal anzeigen
 
 Dem Journal live folgen
 
     journalctl -f
+
 
 
 # rsyslog deaktivieren
