@@ -34,6 +34,10 @@ in /etc/fstab
 - `apt clean` gefolgt von `apt autoremove` auführen
 - `journalctl --vacuum-size=100M` ausführen, um Logs zu löschen
 
+Ich habe 2 Arten eingerichtet
+
+- `raspiBackup` sichert ein dd image auf der NAS (benutzt Configdatei ´/usr/local/bin/raspiBackup`)
+- `raspiBackup -f /usr/local/bin/raspiBackuptar.conf` sichert ein tar image auf der NAS
 
 ## PiShrink
 
