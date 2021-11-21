@@ -19,7 +19,15 @@ Update durchführen:
 
     sudo rpi-update
 
-und Neustart via
+Falls eine Meldung wie:
+
+    Partition size XXXM may not be sufficient for new Pi4 files
+    This could result in a system that will not boot.
+    256M FAT partition is recommended. Ensure you have a backup if continuing.
+
+kommt muss die boot partition vergrößert werden, siehe hierzu https://learn.adafruit.com/resizing-raspberry-pi-boot-partition/edit-partitions
+
+Neustart via
 
     sudo reboot
 
