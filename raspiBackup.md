@@ -30,9 +30,10 @@ in /etc/fstab
     
 ## Starten
 
-- Vor dem Start lohnt es sich mit `ncdu` nach Speicherfressern zu suchen. Bei Nextcloud sollten z.B. unbenötigte Backups unter `/var/owncloud/data/updater-XXXXXX` gelöscht werden
+- Vor dem Start lohnt es sich mit `ncdu` nach Speicherfressern zu suchen.
+- Bei Nextcloud sollten unbenötigte Backups unter `/var/owncloud/data/updater-XXXXXX` gelöscht werden
+- Bei FHEM sollten unbenötigte Backups unter `/opt/fhem/backup` gelöscht werden 
 - `apt clean` gefolgt von `apt autoremove` auführen
-- `journalctl --vacuum-size=100M` ausführen, um Logs zu löschen
 
 Ich habe 2 Arten eingerichtet
 
