@@ -40,6 +40,8 @@ Ich habe 2 Arten eingerichtet
 - `raspiBackup` sichert ein dd image auf der NAS (benutzt Configdatei ´/usr/local/bin/raspiBackup`)
 - `raspiBackup -f /usr/local/etc/raspiBackuptar.conf` sichert ein tar image auf der NAS
 
+Mit der Option `-F` (=Fake) kann man vorher ausprobieren ob alles richtig eingerichtet ist
+
 ## PiShrink
 
 Nach erstellen des Backups kann mit PiShrink die .img Datei deutlich verkleinert werden, siehe
