@@ -28,11 +28,11 @@ Das Protokoll wird auch nach `/var/log/log2ram.log` geschrieben.
 
 Man kann auch den Mount-Ordner im RAM mit 
 
-  df -h | grep log2ram
+    df -h | grep log2ram
 
 und/oder
 
-  mount | grep log2ram
+    mount | grep log2ram
 
 anzeigen. Wenn log2ram funktioniert, werden Zeilen mit log2ram angezeigt
 
