@@ -58,6 +58,8 @@ Dem Journal live folgen
 Wenn man rsyslog nicht benötigt, weil man z.B. wie oben beschrieben das journalctl-Protokoll persistent speichert, dann kann man es einfach deinstallieren mit
 
     apt --autoremove purge rsyslog
+    
+ Bei mir ist auf allen Raspis rsyslog deaktiviert.
 
     
 # Größenbegrenzung von Text-Log-Dateien mit logrotate (NICHT für system.journal!)
