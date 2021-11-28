@@ -59,9 +59,11 @@ Aktuell (Stand Nov. 2021) ist die V2.5, die also unbedingt installiert werden mu
 
 # Firmware-Update über FHEM
 
+- Updatedatei herunterladen von https://www.eq-3.de/service/downloads.html
+- Die Datei `HM-ES-TX-WM_update_V2_5_191209.eq3` nach `/opt/fhem/` kopieren
 - Für ein erfolgreiches Firmwareupdate sollte das Gerät mit einem Sensor verbunden sein.
 - Das Gerät lässt sich in den Updatemodus versetzen, im dem die Batterien zunächst entfernt, dann beim Einsetzen die Anlerntaste (die rechte mit der Bezeichnung ">") gedrückt bleibt. Die Leuchtdiode blinkt dann rot im sehr schnellen Takt.
-- Das FHEM-Kommando zum Senden der Firmware per set <devicename> fwUpdate <Firmwaredatei.eq3> muss vor dem Einlegen der Batterie (bei gleichzeitigem Drücken der Anlerntaste) aufgegeben werden. Erfolgt zum Zeitpunkt des Einschaltens im Updatemodus keine Sendung der Firmware wird der Zählersensor normal gebootet.
+- Das FHEM-Kommando zum Senden der Firmware per `set <devicename> fwUpdate <Firmwaredatei.eq3>` muss vor dem Einlegen der Batterie (bei gleichzeitigem Drücken der Anlerntaste) aufgegeben werden. Erfolgt zum Zeitpunkt des Einschaltens im Updatemodus keine Sendung der Firmware wird der Zählersensor normal gebootet.
 - Die Meldung <devicename> fwUpdate: fail:notInBootLoader im Filelog erscheint, wenn das FHEM fwUpdate Kommando zu spät gesendet wurde.
 - Der Update dauert etwa eine Minute. Während des Updates blinkt die Diode rot in kurzen Intervallen.
 - Nach erfolgreichen Update muss der Sensor auf die Werkseinstellungen zurückgesetzt (">" Taste 4 Sekunden drücken (Display zeigt reS), kurz warten, ">" noch mal 4 Sekunden drücken - Zählersensor rebootet), aus der FHEM Konfiguration entfernt und neu angelernt werden. Wenn der Reset nicht durchgeführt wird, kommt vom Sensor immer die Fehlermeldung: einmal langes und drei mal kurzes rotes Blinken (Sitz des Auslesekopfes prüfen). Diese Meldung ist in diesem Zusammenhang ziemlich irreführend. 
