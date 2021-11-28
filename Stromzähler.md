@@ -25,11 +25,11 @@ Im "Erweiterten Betrieb" werden auch
 
 - Momentane Leistung Obis 16.7.0
 - Phasenspannung L1 Obis 32.7.0
-- Phasenspannung L2 52.7.0
-- Phasenspannung L3 72.7.0
-- Phasenstrom 1 31.7.0
-- Phasenstrom 2 51.7.0
-- Phasenstrom 3 71.7.0
+- Phasenspannung L2 Obis 52.7.0
+- Phasenspannung L3 Obis 72.7.0
+- Phasenstrom 1 Obis 31.7.0
+- Phasenstrom 2 Obis 51.7.0
+- Phasenstrom 3 Obis 71.7.0
 - 
 erwähnt, allerdings ohne direkter Angabe einer Obis-Nummer - diese stehen aber in einem anderen Kontext später in der Anleitung.
 
