@@ -45,10 +45,26 @@ Zitat:
 
 "Bei SML-Zählern muss häufig zunächst die Info-Funktion im Menü auf On-gestellt werden, um alle Daten und die Zählerstände mit voller Auflösung zu erhalten. Hierfür ist ggf. die PIN von Messstellenbeteiber zu erfragen."
 
-# PIN des Stromzählers
+## PIN des Stromzählers
 
 Habe über die Webseite https://www.rng.de/cms/smart-meter-pin-anfordern.html die PIN angefordert - sie soll mir per Post zugestellt werden, ist aber bis jetzt noch nicht geschehen.
 
+# Firmware HM-ES-TX-WM
+
+Im Auslieferungszustand ist die Firmware V1.2 auf dem HM-ES-TX-WM installiert.
+
+Für den Betrieb mit dem ES-IEC ist auf dem HM-ES-TX-WM eine Firmwareversion ≥ 2.0 notwendig.
+
+Aktuell (Stand Nov. 2021) ist die V2.5, die also unbedingt installiert werden muss.  
+
+# Firmware-Update über FHEM
+
+- Für ein erfolgreiches Firmwareupdate sollte das Gerät mit einem Sensor verbunden sein.
+- Das Gerät lässt sich in den Updatemodus versetzen, im dem die Batterien zunächst entfernt, dann beim Einsetzen die Anlerntaste (die rechte mit der Bezeichnung ">") gedrückt bleibt. Die Leuchtdiode blinkt dann rot im sehr schnellen Takt.
+- Das FHEM-Kommando zum Senden der Firmware per set <devicename> fwUpdate <Firmwaredatei.eq3> muss vor dem Einlegen der Batterie (bei gleichzeitigem Drücken der Anlerntaste) aufgegeben werden. Erfolgt zum Zeitpunkt des Einschaltens im Updatemodus keine Sendung der Firmware wird der Zählersensor normal gebootet.
+- Die Meldung <devicename> fwUpdate: fail:notInBootLoader im Filelog erscheint, wenn das FHEM fwUpdate Kommando zu spät gesendet wurde.
+- Der Update dauert etwa eine Minute. Während des Updates blinkt die Diode rot in kurzen Intervallen.
+- Nach erfolgreichen Update muss der Sensor auf die Werkseinstellungen zurückgesetzt (">" Taste 4 Sekunden drücken (Display zeigt reS), kurz warten, ">" noch mal 4 Sekunden drücken - Zählersensor rebootet), aus der FHEM Konfiguration entfernt und neu angelernt werden. Wenn der Reset nicht durchgeführt wird, kommt vom Sensor immer die Fehlermeldung: einmal langes und drei mal kurzes rotes Blinken (Sitz des Auslesekopfes prüfen). Diese Meldung ist in diesem Zusammenhang ziemlich irreführend. 
 
 
 
