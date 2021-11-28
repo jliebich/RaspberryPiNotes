@@ -61,6 +61,7 @@ Aktuell (Stand Nov. 2021) ist die V2.5, die also unbedingt installiert werden mu
 
 - Updatedatei herunterladen von https://www.eq-3.de/service/downloads.html
 - Die Datei `HM-ES-TX-WM_update_V2_5_191209.eq3` nach `/opt/fhem/` kopieren
+- Korrekte Rechte vergeben mit `chown fhem:dialout /opt/fhem/HM-ES-TX-WM_update_V2_5_191209.eq3`
 - Für ein erfolgreiches Firmwareupdate sollte das Gerät mit einem Sensor verbunden sein.
 - Das Gerät lässt sich in den Updatemodus versetzen, im dem die Batterien zunächst entfernt, dann beim Einsetzen die Anlerntaste (die rechte mit der Bezeichnung ">") gedrückt bleibt. Die Leuchtdiode blinkt dann rot im sehr schnellen Takt.
 - Das FHEM-Kommando zum Senden der Firmware per `set <devicename> fwUpdate <Firmwaredatei.eq3>` muss vor dem Einlegen der Batterie (bei gleichzeitigem Drücken der Anlerntaste) aufgegeben werden. Erfolgt zum Zeitpunkt des Einschaltens im Updatemodus keine Sendung der Firmware wird der Zählersensor normal gebootet.
