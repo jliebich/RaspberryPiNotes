@@ -43,7 +43,13 @@ Das passt zu der Aussage von ELV:
 
 Zitat:
 
-"Bei SML-Zählern muss häufig zunächst die Info-Funktion im Menü auf On-gestellt werden, um alle Daten und die Zählerstände mit voller Auflösung zu erhalten."
+"Bei SML-Zählern muss häufig zunächst die Info-Funktion im Menü auf On-gestellt werden, um alle Daten und die Zählerstände mit voller Auflösung zu erhalten. Hierfür ist ggf. die PIN von Messstellenbeteiber zu erfragen."
+
+# PIN des Stromzählers
+
+Habe über die Webseite https://www.rng.de/cms/smart-meter-pin-anfordern.html die PIN angefordert - sie soll mir per Post zugestellt werden, ist aber bis jetzt noch nicht geschehen.
+
+
 
 
 
