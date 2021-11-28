@@ -34,8 +34,19 @@ Im "Erweiterten Betrieb" werden auch
 erwähnt, allerdings ohne direkter Angabe einer Obis-Nummer - diese stehen aber in einem anderen Kontext später in der Anleitung.
 
 Der Wechsel zwischen den beiden Protokollarten geschied durch den "InF"-Paramter.
-Zitat auf Bedienungsanleitung:
-"Aktivierungsbetrieb der Herstellerdaten im Telegramm am INFO-Port. Es wird das ON-Symbol angezeigt, wenn die Funktion ON ist (erweiterte Daten) oder OFF-Symbol, wenn die Funktion aus ist (Daten in der grundsätzlichen Version). Änderung des ON/OFF-Parameters durch langes Lichtsignal.
+
+Zitat aus Bedienungsanleitung:
+
+"Aktivierungsbetrieb der Herstellerdaten im Telegramm am INFO-Port. Es wird das ON-Symbol angezeigt, wenn die Funktion ON ist (erweiterte Daten) oder OFF-Symbol, wenn die Funktion aus ist (Daten in der grundsätzlichen Version). Änderung des ON/OFF-Parameters durch langes Lichtsignal."
+
+Das passt zu der Aussage von ELV:
+
+Zitat:
+
+"Bei SML-Zählern muss häufig zunächst die Info-Funktion im Menü auf On-gestellt werden, um alle Daten und die Zählerstände mit voller Auflösung zu erhalten."
+
+
+
 
 
 
