@@ -23,15 +23,15 @@ Es gibt einen "Baisbetrieb" und einen "Erweiterten Betrieb - Herstellerbetrieb"
 Im Basisbetrieb wird Obis 1.8.0 = "Entnommene Energie" unterstützt - das ist auch in 142148_liste_data.pdf erwähnt
 Im "Erweiterten Betrieb" werden auch
 
-- Momentane Leistung
-- Phasenspannung L1
-- Phasenspannung L2
-- Phasenspannung L3
-- Phasenstrom 1
-- Phasenstrom 2
-- Phasenstrom 3
+- Momentane Leistung Obis 16.7.0
+- Phasenspannung L1 Obis 32.7.0
+- Phasenspannung L2 52.7.0
+- Phasenspannung L3 72.7.0
+- Phasenstrom 1 31.7.0
+- Phasenstrom 2 51.7.0
+- Phasenstrom 3 71.7.0
 - 
-erwähnt, allerdings ohne Angabe einer Obis-Nummer.
+erwähnt, allerdings ohne direkter Angabe einer Obis-Nummer - diese stehen aber in einem anderen Kontext später in der Anleitung.
 
 Der Wechsel zwischen den beiden Protokollarten geschied durch den "InF"-Paramter.
 Zitat auf Bedienungsanleitung:
