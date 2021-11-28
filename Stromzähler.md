@@ -9,8 +9,9 @@
 ## Anleitungen
 
 - Handbuch Nordax 3D: Handbuch_Norax3D.pdf
-- FHEM Wiki zum M-ES-TX-WM (ES-IEC Sensor ist hier nicht erwähnt) https://wiki.fhem.de/wiki/HM-ES-TX-WM_Z%C3%A4hlersensor_f%C3%BCr_Strom-_und_Gasz%C3%A4hler
+- [FHEM Wiki zum M-ES-TX-WM](https://wiki.fhem.de/wiki/HM-ES-TX-WM_Z%C3%A4hlersensor_f%C3%BCr_Strom-_und_Gasz%C3%A4hler) ES-IEC Sensor ist hier leider nicht erwähnt
 - Liste der unterstützen Stromzähler: 142148_liste_data.pdf NORDAX 3D ist in der Liste erwähnt, müsste also funktionieren
+- [HM-ES-TX-WM Anbindung an FHEM (Anderer Zählertyp](https://richter.site/?p=54)
 
 ## Protokoll
 
