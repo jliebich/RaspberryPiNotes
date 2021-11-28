@@ -8,7 +8,7 @@
 
 ## Anleitungen
 - Handbuch_Norax3D.pdf
-
+- https://wiki.fhem.de/wiki/HM-ES-TX-WM_Z%C3%A4hlersensor_f%C3%BCr_Strom-_und_Gasz%C3%A4hler
 
 ## Protokoll
 
@@ -16,4 +16,6 @@ Laut Anleitung hat die optische Schnittstelle des NORAX3D folgende Eigenschaften
 
 - 9600 Baud 8N1
 - Protokoll: SML + COSEM
+
+
 
