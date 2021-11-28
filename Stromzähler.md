@@ -7,8 +7,9 @@
 - Stromzähler NORAX3D
 
 ## Anleitungen
-- Handbuch_Norax3D.pdf
-- https://wiki.fhem.de/wiki/HM-ES-TX-WM_Z%C3%A4hlersensor_f%C3%BCr_Strom-_und_Gasz%C3%A4hler
+- Handbuch Nordax 3D: Handbuch_Norax3D.pdf
+- FHEM Wiki zum M-ES-TX-WM (ES-IEC Sensor ist hier nicht erwähnt) https://wiki.fhem.de/wiki/HM-ES-TX-WM_Z%C3%A4hlersensor_f%C3%BCr_Strom-_und_Gasz%C3%A4hler
+- Liste der unterstützen Stromzähler: 142148_liste_data.pdf NORDAX 3D inst in der Liste NICHT erwähnt
 
 ## Protokoll
 
