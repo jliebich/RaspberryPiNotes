@@ -31,8 +31,11 @@ Im "Erweiterten Betrieb" werden auch
 - Phasenstrom 2
 - Phasenstrom 3
 - 
-erwähnt, allerdings ohne Angabe einer Obis-Nummer
+erwähnt, allerdings ohne Angabe einer Obis-Nummer.
 
+Der Wechsel zwischen den beiden Protokollarten geschied durch den "InF"-Paramter.
+Zitat auf Bedienungsanleitung:
+"Aktivierungsbetrieb der Herstellerdaten im Telegramm am INFO-Port. Es wird das ON-Symbol angezeigt, wenn die Funktion ON ist (erweiterte Daten) oder OFF-Symbol, wenn die Funktion aus ist (Daten in der grundsätzlichen Version). Änderung des ON/OFF-Parameters durch langes Lichtsignal.
 
 
 
