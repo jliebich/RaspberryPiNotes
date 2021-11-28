@@ -49,7 +49,7 @@ Zitat:
 
 Habe über die Webseite https://www.rng.de/cms/smart-meter-pin-anfordern.html die PIN angefordert - sie soll mir per Post zugestellt werden, ist aber bis jetzt noch nicht geschehen.
 
-# Firmware HM-ES-TX-WM
+## Firmware HM-ES-TX-WM
 
 Im Auslieferungszustand ist die Firmware V1.2 auf dem HM-ES-TX-WM installiert.
 
@@ -57,7 +57,7 @@ Für den Betrieb mit dem ES-IEC ist auf dem HM-ES-TX-WM eine Firmwareversion ≥
 
 Aktuell (Stand Nov. 2021) ist die V2.5, die also unbedingt installiert werden muss.  
 
-# Firmware-Update über FHEM
+## Firmware-Update über FHEM
 
 - Updatedatei herunterladen von https://www.eq-3.de/service/downloads.html
 - Die Datei `HM-ES-TX-WM_update_V2_5_191209.eq3` nach `/opt/fhem/` kopieren
