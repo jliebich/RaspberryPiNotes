@@ -68,7 +68,26 @@ Aktuell (Stand Nov. 2021) ist die V2.5, die also unbedingt installiert werden mu
 - Das FHEM-Kommando zum Senden der Firmware per `set <devicename> fwUpdate <Firmwaredatei.eq3>` muss vor dem Einlegen der Batterie (bei gleichzeitigem Drücken der Anlerntaste) aufgegeben werden. Erfolgt zum Zeitpunkt des Einschaltens im Updatemodus keine Sendung der Firmware wird der Zählersensor normal gebootet. Die Meldung `<devicename> fwUpdate: fail:notInBootLoader` im Filelog erscheint, wenn das FHEM fwUpdate Kommando zu spät gesendet wurde. Das Update dauert etwa eine Minute. Während des Updates blinkt die Diode rot in kurzen Intervallen.
 - Nach erfolgreichen Update muss der Sensor auf die Werkseinstellungen zurückgesetzt (">" Taste 4 Sekunden drücken (Display zeigt reS), kurz warten, ">" noch mal 4 Sekunden drücken - Zählersensor rebootet), aus der FHEM Konfiguration entfernt und neu angelernt werden. Wenn der Reset nicht durchgeführt wird, kommt vom Sensor immer die Fehlermeldung: einmal langes und drei mal kurzes rotes Blinken (Sitz des Auslesekopfes prüfen). Diese Meldung ist in diesem Zusammenhang ziemlich irreführend. 
 
+# Konfiguration
 
+Mit `get HM_PowerMeter regList` kann man eine Übersicht der einzustellenden Register auslesen
+
+list:         register | range              | peer     | description
+   0: baudrate         |     literal        |          | baudrate options:Bd2400,Bd19200,Bd1200,Bd300,Bd4800,Bd9600,Bd600
+   0: pairCentral      |   0 to 16777215    |          | pairing to central
+   0: powerMode        |     literal        |          | meter powermode options:mainPower,batPower
+   0: protocolMode     |     literal        |          | meter protocol mode options:modeA,modeB,modeC,modeD,modeSML
+   0: samplPerCycl     |   1 to 10          |          | samples per cycle
+   0: serialFormat     |     literal        |          | serial Format options:s7D1PE2S,s8D0PN1S,s8D1PE1S,s7D1PE1S
+   0: transmDevTryMax  |   1 to 10          |          | max message re-transmit
+
+und mit `get HM_PowerMeter reg XXXX` kann man die Einstellung lesen
+
+Korrekte Einstellung für den NORAX3D sind
+
+baudrate = Bd9600 (war schon default)
+protocolMode = modeSML  (Default war modeD)
+serialFormat = s8D0PN1S (Default war s7D1PE1S)
 
 
 
