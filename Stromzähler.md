@@ -48,7 +48,13 @@ Zitat:
 
 ## PIN des Stromzählers
 
-Habe über die Webseite https://www.rng.de/cms/smart-meter-pin-anfordern.html die PIN angefordert - sie soll mir per Post zugestellt werden, ist aber bis jetzt noch nicht geschehen.
+Habe über die Webseite https://www.rng.de/cms/smart-meter-pin-anfordern.html die PIN angefordert, sie kam ein paar Tage später mit mir per Post.
+
+Zur PIN-Eingabe einmal lange (> 5 s) auf die "Nach-Links-Taste" am Zähler drücken.
+
+Dann PIN eingeben. Dies geschied ausschließlich mit der "Nach-Links-Taste" am Zähler (langes oder kurzes Drücken)
+
+Dann im Menü den Parameter "InF" auf "ON" gestellt und den Paremeter PIN auf "Off" (um PIN später nicht mehr eingeben zu müssen)
 
 ## Firmware HM-ES-TX-WM
 
@@ -88,8 +94,5 @@ Korrekte Einstellung für den NORAX3D sind
 baudrate = Bd9600 (war schon default)
 protocolMode = modeSML  (Default war modeD)
 serialFormat = s8D0PN1S (Default war s7D1PE1S)
-
-
-
 
 
