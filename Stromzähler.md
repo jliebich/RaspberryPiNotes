@@ -78,21 +78,21 @@ Aktuell (Stand Nov. 2021) ist die V2.5, die also unbedingt installiert werden mu
 
 Mit `get HM_PowerMeter regList` kann man eine Übersicht der einzustellenden Register auslesen
 
-list:         register | range              | peer     | description
-   0: baudrate         |     literal        |          | baudrate options:Bd2400,Bd19200,Bd1200,Bd300,Bd4800,Bd9600,Bd600
-   0: pairCentral      |   0 to 16777215    |          | pairing to central
-   0: powerMode        |     literal        |          | meter powermode options:mainPower,batPower
-   0: protocolMode     |     literal        |          | meter protocol mode options:modeA,modeB,modeC,modeD,modeSML
-   0: samplPerCycl     |   1 to 10          |          | samples per cycle
-   0: serialFormat     |     literal        |          | serial Format options:s7D1PE2S,s8D0PN1S,s8D1PE1S,s7D1PE1S
-   0: transmDevTryMax  |   1 to 10          |          | max message re-transmit
+    list:         register | range              | peer     | description
+       0: baudrate         |     literal        |          | baudrate options:Bd2400,Bd19200,Bd1200,Bd300,Bd4800,Bd9600,Bd600
+       0: pairCentral      |   0 to 16777215    |          | pairing to central
+       0: powerMode        |     literal        |          | meter powermode options:mainPower,batPower
+       0: protocolMode     |     literal        |          | meter protocol mode options:modeA,modeB,modeC,modeD,modeSML
+       0: samplPerCycl     |   1 to 10          |          | samples per cycle
+       0: serialFormat     |     literal        |          | serial Format options:s7D1PE2S,s8D0PN1S,s8D1PE1S,s7D1PE1S
+       0: transmDevTryMax  |   1 to 10          |          | max message re-transmit
 
 und mit `get HM_PowerMeter reg XXXX` kann man die Einstellung lesen
 
 Korrekte Einstellung für den NORAX3D sind
 
-baudrate = Bd9600 (war schon default)
-protocolMode = modeSML  (Default war modeD)
-serialFormat = s8D0PN1S (Default war s7D1PE1S)
+    baudrate = Bd9600 (war schon default)
+    protocolMode = modeSML  (Default war modeD)
+    serialFormat = s8D0PN1S (Default war s7D1PE1S)
 
 
