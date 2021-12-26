@@ -61,7 +61,24 @@ Kommentarzeichen vor diesen Einträgen entfernen in Datei `/etc/php5/fpm/pool.d/
 Folgende Zeile in `config.php` editieren
 
     'memcache.local' => '\OC\Memcache\APCu',
+
+# Fehlermeldung "OC\HintException: [0]: Memcache \OC\Memcache\APCu not available for local cache (Is the matching PHP module installed and enabled?)"
+
+Sofortiges beheben durch Aufruf von occ mit 
     
+    php -d apc.enable_cli=1
+
+also z.B 
+
+    sudo -u www-data php -d apc.enable_cli=1 occ maintenance:mode --off
+    
+Generell in `/etc/php/7.X/cli/php.ini` die Zeile
+
+    apc.enable_cli=1
+
+am Ende einfügen
+
+
 # Berechtigungen setzen
 
 Script SetPermissions.sh (liegt bei mir unter /root)
