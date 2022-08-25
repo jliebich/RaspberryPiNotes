@@ -13,16 +13,18 @@ Um Gigabut Ethernet-Verbindungen zu verhindern kann man
 
 verwenden 0x00f ist die Kombination aus allen anderen (langsameren) Modi laut dieser Tabelle:
 
-advertise N
+    advertise N
     Sets the speed and duplex advertised by autonegotiation.  The 
     argument is a hexadecimal value using one or a combination of
     the following values:
-      0x001       10baseT Half
-      0x002       10baseT Full
-      0x004       100baseT Half
-      0x008       100baseT Full
-      0x010       1000baseT Half       (not supported by IEEE standards)
-      0x020       1000baseT Full
+    0x001       10baseT Half
+    0x002       10baseT Full
+    0x004       100baseT Half
+    0x008       100baseT Full
+    0x010       1000baseT Half       (not supported by IEEE standards)
+    0x020       1000baseT Full
+    
+
       
       
 
