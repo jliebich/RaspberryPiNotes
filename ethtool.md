@@ -11,7 +11,10 @@ Um Gigabut Ethernet-Verbindungen zu verhindern kann man
 
     ethtool -s eth0 advertise 0x00f
 
-verwenden 0x00f ist die Kombination aus allen anderen (langsameren) Modi laut dieser Tabelle:
+verwenden.
+Achtung: Die Ausführung des Befehls dauert tatsächlich ca. 20 Sekunden!
+
+0x00f ist die Kombination aus allen anderen (langsameren) Modi laut dieser Tabelle:
 
     advertise N
     Sets the speed and duplex advertised by autonegotiation.  The 
@@ -23,6 +26,7 @@ verwenden 0x00f ist die Kombination aus allen anderen (langsameren) Modi laut di
     0x008       100baseT Full
     0x010       1000baseT Half       (not supported by IEEE standards)
     0x020       1000baseT Full
+    
     
 
       
