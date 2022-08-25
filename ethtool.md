@@ -28,6 +28,7 @@ Achtung: Die Ausführung des Befehls dauert tatsächlich ca. 20 Sekunden!
     0x020       1000baseT Full
     
     
+Mit 100 MBit statt 1GBit verbraucht mein Raspberry Pi 4 nur ca. 20 mA (= ca. 5%) weniger Strom. Lohnt also den Aufwand nicht...
 
       
       
