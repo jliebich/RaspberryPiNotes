@@ -2,6 +2,6 @@
 
 Zugriff auf Dateien im WSL auf Windows heraus:
 
-    //wsl$
+    \\wsl$
     
-im Explorer eingeben
+im Explorer eingeben - Achtung Backslash nicht Slash!
