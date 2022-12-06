@@ -32,6 +32,7 @@ Ich möchte die InfluxDB aber nicht (wie oben beschrieben) lokal auf dem gleiche
     '''
 
 
+![grafik](https://user-images.githubusercontent.com/7657793/205508463-e8f5b3c1-58bc-484d-9cc6-6a7fe3e4850b.png)
 
 
 
