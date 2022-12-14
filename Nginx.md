@@ -81,8 +81,36 @@ In der „http„-Sektion der nginx.conf folgendes einfügen
 
     server_tokens off;
 
+## SSL Konfiguration prüfen
+
+https://www.ssllabs.com/ssltest/
+
 ## SSL Konfiguration sicherer machen
 
-Siehe https://www.sherbers.de/howto/nginx/
+Siehe
+https://www.sherbers.de/howto/nginx/
+oder
+https://beaglesecurity.com/blog/article/nginx-server-security.html
+
+Mit ssl_ciphers kann man nginx sagen, welche ciphers es erlauben soll (bzw. mit vorgestelltem ! welche nicht)
+
+nginx erwartet dabei namen, die openssl versteht.
+
+Hier eine Liste der Namen:
+
+https://testssl.sh/openssl-iana.mapping.html
+
+Mit dieser Konfiguration
+
+    ssl_ciphers HIGH:!aNULL:!MD5:!CAMELLIA:!ECDHE-RSA-AES256-SHA384:!ECDHE-RSA-AES128-SHA256:!ECDHE-RSA-AES256-SHA:!ECDHE-RSA-AES128-SHA:!AES256-GCM-SHA384:!AES256-CCM8:!AES256-CCM:!AES128-GCM-SHA256:!AES128-CCM8:!AES128-CCM:!AES256-SHA256:!AES128-SHA256:!AES256-SHA:!AES128-SHA;
+
+liefert SSLLabs noch folgende "weak" ciphers:
+
+    TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (0xc013)   ECDH x25519 (eq. 3072 bits RSA)   FS   WEAK
+    TLS_RSA_WITH_ARIA_256_GCM_SHA384 (0xc051)   WEAK
+    TLS_RSA_WITH_ARIA_128_GCM_SHA256 (0xc050)   WEAK
+
+Diese haben leider keinen openssl Namen, deshalb weiß ich nicht, wie ich die deaktivieren soll.
+
 
 
