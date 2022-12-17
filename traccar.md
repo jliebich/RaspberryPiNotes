@@ -20,3 +20,9 @@ Abweichend von dieser Anleitung folgendes in /opt/traccar/conf/traccar.xml eintr
 https://www.traccar.org/secure-connection/
 
 https://www.traccar.org/forums/topic/nginx-ssl-websocket-example-configuration/
+
+## Überflüssig Port disabeln
+
+https://www.traccar.org/forums/topic/how-to-reduce-open-tcp-ports-on-the-server/
+
+
