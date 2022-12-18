@@ -6,7 +6,7 @@ https://github.com/azlux/log2ram
 
 Meine Konfiguration:
 * Größe 30 MB statt 40 MB
-* Sync täglich statt stündlich
+* Sync täglich
 * Keine Mail
 
 ## Testen ob log2ram läuft
