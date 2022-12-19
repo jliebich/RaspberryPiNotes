@@ -1,4 +1,13 @@
 # MySQL
+
+## Speicherort der Datenbank
+
+Unter
+
+    /var/lib/mysql/
+    
+(bzw. was für datadir [innodb: innodb_data_home_dir]) in der /etc/mysql/my.cnf konfiguriert ist) gibt es für jede Datenbank ein Verzeichnis (Name der Datenbank) mit den zugehörigen Datenfiles.
+
 ## MySQL-Passwort vergessen
 Die Datei
  
