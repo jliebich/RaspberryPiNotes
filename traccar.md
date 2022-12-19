@@ -34,11 +34,13 @@ Habe ich nicht
 
 ### Remove old version of Traccar
 
+### Install new version of Traccar
 
-    Install new version of Traccar
-    Restore media folder
-    Restore config file (if applicable)
-    Start Traccar service
+### Restore media folder
+
+### Restore config file (if applicable)
+
+### Start Traccar service
 
 ## SSL einrichten
 
