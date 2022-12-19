@@ -19,7 +19,26 @@ Abweichend von dieser Anleitung folgendes in /opt/traccar/conf/traccar.xml eintr
 
 https://www.traccar.org/upgrading-traccar/
 
+### Make a database backup
 
+### Backup your config file
+
+    /opt/traccar/conf/traccar.xml
+
+und 
+
+    /opt/traccar/conf/default.xml
+    
+### Backup media folder
+Habe ich nicht
+
+### Remove old version of Traccar
+
+
+    Install new version of Traccar
+    Restore media folder
+    Restore config file (if applicable)
+    Start Traccar service
 
 ## SSL einrichten
 
