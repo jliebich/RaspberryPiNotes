@@ -15,6 +15,10 @@ Abweichend von dieser Anleitung folgendes in /opt/traccar/conf/traccar.xml eintr
 
 (Rest wie in Anleitung)
 
+## Aktuell insalliere Version anzeigen
+
+In der Weboberfläche unter Einstellungen -> Info
+
 ## Upgrade
 
 https://www.traccar.org/upgrading-traccar/
