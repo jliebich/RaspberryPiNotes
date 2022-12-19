@@ -15,6 +15,12 @@ Abweichend von dieser Anleitung folgendes in /opt/traccar/conf/traccar.xml eintr
 
 (Rest wie in Anleitung)
 
+## Upgrade
+
+https://www.traccar.org/upgrading-traccar/
+
+
+
 ## SSL einrichten
 
 https://www.traccar.org/secure-connection/
