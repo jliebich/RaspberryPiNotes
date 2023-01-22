@@ -10,6 +10,10 @@ Installieren:
 Einfügen der Zwischenablage in den Editor von Midnight Commander geschied über SHIFT und rechtem Mausklick!
 
 Zum Paket gehört auch der Editor mcedit - dieser kann deutlich mehr als nano. Eine Installation von nano ist daher nicht nötig.
+
+Um in einem Terminal con mcedit in die Zwischenablage zu kopieren
+
+    (hold) Shift + Select with mouse (copies to clipboard)
  
 ## ncdu
 sowas wie Treesize für die Linux-Bash / grafische Version von du = disk usage
