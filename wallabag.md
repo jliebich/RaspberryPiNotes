@@ -1,4 +1,4 @@
-#Wallabag installieren
+# Wallabag installieren
 
 ## Auf vielen Webservern wird mod_tidy fehlen...
     apt-get install php5-tidy
@@ -104,6 +104,8 @@ Jail: Inhalt von /etc/fail2ban/jail.d/wallabag.conf
 # Setting up wallabag + MySQL + nginx
 
 https://blog.ronsonchan.com/setting-up-wallabag-mysql-nginx/
+
+https://www.howtoforge.com/how-to-install-wallabag-on-ubuntu-1804/
 
 # Öffentliche Benutzerregistrierung deaktivieren
 
