@@ -3,6 +3,11 @@ Status
 
     systemctl status bluetooth
 
+und auch
+
+    hciconfig -a
+    
+
 Enable
 
     sudo systemctl start bluetooth
