@@ -31,7 +31,7 @@ in /etc/fstab
 ## Starten
 
 - Vor dem Start lohnt es sich mit `ncdu` nach Speicherfressern zu suchen.
-- Bei Nextcloud sollten unbenötigte Backups unter `/var/owncloud/data/updater-XXXXXX` gelöscht werden
+- Bei Nextcloud sollten unbenötigte Backups unter `/var/www/owncloud/data/updater-XXXXXX` gelöscht werden
 - Bei FHEM sollten unbenötigte Backups unter `/opt/fhem/backup` gelöscht werden 
 - `apt clean` gefolgt von `apt autoremove` auführen
 
