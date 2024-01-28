@@ -152,4 +152,5 @@ fhem(„set MeineVariable on“);
 * M-Configs entsprechend altem Geraet anpassen (register, usw...)
 * altes Device loeschen
 * rename neues-HM-Geraet NamedesaltenHMGeraets
+* Achtung, Tür/Fenstersensor-Status ist bei FS20 "Open" und "Close" bei Homematic ist es allerdings "open" und "close". DoIfs müssen also ggf angepasst werden
 * shutdown restart
