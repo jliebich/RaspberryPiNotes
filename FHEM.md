@@ -96,6 +96,7 @@ Homematic-Gerät in den Pairing-Mode versetzen:
 * Funk-Gongmodul MP3 (HM-OU-CM-PCB): Taste TA1 min. 4 Sekunden drücken (dauerhaftes Blinken = Anlernmodus)
 * Tür-/Fensterkontakt, optisch: Kurz auf Taste drücken
 * 4 Kanal Funk-Schaltaktor für Batteriebetrieb (HM-LC-Sw4-Ba-PCB): Taste am entsprechenden Kanal min 4 Sekunden drücken. Laut Anleitung muss jeder Kanal einzeln angelert werden, in FHEM erscheinen bei mir aber sofort alle 4 Kanäle, nachdem ich einen Kanal angelert habe.
+* Homematic Funk-Schaltaktor, Zwischenstecker HM-LC-Sw1-Pl-DN-R1: Halten Sie die Kanaltaste für mindestens 4 Sekunden gedrückt. Langsames Blinken der Geräte-LED signalisiert den Anlernmodus. Die Anlernzeit beträgt max. 20 Sekunden.
 
 Nach dem Anlernen erkennt man an in der Weboberfläche von FHEM an dem roten Fragezeichen hinter "Save config", dass das Gerät angelernt wurde.
 Man kann auf das Fragezechen klicken, um zu sehen wie das neue Gerät heißt. "Save config" klicken um die Änderung zu übernhemen
