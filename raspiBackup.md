@@ -33,6 +33,11 @@ In raspiBackup.conf
 in /etc/fstab    
 
     192.168.0.11:/volume1/Backup_Raspi /media/nas-backup nfs noauto,rw,nfsvers=3 0 0
+
+## Berechtigung in NAS vergeben
+
+Auf der Synology NAS unter Systemsteuerung -> Fregegebener Ordner den Ordner Backup_Raspi wählen und "Bearbeiten" klicken
+Dann auf NFS-Berechtigungen gehen und die IP Adresse des Clients hinzufügen
     
 ## Starten
 
