@@ -11,10 +11,16 @@ Meldungen (Fehler, Erfolg Ergebnis) werden an Telegram gesendet
 
 ## Pfade
 
+Das eigentliche Backupprogramm:
+
     /usr/local/bin/raspiBackup
     
+Die dazugehörige GUI für die grundlegende Konfiguration
+
     /usr/local/bin/raspiBackupInstallUI
-    
+
+Die Config-Datei - bei mir für das sichern eines dd Images auf dem NAS
+
     /usr/local/etc/raspiBackup.conf
 
 ## NAS (nfs) automatisch mounten
