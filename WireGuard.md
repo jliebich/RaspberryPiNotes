@@ -51,5 +51,10 @@ Am besten über die .conf Dateien. Kann man z.B. über WinSCP vom Raspi runterho
  
  zeigt eine Zusmmenfassung der Konfiguarion, wann die letzte Verbindung war und wieviel Daten übertragen wurden
  
+## Nutzung unter Linux CLI
+
+https://github.com/UnnoTed/wireguird/tree/v1.0.0
+
+
 
     
