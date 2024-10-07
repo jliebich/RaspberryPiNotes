@@ -23,11 +23,11 @@ Die Dateien befinden sich dann unter
 
 ## Vorlage anlegen
 
-Die Datei unter
+Die Datei https://github.com/jliebich/RaspberryPiNotes/blob/master/scripts/config.jsonc unter
 
     /root/.config/fastfetch/config.jsonc
 
-anlegen. Und dort auch eine Textdatei mit dem eigenen logo anlegen z.B.
+anlegen. Und dort auch eine Textdatei mit dem eigenen logo anlegen z.B. https://github.com/jliebich/RaspberryPiNotes/blob/master/scripts/FHEM_Logo.txt
 
     /root/.config/fastfetch/FHEM_Logo.txt
 
