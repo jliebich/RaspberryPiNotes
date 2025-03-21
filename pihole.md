@@ -12,10 +12,13 @@
 
 ## Weblinks
 
-Installation:
+https://dnsforge.de/ Ist eine gute Quelle für Filterlisten.
 
-https://www.kuketz-blog.de/pi-hole-schwarzes-loch-fuer-werbung-raspberry-pi-teil1/
+Darin enthalten sind u.a auch die Liste von
+https://github.com/StevenBlack/hosts?tab=readme-ov-file
 
-Pihole auf nginx statt lighttpd
+Zusätzlich kann man noch hinzunehmen
 
-https://github.com/pi-hole/pi-hole/wiki/Nginx-Configuration
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-only/hosts
+
+
