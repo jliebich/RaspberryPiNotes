@@ -107,5 +107,5 @@ WantedBy=multi-user.target
 
 ## Test im Browser
 
-    http://192.168.0.8:7762/suspend?key=MEINGEHEIMNIS
+    http://192.168.0.8:7762/status?key=MEINGEHEIMNIS
 
