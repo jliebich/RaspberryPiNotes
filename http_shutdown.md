@@ -1,6 +1,7 @@
 # Shutdown Script
 Das ist auf meinem Jellyfin Server instlliert um ihn einfach herunterfahren zu können, z.B. über FHEM
 
+```
 #!/usr/bin/env python3
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import subprocess
@@ -70,5 +71,41 @@ class Handler(BaseHTTPRequestHandler):
 
 # Server starten
 HTTPServer(("", PORT), Handler).serve_forever()
+```
 
+Speichern, dann ausführbar machen:
+
+    sudo chmod +x /usr/local/bin/http-shutdown.py
+
+## systemd-Service anlegen
+sudo nano /etc/systemd/system/http-shutdown.service
+Inhalt:
+```
+[Unit]
+Description=HTTP Shutdown Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/http-shutdown.py
+User=root
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+## Service aktivieren & starten
+
+    sudo systemctl daemon-reload
+    sudo systemctl enable http-shutdown.service
+    sudo systemctl start http-shutdown.service
+
+
+## Status prüfen
+
+    sudo systemctl status http-shutdown.service
+
+## Test im Browser
+
+    http://192.168.0.8:7762/suspend?key=MEINGEHEIMNIS
 
