@@ -84,6 +84,27 @@ Prüfen ob service korrekt gestartet wurde.
         ...
     
 Nach einem Reboot wird der co2mini_server.pl jetzt immer automatisch gestartet.
+
+## C Version
+
+Ich habe ein C Version von co2mini_server.pl erstellt.
+
+https://github.com/jliebich/RaspberryPiNotes/blob/master/scripts/co2mini_server.c 
+
+Verwende dies als "resoucenschonendere" Variante.
+
+Muss mit
+
+        gcc -O2 -Wall co2mini_server.c -o co2mini_server
+
+auf dem Zielsystem kompiliert werden.
+
+In /etc/init.d/co2mini dann den Pfad zur ausführbaren Datei ändern z.B.
+
+        file="/home/co2mini_server"
+
+Alles andere bleibt unverändert.
+
  
 ## Installation in FHEM
 
