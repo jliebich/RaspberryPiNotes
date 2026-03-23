@@ -75,6 +75,10 @@ Stelle sicher, dass es ausführbar ist
 
 ## Konfig auf Slave
 
+    global_defs {
+        max_auto_priority
+    }
+
     vrrp_instance VI_1 {
       state BACKUP
       interface eth0
