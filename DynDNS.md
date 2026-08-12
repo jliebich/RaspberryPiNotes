@@ -2,7 +2,7 @@
 
     https://www.noip.com/support/knowledgebase/install-ip-duc-onto-raspberry-pi/
     
-    http://www.raspberrypi-tutorials.de/software/dyndns-mit-no-ip-fuer-den-raspberry-pi-einrichten.html
+    https://raspberry.tips/raspberrypi-einsteiger/raspberry-pi-einsteiger-guide-dyndns-teil-5
 
 Alternativ dieses Script verwenden
 
