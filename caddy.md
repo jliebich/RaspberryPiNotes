@@ -111,6 +111,9 @@
   FTLCONF_misc_dnsmasq_lines: "address=/XXXXXXX.ipv64.de/192.168.0.37;local=/XXXXXXX.ipv64.de/"
   FTLCONF_dns_upstreams: "9.9.9.9;149.112.112.112"
   ```
-- **Starten und prüfen:** Mit `docker compose up -d --build` starten. Caddy-Logs auf eine erfolgreiche Zertifikatsausstellung prüfen und im Heimnetz `https://dienst.XXXXXXX.ipv64.de` aufrufen.
+- **Starten und prüfen:**
+  Mit `docker compose up -d --build` starten. mit `docker ps` kann man schauen ob der Container läuft.
+  Mit `docker logs caddy-ipv64-caddy-1` kann man sich die Logdatei anschauen. Da sollte was von `enabling automatic TLS certificate management` stehen
+  Im Heimnetz `https://dienst.XXXXXXX.ipv64.de` aufrufen.
 
 **Hinweis:** Der API-Key ist vertraulich. Das ipv64.net-Modul ist ein Community-Modul.
