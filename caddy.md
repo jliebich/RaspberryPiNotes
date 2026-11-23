@@ -11,19 +11,47 @@
   FROM caddy:2
   COPY --from=builder /usr/bin/caddy /usr/bin/caddy
   ```
-- **Key hinterlegen:** In `.env` eintragen und in `docker-compose.yaml` an den Caddy-Container weiterreichen:
+- **docker-compose.yaml anlegen:** Bei mit unter (bei mir unter `/opt/caddy-ipv64/docker-compose.yaml` ):
+  ```docker-compose.yaml
+  services:
+  caddy:
+    image: caddy-ipv64:local
+    restart: unless-stopped
+
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+
+    environment:
+      IPV64_API_TOKEN: "${IPV64_API_TOKEN}"
+
+    volumes:
+      - /opt/caddy-ipv64/Caddyfile:/etc/caddy/Caddyfile:ro
+      - /opt/caddy-ipv64/data:/data
+      - /opt/caddy-ipv64/config:/config
+
+    networks:
+      - proxy
+
+  networks:
+    proxy:
+      external: true
+      name: proxy
+  ```
+- **Key hinterlegen:** In `.env` eintragen (wird in `docker-compose.yaml` ausgelesen):
   ```env
   IPV64_API_TOKEN=dein_api_key
   ```
   Achtung: mit normalem ls wird die .env Datei nicht angezeigt!
   
-- **Caddy konfigurieren:** So sieht mein Caddyfile aus:
+- **Caddy konfigurieren:** So sieht mein Caddyfile aus ( bei mir unter /opt/caddy-ipv64/Caddyfile ):
   ```Caddyfile
   {
     email admin@XXXXXXX.ipv64.de
-}
+  }
 
-*.XXXXXXX.ipv64.de {
+  *.XXXXXXX.ipv64.de {
     tls {
         dns ipv64 {
             api_token {env.IPV64_API_TOKEN}
@@ -73,9 +101,11 @@
     handle {
         abort
     }
-}
+  }
   ```
   `meinname.ipv64.de`, die Dienstnamen, IP-Adressen und Ports anpassen. Weitere Dienste jeweils mit eigenem `host`-Matcher und `reverse_proxy` ergänzen.
+- **Caddy konfigurieren:** 
+
 - **Lokalen DNS einrichten:** Im lokalen DNS einen Wildcard-Eintrag für `*.meinname.ipv64.de` auf die LAN-IP von Caddy setzen. Die Clients müssen diesen DNS-Server verwenden.
 - **Starten und prüfen:** Mit `docker compose up -d --build` starten. Caddy-Logs auf eine erfolgreiche Zertifikatsausstellung prüfen und im Heimnetz `https://dienst.meinname.ipv64.de` aufrufen.
 
