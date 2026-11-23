@@ -1,7 +1,7 @@
 ## HTTPS für Heimnetz-Dienste mit ipv64.net und Caddy
 
 - **Voraussetzungen:** Linux-System mit fester LAN-IP, Docker und Docker Compose. Caddy übernimmt den Reverse Proxy; Pi-hole oder ein anderer lokaler DNS-Server löst die Dienstnamen im Heimnetz auf.
-- **ipv64.net vorbereiten:** DynDNS-Domain anlegen, zum Beispiel `meinname.ipv64.de`. Eine CDN-Domain brauchst du dafür nicht.
+- **ipv64.net vorbereiten:** DynDNS-Domain anlegen, zum Beispiel `XXXXXXX.ipv64.de`. Eine CDN-Domain brauchst du dafür nicht.
 - **API-Key erstellen:** In ipv64.net unter **Account → API** einen Key anlegen und sicher aufbewahren.
 - **Caddy-Modul einbauen:** Im Caddy-Dockerfile (bei mir unter `/opt/caddy-ipv64/Dockerfile` ) das Modul `github.com/Sickjuicy/caddy-ipv64` hinzufügen:
   ```dockerfile
@@ -103,10 +103,10 @@
     }
   }
   ```
-  `meinname.ipv64.de`, die Dienstnamen, IP-Adressen und Ports anpassen. Weitere Dienste jeweils mit eigenem `host`-Matcher und `reverse_proxy` ergänzen.
+  `XXXXXXX.ipv64.de`, die Dienstnamen, IP-Adressen und Ports anpassen. Weitere Dienste jeweils mit eigenem `host`-Matcher und `reverse_proxy` ergänzen.
 - **Caddy konfigurieren:** 
 
-- **Lokalen DNS einrichten:** Im lokalen DNS einen Wildcard-Eintrag für `*.meinname.ipv64.de` auf die LAN-IP von Caddy setzen. Die Clients müssen diesen DNS-Server verwenden.
-- **Starten und prüfen:** Mit `docker compose up -d --build` starten. Caddy-Logs auf eine erfolgreiche Zertifikatsausstellung prüfen und im Heimnetz `https://dienst.meinname.ipv64.de` aufrufen.
+- **Lokalen DNS einrichten:** Im lokalen DNS einen Wildcard-Eintrag für `*.XXXXXXX.ipv64.de` auf die LAN-IP von Caddy setzen. Die Clients müssen diesen DNS-Server verwenden.
+- **Starten und prüfen:** Mit `docker compose up -d --build` starten. Caddy-Logs auf eine erfolgreiche Zertifikatsausstellung prüfen und im Heimnetz `https://dienst.XXXXXXX.ipv64.de` aufrufen.
 
 **Hinweis:** Der API-Key ist vertraulich. Das ipv64.net-Modul ist ein Community-Modul.
