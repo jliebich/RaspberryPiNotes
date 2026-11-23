@@ -104,7 +104,7 @@
   }
   ```
   `XXXXXXX.ipv64.de`, die Dienstnamen, IP-Adressen und Ports anpassen. Weitere Dienste jeweils mit eigenem `host`-Matcher und `reverse_proxy` ergänzen.
-- **Pihole konfigurieren:** In der docker-compose.yaml vpn Pihole folgendes unter environment setzen und neu starten:
+- **Pihole konfigurieren:** In der docker-compose.yaml von Pihole folgendes unter environment setzen und neu starten:
   ```
   # If using Docker's default `bridge` network setting the dns listening mode should be set to 'all'
   FTLCONF_dns_listeningMode: 'all'
