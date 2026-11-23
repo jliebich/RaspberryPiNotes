@@ -104,9 +104,13 @@
   }
   ```
   `XXXXXXX.ipv64.de`, die Dienstnamen, IP-Adressen und Ports anpassen. Weitere Dienste jeweils mit eigenem `host`-Matcher und `reverse_proxy` ergänzen.
-- **Caddy konfigurieren:** 
-
-- **Lokalen DNS einrichten:** Im lokalen DNS einen Wildcard-Eintrag für `*.XXXXXXX.ipv64.de` auf die LAN-IP von Caddy setzen. Die Clients müssen diesen DNS-Server verwenden.
+- **Pihole konfigurieren:** In der docker-compose.yaml vpn Pihole folgendes unter environment setzen und neu starten:
+  ```
+  # If using Docker's default `bridge` network setting the dns listening mode should be set to 'all'
+  FTLCONF_dns_listeningMode: 'all'
+  FTLCONF_misc_dnsmasq_lines: "address=/XXXXXXX.ipv64.de/192.168.0.37;local=/XXXXXXX.ipv64.de/"
+  FTLCONF_dns_upstreams: "9.9.9.9;149.112.112.112"
+  ```
 - **Starten und prüfen:** Mit `docker compose up -d --build` starten. Caddy-Logs auf eine erfolgreiche Zertifikatsausstellung prüfen und im Heimnetz `https://dienst.XXXXXXX.ipv64.de` aufrufen.
 
 **Hinweis:** Der API-Key ist vertraulich. Das ipv64.net-Modul ist ein Community-Modul.
